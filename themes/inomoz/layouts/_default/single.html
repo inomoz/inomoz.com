@@ -1,0 +1,34 @@
+{{ define "main" }}
+<section class="list">
+    <article>
+        <header>
+            <h1>{{ .Title }}</h1>
+        </header>
+        {{ if isset .Params "tldr" }}
+        <div class="tldr">
+            <strong>tl;dr:</strong>
+            {{ .Params.tldr }}
+        </div>
+        {{ end }}
+
+        <section class="body">
+            {{ .Content }}
+        </section>
+
+        <footer>
+            <p class="published-time">Created: {{ dateFormat "Jan 2, 2006" .Date }} | Updated: {{ dateFormat "Jan 2, 2006" .Lastmod }} {{ if .Draft }}
+                <span class="draft-label">DRAFT</span> {{ end }} {{ if ne .Type "page" }}
+            {{ if gt .Params.categories 0 }}
+                {{ range .Params.categories }}
+                    | <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                {{ end }}
+            {{ end }}
+            {{ end }}</p>
+        </footer>
+
+        <section>
+            <div id="remark42"></div>
+        </section>
+    </article>
+</section>
+{{ end }}

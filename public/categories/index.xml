@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Inomoz</title>
+    <link>https://inomoz.com/categories/</link>
+    <description>Recent content in Categories on Inomoz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Apr 2021 11:08:57 +0300</lastBuildDate><atom:link href="https://inomoz.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Workflow</title>
+      <link>https://inomoz.com/categories/workflow/</link>
+      <pubDate>Wed, 21 Apr 2021 11:08:57 +0300</pubDate>
+      
+      <guid>https://inomoz.com/categories/workflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://inomoz.com/categories/life/</link>
+      <pubDate>Tue, 20 Apr 2021 11:08:57 +0300</pubDate>
+      
+      <guid>https://inomoz.com/categories/life/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

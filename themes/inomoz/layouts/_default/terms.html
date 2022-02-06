@@ -1,0 +1,48 @@
+{{ define "main" }}
+<main class="list">
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+    {{ range $paginator.Pages }}
+    <section class="list-item">
+        <a href="{{ .RelPermalink }}" class="article-w">
+            <article>
+                <header>
+                    <h1 class="title">{{.Title}}</h1>
+                    <i class="gg-link"></i>
+                </header>
+                <section class="summary-section">
+                    {{ if isset .Params "description" }}
+                    {{ .Description }}
+                    {{ else }}
+                    {{ .Summary }}&hellip;
+                    {{ end }}
+                </section>
+                <footer>
+                    <p class="published-time">
+                        <time>Created: {{ dateFormat "Jan 2, 2006" .Date }} | Updated: {{ dateFormat "Jan 2, 2006" .Lastmod }} {{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }} | ~ {{ math.Round (div (countwords .Content) 220.0) }} minutes to read</time>
+                    </p>
+                </footer>
+            </article>
+        </a>
+    </section>
+    {{ end }}
+    {{ template "partials/paginator.html" . }}
+    </main>
+
+{{ $biggest := 1 }}
+{{ $smallest := 1 }}
+{{ $max := 3 }}
+{{ $min := 1 }}
+{{ $size := $min }}
+
+{{ $data := .Data }}
+<div class="tag-cloud">
+	<ul class="tags">
+		{{ range $key, $value := .Data.Terms.ByCount }}
+		{{ $size := (add (mul (div $value.Count $biggest) (sub $max $min)) $min) }}
+		{{ $size := (cond (eq $biggest $smallest) $min $size) }}
+		<li><a style="font-size: {{ $size }}rem;" href="{{ $.Site.LanguagePrefix | absURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}/">{{ $value.Name }}</a></li>
+		{{ end }}
+	</ul>
+</div>
+{{ end }}

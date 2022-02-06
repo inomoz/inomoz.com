@@ -1,0 +1,47 @@
+baseURL = "https://inomoz.com/"
+languageCode = "en-us"
+title = "Inomoz"
+theme = "inomoz"
+copycode = "true"
+enableGitInfo = "true"
+
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  expiryDate = ["expiryDate"]
+  lastmod = [":git", "lastmod", "date", "publishDate"]
+  publishDate = ["publishDate", "date"]
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[menu]
+  [[menu.main]]
+    identifier = "Workflow"
+    name = "Workflow"
+    pre = ""
+    url = "/categories/workflow/"
+    weight = -100
+  [[menu.main]]
+    identifier = "Life"
+    name = "Life"
+    pre = ""
+    url = "/categories/life/"
+    weight = -90
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
