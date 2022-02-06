@@ -1,0 +1,2214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Inomoz</title><link>https://inomoz.com/posts/</link><description>Recent content in Posts on Inomoz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://inomoz.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Education</title><link>https://inomoz.com/posts/20220126023314-edu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220126023314-edu/</guid><description>&lt;h2 id="stage-1">Stage 1&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://puzzle-english.com/">Puzzle English&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/ritchieprogramminglanguage1990/">The C programming language&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/petzoldkodtaynyyyazyk101/">Код: тайный язык информатики&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/alexandremelinkratchayshiykursshkolnoy/">Кратчайший Курс Школьной Математики&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/">LeetCode&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/20220203004140-leetcode_examples/">LeetCode examples&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/feldroytwoscoopsdjango101/">Two scoops of Django 3.x&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://hyperskill.org/tracks">JetBrains Academy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/slatkineffectivepython902019/">Effective python: 90 specific ways to write better python&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/bhargavagrokkingalgorithms101/">Grokking Algorithms&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/huntpragmaticprogrammerjourneyman1999/">The Pragmatic Programmer: From Journeyman to Master&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/martinchistyykod101/">Clean Code: A Handbook of Agile Software Craftsmanship RU&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/flanaganjavascriptdefinitiveguide2020/">JavaScript: The definitive guide, 7th edition&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/djirdehfullstackvuejs2021/">Full Stack Vue.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://inomoz.com/posts/davidsvetosveshchenie2001/">Свет и освещение&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Effective python: 90 specific ways to write better python</title><link>https://inomoz.com/posts/slatkineffectivepython902019/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/slatkineffectivepython902019/</guid><description>&lt;h2 id="slatkinEffectivePython902019">Effective python: 90 specific ways to write better python&lt;/h2>
+&lt;h3 id="item-1-know-which-version-of-python-you-re-using">Item 1: Know which version of python you&amp;rsquo;re using&lt;/h3>
+&lt;h4 id="idioms-of-programming-language-are-defined-by-its-users">Idioms of programming language are defined by its users&lt;/h4>
+&lt;p>This means popular practices, formating rules, conventions, etc are defined by their users!&lt;/p>
+&lt;h4 id="python-version">Python version&lt;/h4>
+&lt;p>You can easily detect which python version you use right now.&lt;/p>
+&lt;h3 id="item-2-follow-the-pep8-style-guide">Item 2: Follow the PEP8 Style Guide&lt;/h3>
+&lt;h4 id="pep-is">PEP is&lt;/h4>
+&lt;p>Python Enhancement Proposal or PEP 8
+It&amp;rsquo;s Python formatting style guide.&lt;/p>
+&lt;h4 id="why-pep">Why PEP?&lt;/h4>
+&lt;p>Using consistent style, make your code much more approachable and readable.&lt;/p>
+&lt;h4 id="whitespace">Whitespace&lt;/h4>
+&lt;p>Since whitespaces are significant in Python, it&amp;rsquo;s recommend to follow this rules:&lt;/p>
+&lt;ul>
+&lt;li>Use 4 spaces insted tabs for indentation.&lt;/li>
+&lt;li>Indent a long lines by additional spaces if they splitted.&lt;/li>
+&lt;li>Functions and classes separated by 2 blank lines.&lt;/li>
+&lt;li>Class methods separated by 1 blank line.&lt;/li>
+&lt;li>&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;h4 id="naming">Naming&lt;/h4>
+&lt;ul>
+&lt;li>Functions, variables, and attributes in &lt;code>lowercas_underscore&lt;/code> format.&lt;/li>
+&lt;li>Protected instance attributes should be in &lt;code>_leading_underscore&lt;/code> format.&lt;/li>
+&lt;li>Classes (including exceptions) should be in &lt;code>CapitalizedWord&lt;/code> format.&lt;/li>
+&lt;li>Module-level constants should be in &lt;code>ALL_CAPS&lt;/code> format.&lt;/li>
+&lt;li>Instance methods in classes should use &lt;code>self&lt;/code> (ref to object), as the name of the first parameter.&lt;/li>
+&lt;li>Class methods should use &lt;code>cls&lt;/code>, which refers to the class, as the name of the first parameter.&lt;/li>
+&lt;/ul>
+&lt;h4 id="expressions-and-statements">Expressions and statements&lt;/h4>
+&lt;ul>
+&lt;li>Use inline negation &lt;code>if a is not b&lt;/code> instead negation of positive expression &lt;code>if not a is b&lt;/code>, some like &lt;code>if not CONDTION&lt;/code>. It&amp;rsquo;s really hard to understand.&lt;/li>
+&lt;li>Don&amp;rsquo;t check for empty/non-empty by comparing length to zero ([], &amp;lsquo;'), just use &lt;code>if/if not&lt;/code> something and you need assume that empty value will be evaluated to False, non-empty to True.&lt;/li>
+&lt;li>Avoid single-line if, for and while loops, except compound statements, spread them over multiple lines for clarity/readability (it&amp;rsquo;s actual for complex items).&lt;/li>
+&lt;li>Split long lines with parentheses if they are too long.&lt;/li>
+&lt;li>Prefer splitting with parentheses over using \ line conttinuation character.&lt;/li>
+&lt;/ul>
+&lt;h4 id="imports">Imports&lt;/h4>
+&lt;ul>
+&lt;li>Place imports at top.&lt;/li>
+&lt;li>Use absolute names when you import modules.&lt;/li>
+&lt;li>When you need do relative import, use explicit method &lt;code>from . import foo&lt;/code>&lt;/li>
+&lt;li>Follow ordering of module import: stdlib, thrid-party, own.&lt;/li>
+&lt;li>Use linters linke pylint, black, etc&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;h4 id="things-to-remember">Things to remember&lt;/h4>
+&lt;ul>
+&lt;li>Follow the PEP style guide.&lt;/li>
+&lt;li>Following common style facilitates collaboration with others.&lt;/li>
+&lt;li>Consistent code style make it easier to modify later (include automation?).&lt;/li>
+&lt;/ul>
+&lt;h3 id="item-3-know-the-differences-between-bytes-and-str">Item 3: Know the Differences Between bytes and str&lt;/h3>
+&lt;h4 id="sequence-data">Sequence data&lt;/h4>
+&lt;p>In python there are 2 types that represent sequences of characters
+bytes and str&lt;/p>
+&lt;ul>
+&lt;li>byte - RAW unsigned 8 bit value &lt;code>b'h\x65llo'&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;!--listend-->
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">a &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">b&lt;/span>&lt;span style="color:#e6db74">&amp;#39;h&lt;/span>&lt;span style="color:#ae81ff">\x65&lt;/span>&lt;span style="color:#e6db74">llo&lt;/span>&lt;span style="color:#ae81ff">\x55&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>
+print(list(a))
+print(a)
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>str instances - &lt;a href="https://inomoz.com/posts/20220123015058-utf/">Unicode&lt;/a> code points, that represent textual characters from human language
+str instances don&amp;rsquo;t have binary encoding&lt;/li>
+&lt;/ul>
+&lt;!--listend-->
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">a &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;a&lt;/span>&lt;span style="color:#ae81ff">\u0300&lt;/span>&lt;span style="color:#e6db74"> propos&amp;#39;&lt;/span>
+print(list(a))
+print(a)
+print(a&lt;span style="color:#f92672">.&lt;/span>encode(&lt;span style="color:#e6db74">&amp;#39;windows-1251&amp;#39;&lt;/span>, &lt;span style="color:#e6db74">&amp;#39;ignore&amp;#39;&lt;/span>))
+print(a&lt;span style="color:#f92672">.&lt;/span>encode()&lt;span style="color:#f92672">.&lt;/span>decode())
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The core of your program should use str type containg Unicode data, but can accept different encoding - latin1, big5 from interafaces.&lt;/p>
+&lt;p>Use helper function to ensure th e inputs you operate are the type of character sequence that you expect.&lt;/p>
+&lt;p>Bytes and str instances can be used together with operatos &amp;gt;, =, -, +, %&lt;/p>
+&lt;p>If you want read or write bin data, open it in &amp;lsquo;rb&amp;rsquo; &amp;lsquo;rw&amp;rsquo; modes.&lt;/p>
+&lt;p>If you want to read or write unicode data be careful about system encoding. Explictiy pass the encoding paramter to open if you want to avoid surprices.&lt;/p>
+&lt;p>prefer f-strings&lt;/p>
+&lt;p>format of f strinig: f&amp;rsquo;{key!r:&amp;lt;10} = {value:.2f}
+{key!r} - raw
+{key:&amp;lt;10} - left order (min width) - 10 characters
+{value:.2f} - precision formatting
+f&amp;rsquo;my number is {number:.{places}}?&lt;/p>
+&lt;p>F-strings are sucinot yet powerful, because they allow for arbitray Pytho expression to be directly embedded within format specifiers.&lt;/p>
+&lt;p>Write helperes functions instead of complex expressions&lt;/p>
+&lt;p>Python&amp;rsquo;s syntax makes it easy to write single line epxressions that are overly complicated and difficult to read.&lt;/p>
+&lt;p>Move complex expressions into helpere functions expeciialy if you need to use the same logic repeately&lt;/p></description></item><item><title>escape sequences</title><link>https://inomoz.com/posts/20220119215704-escape_sequences/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220119215704-escape_sequences/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1">https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1&lt;/a>
+\a 07 Alert (Beep, Bell) (added in C89)[1]
+\b 08 Backspace
+\e 1B Escape character (non standart)
+\f 0C Formfeed Page Break
+\n 0A Newline (Line Feed); see notes below
+\r 0D Carriage Return
+\t 09 Horizontal Tab
+\v 0B Vertical Tab
+\\ 5C Backslash
+\' 27 Apostrophe or single quotation mark
+\&amp;quot; 22 Double quotation mark
+\? 3F Question mark (used to avoid trigraphs)
+\nnnnote 2 any The byte whose numerical value is given by nnn interpreted as an octal number
+\xhh… any The byte whose numerical value is given by hh… interpreted as a hexadecimal number
+\uhhhhnote 3 none Unicode code point below 10000 hexadecimal (added in C99)[1]: 26
+\Uhhhhhhhhnote 4 none Unicode code point where h is a hexadecimal digit&lt;/p>
+&lt;p>&lt;a href="https://gist.github.com/hectoregm/1368066">https://gist.github.com/hectoregm/1368066&lt;/a>
+Escape Sequence Name Meaning
+\a Alert Produces an audible or visible alert.
+\b Backspace Moves the cursor back one position (non-destructive).
+\f Form Feed Moves the cursor to the first position of the next page.
+\n New Line Moves the cursor to the first position of the next line.
+\r Carriage Return Moves the cursor to the first position of the current line.
+\t Horizontal Tab Moves the cursor to the next horizontal tabular position.
+\v Vertical Tab Moves the cursor to the next vertical tabular position.
+\' Produces a single quote.
+\&amp;quot; Produces a double quote.
+\? Produces a question mark.
+\\ Produces a single backslash.
+\0 Produces a null character.
+\ddd Defines one character by the octal digits (base-8 number). Multiple characters may be defined in the same escape sequence, but the value is implementation-specific (see examples).
+\xdd Defines one character by the hexadecimal digit (base-16 number).&lt;/p></description></item><item><title>Fullstack Vue.js</title><link>https://inomoz.com/posts/djirdehfullstackvuejs2021/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/djirdehfullstackvuejs2021/</guid><description>&lt;h2 id="djirdehFullstackVueJs2021">Fullstack Vue.js&lt;/h2></description></item><item><title>Grokking Algorithms</title><link>https://inomoz.com/posts/bhargavagrokkingalgorithms101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/bhargavagrokkingalgorithms101/</guid><description>&lt;h2 id="bhargavaGrokkingAlgorithms101">Grokking Algorithms&lt;/h2></description></item><item><title>JavaScript: The definitive guide, 7th edition</title><link>https://inomoz.com/posts/flanaganjavascriptdefinitiveguide2020/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/flanaganjavascriptdefinitiveguide2020/</guid><description>&lt;h2 id="flanaganJavaScriptDefinitiveGuide2020">JavaScript: The definitive guide, 7th edition&lt;/h2></description></item><item><title>LEAN</title><link>https://inomoz.com/posts/20220123190452-lean/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220123190452-lean/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Lean_software_development">https://en.wikipedia.org/wiki/Lean_software_development&lt;/a>&lt;/p>
+&lt;p>Lean software development is a translation of lean manufacturing principles and practices to the software development domain. Adapted from the Toyota Production System,[1] it is emerging with the support of a pro-lean subculture within the agile community. Lean offers a solid conceptual framework, values and principles, as well as good practices, derived from experience, that support agile organizations&lt;/p></description></item><item><title>LeetCode examples</title><link>https://inomoz.com/posts/20220203004140-leetcode_examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220203004140-leetcode_examples/</guid><description>&lt;h2 id="array-in-java">Array in Java&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Main&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String&lt;span style="color:#f92672">[]&lt;/span> args&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+DVD&lt;span style="color:#f92672">[]&lt;/span> dvdCollection &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> DVD&lt;span style="color:#f92672">[&lt;/span>15&lt;span style="color:#f92672">];&lt;/span>
+&lt;span style="color:#75715e">// Create avenger item
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> DVD avengerDVD &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> DVD&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;The avengers&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> 2012&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Joss Wedon&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+dvdCollection&lt;span style="color:#f92672">[&lt;/span>7&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">=&lt;/span> avengerDVD&lt;span style="color:#f92672">;&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">print&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;hello, world&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#75715e">// A simple definition for a DVD.
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">DVD&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String name&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> releaseYear&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String director&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">DVD&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String name&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> releaseYear&lt;span style="color:#f92672">,&lt;/span> String director&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">name&lt;/span> &lt;span style="color:#f92672">=&lt;/span> name&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">releaseYear&lt;/span> &lt;span style="color:#f92672">=&lt;/span> releaseYear&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">director&lt;/span> &lt;span style="color:#f92672">=&lt;/span> director&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">name&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;, directed by &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">director&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;, released in &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">releaseYear&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#75715e">// The actual code for creating an Array to hold DVD&amp;#39;s.
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>The c programming language</title><link>https://inomoz.com/posts/ritchieprogramminglanguage1990/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/ritchieprogramminglanguage1990/</guid><description>&lt;h2 id="ritchieProgrammingLanguage1990">The c programming language&lt;/h2>
+&lt;h3 id="chapter-1-a-tutorial-introduction">Chapter 1 - A Tutorial Introduction&lt;/h3>
+&lt;h4 id="1-dot-1-getting-started">1.1 Getting Started&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>the only way&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Exist only one way to learn programming language, what is that way?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>The only way to learn programming language is writing programs in it.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>hello world&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Write simple hello-world program&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>()
+{
+printf(&lt;span style="color:#e6db74">&amp;#34;hello, world&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>);
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>hello, world&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>C program&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>C program consist of?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>functions and variables&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>string&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>What this sequence called in C - &amp;ldquo;hello, world\n&amp;rdquo;&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>character string or string constant&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>escape sequence chars&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>How much characters represent &lt;a href="https://inomoz.com/posts/20220119215704-escape_sequences/">escape sequences&lt;/a>?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Only one&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="1-dot-2-variables-and-arithmetic-expressions">1.2 Variables and Arithmetic Expressions&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Types&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Which data types in C you know?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;ul>
+&lt;li>int \(-32768 \ldots +32767\)&lt;/li>
+&lt;li>float 32 bit generally between \(10^{-38} \ldots 10^{38}\)&lt;/li>
+&lt;li>char 1 byte&lt;/li>
+&lt;li>short - integer&lt;/li>
+&lt;li>long - integer&lt;/li>
+&lt;li>double&lt;/li>
+&lt;li>arrays&lt;/li>
+&lt;li>structures&lt;/li>
+&lt;li>unions&lt;/li>
+&lt;li>pointers&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Braces&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Is braces required if we have only one statement?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>No, braces is optional in this situation.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Integer division&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Which problem exist in C when we use division of 2 integer numbers?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>In C (and in a lot of other programming languages), integer division truncates (any fractional part discarded).&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>printf result&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>What will printed by this statement.
+&lt;code>printf(&amp;quot;%d\t%d\n&amp;quot;, fahr, celsius)&lt;/code>, if fahr and celsius is integer values&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> fahr &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>, celsius &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>;
+printf(&lt;span style="color:#e6db74">&amp;#34;%d&lt;/span>&lt;span style="color:#ae81ff">\t&lt;/span>&lt;span style="color:#e6db74">%d&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, fahr, celsius);
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>1 2&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Part of the C&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Is &lt;code>printf&lt;/code> is part of the C language?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>NO, &lt;code>printf&lt;/code> is useful function from std. library.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Program fahr&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Can you write (even in pseudo code) Fahrenheit-Celsius convertion program?
+Fahr formula is 5/9 &amp;hellip;&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#75715e">/* print Fahrenheit-Celsius table
+&lt;/span>&lt;span style="color:#75715e"> for fahr = 0, 20, ..., 300; floating-point version */&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>()
+{
+&lt;span style="color:#75715e">/* initialization */&lt;/span>
+&lt;span style="color:#66d9ef">float&lt;/span> fahr, celsius;
+&lt;span style="color:#66d9ef">float&lt;/span> lower, upper, step;
+lower &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; &lt;span style="color:#75715e">/* lower limit of temperatuire scale */&lt;/span>
+upper &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">300&lt;/span>; &lt;span style="color:#75715e">/* upper limit */&lt;/span>
+step &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">100&lt;/span>;
+fahr &lt;span style="color:#f92672">=&lt;/span> lower;
+printf(&lt;span style="color:#e6db74">&amp;#34;Fahr Celsius&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>);
+&lt;span style="color:#66d9ef">while&lt;/span> (fahr &lt;span style="color:#f92672">&amp;lt;=&lt;/span> upper) {
+celsius &lt;span style="color:#f92672">=&lt;/span> (&lt;span style="color:#ae81ff">5.0&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#ae81ff">9.0&lt;/span>) &lt;span style="color:#f92672">*&lt;/span> (fahr &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">32.0&lt;/span>);
+printf(&lt;span style="color:#e6db74">&amp;#34;%4.0f %6.1f&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, fahr, celsius);
+fahr &lt;span style="color:#f92672">+=&lt;/span> step;
+}
+printf(&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">%f fahr&amp;#34;&lt;/span>, fahr);
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Fahr Celsius
+0 -17.8
+100 37.8
+200 93.3
+300 148.9&lt;/p>
+&lt;p>400.000000 fahr&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Implicit conversion&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>If you have 2 integer division what you will receive in result?
+If one integer and second is float will situation change?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>If 2 integers, result will truncate (after dot). If one float, one integer - we convert integer to float first, then do division, result will be more precisely (no truncation after dot).&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Digit formatting&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Which results you receive with this code (output)&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">printf(&lt;span style="color:#e6db74">&amp;#34;%d&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, &lt;span style="color:#ae81ff">1&lt;/span>);
+printf(&lt;span style="color:#e6db74">&amp;#34;%6d&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>);
+printf(&lt;span style="color:#e6db74">&amp;#34;%f&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, &lt;span style="color:#ae81ff">1.01&lt;/span>);
+printf(&lt;span style="color:#e6db74">&amp;#34;%6f&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, &lt;span style="color:#ae81ff">4.01&lt;/span>);
+printf(&lt;span style="color:#e6db74">&amp;#34;%.2f&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, &lt;span style="color:#ae81ff">12.01&lt;/span>);
+printf(&lt;span style="color:#e6db74">&amp;#34;%6.2f&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, &lt;span style="color:#ae81ff">11.01&lt;/span>);
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>1
+2
+1.010000
+4.010000
+12.01
+11.01&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="1-dot-3-the-for-statement">1.3 The for statement&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Complicated expression of that type&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>In any context where it is premisible to use the value of some type you can?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>In any context where it is premisible to use the value of some type you can use a more complicated expression of that type.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Parts of for loop&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Can you explain which parts used in within for parentheses
+&lt;code>for (fahr = 0; fahr &amp;lt;= 300; fahr = fahr + 20)&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Separeted by semicolons
+First is initialization, executed only once, before the loop preper is entered.
+Second part is test (or condition that control the loop)
+Third part is increment step
+Loop terminates if condition has became false.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Reverse temp conversion program&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Write temperatuire convert program which print table in reverse order,
+use for loop&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">&lt;span style="color:#75715e">#define LOWER 0 &lt;/span>&lt;span style="color:#75715e">/* lower limit of table */&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">#define UPPER 300 &lt;/span>&lt;span style="color:#75715e">/* upper limit */&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">#define STEP 20 &lt;/span>&lt;span style="color:#75715e">/* step size */&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">float&lt;/span> fahr &lt;span style="color:#f92672">=&lt;/span> UPPER; fahr &lt;span style="color:#f92672">&amp;gt;=&lt;/span> LOWER; fahr &lt;span style="color:#f92672">-=&lt;/span> STEP)
+{
+printf(&lt;span style="color:#e6db74">&amp;#34;%4.1f %6.1f&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, fahr, (fahr &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">32.0&lt;/span>) &lt;span style="color:#f92672">/&lt;/span> &lt;span style="color:#ae81ff">1.8&lt;/span>);
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="1-dot-4-symbolic-constants">1.4 Symbolic Constants&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Define symbolic constant&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>How to define symbolic constant?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Just use this code &lt;code>#define NAME replacement list /* optional comment */&lt;/code>
+No semicolons, name is uppercase.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="1-dot-5-character-input-and-output">1.5 Character Input and Output&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Text stream&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>What is text stream?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Text stream is a sequence of characters divided into lines; each line is 0+ characters followed by a \n (newline character).&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Getchar and putchar&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>How getchar is working?
+How putchar is working?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>On calling getchar it&amp;rsquo;s reads next input character from a text stream and returns that as its value.&lt;/p>
+&lt;p>Putchar prints a character each time it is called.
+That character can be some integer variable.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>1.5.1 File Copying&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Input=Output&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Can you write program which copies its input to it&amp;rsquo;s output (quickly, just describe logic)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#75715e">/* copy input to output; 1st version */&lt;/span>
+main()
+{
+&lt;span style="color:#66d9ef">int&lt;/span> c;
+c &lt;span style="color:#f92672">=&lt;/span> getchar(); &lt;span style="color:#75715e">/* read a character into stdin */&lt;/span>
+&lt;span style="color:#66d9ef">while&lt;/span> (c &lt;span style="color:#f92672">!=&lt;/span> EOF) { &lt;span style="color:#75715e">/* while condition is true - char is not end of file */&lt;/span>
+putchar(c); &lt;span style="color:#75715e">/* put char from c */&lt;/span>
+c &lt;span style="color:#f92672">=&lt;/span> getchar(); &lt;span style="color:#75715e">/* read char into c variable */&lt;/span>
+}
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">&lt;span style="color:#75715e">/* copy input to output; 2st version */&lt;/span>
+&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+main()
+{
+&lt;span style="color:#66d9ef">int&lt;/span> c;
+&lt;span style="color:#66d9ef">while&lt;/span> ((c &lt;span style="color:#f92672">=&lt;/span> getchar()) &lt;span style="color:#f92672">!=&lt;/span> EOF) { &lt;span style="color:#75715e">/* while condition is true - char is not end of file */&lt;/span>
+putchar(c); &lt;span style="color:#75715e">/* put char from c */&lt;/span>
+}
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Exercises&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Print value of EOF.
+Verify that getchar() != EOF is 0 or 1.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>&lt;a id="code-snippet--my-function-with-cin">&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(){
+&lt;span style="color:#66d9ef">int&lt;/span> c &lt;span style="color:#f92672">=&lt;/span> getchar() &lt;span style="color:#f92672">!=&lt;/span> EOF;
+printf(&lt;span style="color:#e6db74">&amp;#34;%d&amp;#34;&lt;/span>, c);
+printf(EOF); &lt;span style="color:#75715e">/* nothing? */&lt;/span>
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;a id="code-snippet--my-function-with-cin">&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>()
+{
+&lt;span style="color:#66d9ef">int&lt;/span> a,b,c;
+&lt;span style="color:#66d9ef">while&lt;/span> ((c &lt;span style="color:#f92672">=&lt;/span> getchar()) &lt;span style="color:#f92672">!=&lt;/span> EOF){
+printf(c);
+}
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>1.5.2 Character Counting&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>D&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Increment and decrement&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>How increment integer value? How decrement it? Can you explain difference?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Use &lt;code>++var&lt;/code> or &lt;code>--var&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#75715e">/* Increment prefix/postfix */&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">increment&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> a, &lt;span style="color:#66d9ef">int&lt;/span> b)
+{
+a &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">5&lt;/span>;
+&lt;span style="color:#75715e">// POSTFIX
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> b &lt;span style="color:#f92672">=&lt;/span> a&lt;span style="color:#f92672">++&lt;/span>;
+printf(&lt;span style="color:#e6db74">&amp;#34;%d&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, b);
+printf(&lt;span style="color:#e6db74">&amp;#34;%d&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, a);
+&lt;span style="color:#75715e">// PREFIX
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> c &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">++&lt;/span>b;
+printf(&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">%d&amp;#34;&lt;/span>, c);
+}
+&lt;span style="color:#75715e">// Driver code
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>()
+{
+&lt;span style="color:#66d9ef">int&lt;/span> x, y;
+increment(x, y);
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>5
+6&lt;/p>
+&lt;p>6&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-C" data-lang="C">&lt;span style="color:#75715e">/* Character count program */&lt;/span>
+&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e">/* count characters in input; 1st version */&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>()
+{
+&lt;span style="color:#66d9ef">long&lt;/span> counter &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;span style="color:#66d9ef">while&lt;/span> (getchar() &lt;span style="color:#f92672">!=&lt;/span> EOF)
+&lt;span style="color:#f92672">++&lt;/span>counter;
+printf(&lt;span style="color:#e6db74">&amp;#34;\%ld&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, counter);
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>0&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>1.5.3 Line Counting&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>1.5.4 Word Counting&lt;/li>
+&lt;/ul>
+&lt;h4 id="1-dot-6-arrays">1.6 Arrays&lt;/h4>
+&lt;h4 id="1-dot-7-functions">1.7 Functions&lt;/h4>
+&lt;h4 id="1-dot-8-arguments-call-by-value">1.8 Arguments - Call by Value&lt;/h4>
+&lt;h4 id="1-dot-9-character-arrays">1.9 Character Arrays&lt;/h4>
+&lt;h4 id="1-dot-10-external-variables-and-scope">1.10 External Variables and Scope&lt;/h4>
+&lt;h3 id="chapter-2-types-operators-and-expressions">Chapter 2 - Types, Operators and Expressions&lt;/h3>
+&lt;h4 id="2-dot-1-variable-names">2.1 Variable Names&lt;/h4>
+&lt;h4 id="2-dot-2-data-types-and-sizes">2.2 Data Types and Sizes&lt;/h4>
+&lt;h4 id="2-dot-3-constants">2.3 Constants&lt;/h4>
+&lt;h4 id="2-dot-4-declarations">2.4 Declarations&lt;/h4>
+&lt;h4 id="2-dot-5-arithmetic-operators">2.5 Arithmetic Operators&lt;/h4>
+&lt;h4 id="2-dot-6-relational-and-logical-operators">2.6 Relational and Logical Operators&lt;/h4>
+&lt;h4 id="2-dot-7-type-conversions">2.7 Type Conversions&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>Link on page 43: &lt;a href="http://www.buginword.com">moted to the ``higher'' type before the operation proceeds. The result is of the integer type. Section 6 of Appendix A states the conversion rules precisely. If there are no unsigned operands, however&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="2-dot-8-increment-and-decrement-operators">2.8 Increment and Decrement Operators&lt;/h4>
+&lt;h4 id="2-dot-9-bitwise-operators">2.9 Bitwise Operators&lt;/h4>
+&lt;h4 id="2-dot-10-assignment-operators-and-expressions">2.10 Assignment Operators and Expressions&lt;/h4>
+&lt;h4 id="2-dot-11-conditional-expressions">2.11 Conditional Expressions&lt;/h4>
+&lt;h4 id="2-dot-12-precedence-and-order-of-evaluation">2.12 Precedence and Order of Evaluation&lt;/h4>
+&lt;h3 id="chapter-3-control-flow">Chapter 3 - Control Flow&lt;/h3>
+&lt;h4 id="3-dot-1-statements-and-blocks">3.1 Statements and Blocks&lt;/h4>
+&lt;h4 id="3-dot-2-if-else">3.2 If-Else&lt;/h4>
+&lt;h4 id="3-dot-3-else-if">3.3 Else-If&lt;/h4>
+&lt;h4 id="3-dot-4-switch">3.4 Switch&lt;/h4>
+&lt;h4 id="3-dot-5-loops-while-and-for">3.5 Loops - While and For&lt;/h4>
+&lt;h4 id="3-dot-6-loops-do-while">3.6 Loops - Do-While&lt;/h4>
+&lt;h4 id="3-dot-7-break-and-continue">3.7 Break and Continue&lt;/h4>
+&lt;h4 id="3-dot-8-goto-and-labels">3.8 Goto and labels&lt;/h4>
+&lt;h3 id="chapter-4-functions-and-program-structure">Chapter 4 - Functions and Program Structure&lt;/h3>
+&lt;h4 id="4-dot-1-basics-of-functions">4.1 Basics of Functions&lt;/h4>
+&lt;h4 id="4-dot-2-functions-returning-non-integers">4.2 Functions Returning Non-integers&lt;/h4>
+&lt;h4 id="4-dot-3-external-variables">4.3 External Variables&lt;/h4>
+&lt;h4 id="4-dot-4-scope-rules">4.4 Scope Rules&lt;/h4>
+&lt;h4 id="4-dot-5-header-files">4.5 Header Files&lt;/h4>
+&lt;h4 id="4-dot-6-static-variables">4.6 Static Variables&lt;/h4>
+&lt;h4 id="4-dot-7-register-variables">4.7 Register Variables&lt;/h4>
+&lt;h4 id="4-dot-8-block-structure">4.8 Block Structure&lt;/h4>
+&lt;h4 id="4-dot-9-initialization">4.9 Initialization&lt;/h4>
+&lt;h4 id="4-dot-10-recursion">4.10 Recursion&lt;/h4>
+&lt;h4 id="4-dot-11-the-c-preprocessor">4.11 The C Preprocessor&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>4.11.1 File Inclusion&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>4.11.2 Macro Substitution&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>4.11.3 Conditional Inclusion&lt;/li>
+&lt;/ul>
+&lt;h3 id="chapter-5-pointers-and-arrays">Chapter 5 - Pointers and Arrays&lt;/h3>
+&lt;h4 id="5-dot-1-pointers-and-addresses">5.1 Pointers and Addresses&lt;/h4>
+&lt;h4 id="5-dot-2-pointers-and-function-arguments">5.2 Pointers and Function Arguments&lt;/h4>
+&lt;h4 id="5-dot-3-pointers-and-arrays">5.3 Pointers and Arrays&lt;/h4>
+&lt;h4 id="5-dot-4-address-arithmetic">5.4 Address Arithmetic&lt;/h4>
+&lt;h4 id="5-dot-5-character-pointers-and-functions">5.5 Character Pointers and Functions&lt;/h4>
+&lt;h4 id="5-dot-6-pointer-arrays-pointers-to-pointers">5.6 Pointer Arrays; Pointers to Pointers&lt;/h4>
+&lt;h4 id="5-dot-7-multi-dimensional-arrays">5.7 Multi-dimensional Arrays&lt;/h4>
+&lt;h4 id="5-dot-8-initialization-of-pointer-arrays">5.8 Initialization of Pointer Arrays&lt;/h4>
+&lt;h4 id="5-dot-9-pointers-vs-dot-multi-dimensional-arrays">5.9 Pointers vs. Multi-dimensional Arrays&lt;/h4>
+&lt;h4 id="5-dot-10-command-line-arguments">5.10 Command-line Arguments&lt;/h4>
+&lt;h4 id="5-dot-11-pointers-to-functions">5.11 Pointers to Functions&lt;/h4>
+&lt;h4 id="5-dot-12-complicated-declarations">5.12 Complicated Declarations&lt;/h4>
+&lt;h3 id="chapter-6-structures">Chapter 6 - Structures&lt;/h3>
+&lt;h4 id="6-dot-1-basics-of-structures">6.1 Basics of Structures&lt;/h4>
+&lt;h4 id="6-dot-2-structures-and-functions">6.2 Structures and Functions&lt;/h4>
+&lt;h4 id="6-dot-3-arrays-of-structures">6.3 Arrays of Structures&lt;/h4>
+&lt;h4 id="6-dot-4-pointers-to-structures">6.4 Pointers to Structures&lt;/h4>
+&lt;h4 id="6-dot-5-self-referential-structures">6.5 Self-referential Structures&lt;/h4>
+&lt;h4 id="6-dot-6-table-lookup">6.6 Table Lookup&lt;/h4>
+&lt;h4 id="6-dot-7-typedef">6.7 Typedef&lt;/h4>
+&lt;h4 id="6-dot-8-unions">6.8 Unions&lt;/h4>
+&lt;h4 id="6-dot-9-bit-fields">6.9 Bit-fields&lt;/h4>
+&lt;h3 id="chapter-7-input-and-output">Chapter 7 - Input and Output&lt;/h3>
+&lt;h4 id="7-dot-1-standard-input-and-output">7.1 Standard Input and Output&lt;/h4>
+&lt;h4 id="7-dot-2-formatted-output-printf">7.2 Formatted Output - printf&lt;/h4>
+&lt;h4 id="7-dot-3-variable-length-argument-lists">7.3 Variable-length Argument Lists&lt;/h4>
+&lt;h4 id="7-dot-4-formatted-input-scanf">7.4 Formatted Input - Scanf&lt;/h4>
+&lt;h4 id="7-dot-5-file-access">7.5 File Access&lt;/h4>
+&lt;h4 id="7-dot-6-error-handling-stderr-and-exit">7.6 Error Handling - Stderr and Exit&lt;/h4>
+&lt;h4 id="7-dot-7-line-input-and-output">7.7 Line Input and Output&lt;/h4>
+&lt;h4 id="7-dot-8-miscellaneous-functions">7.8 Miscellaneous Functions&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>7.8.1 String Operations&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>7.8.2 Character Class Testing and Conversion&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>7.8.3 Ungetc&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>7.8.4 Command Execution&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>7.8.5 Storage Management&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>7.8.6 Mathematical Functions&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>7.8.7 Random Number generation&lt;/li>
+&lt;/ul>
+&lt;h3 id="chapter-8-the-unix-system-interface">Chapter 8 - The UNIX System Interface&lt;/h3>
+&lt;h4 id="8-dot-1-file-descriptors">8.1 File Descriptors&lt;/h4>
+&lt;h4 id="8-dot-2-low-level-i-o-read-and-write">8.2 Low Level I/O - Read and Write&lt;/h4>
+&lt;h4 id="8-dot-3-open-creat-close-unlink">8.3 Open, Creat, Close, Unlink&lt;/h4>
+&lt;h4 id="8-dot-4-random-access-lseek">8.4 Random Access - Lseek&lt;/h4>
+&lt;h4 id="8-dot-5-example-an-implementation-of-fopen-and-getc">8.5 Example - An implementation of Fopen and Getc&lt;/h4>
+&lt;h4 id="8-dot-6-example-listing-directories">8.6 Example - Listing Directories&lt;/h4>
+&lt;h4 id="8-dot-7-example-a-storage-allocator">8.7 Example - A Storage Allocator&lt;/h4>
+&lt;h3 id="appendix-a-reference-manual">Appendix A - Reference Manual&lt;/h3>
+&lt;h4 id="a-dot-1-introduction">A.1 Introduction&lt;/h4>
+&lt;h4 id="a-dot-2-lexical-conventions">A.2 Lexical Conventions&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.2.1 Tokens&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.2.2 Comments&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.2.3 Identifiers&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.2.4 Keywords&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>A.2.5 Constants&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.2.5.1 Integer Constants&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.2.5.2 Character Constants&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.2.5.3 Floating Constants&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A2.5.4 Enumeration Constants&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.2.6 String Literals&lt;/li>
+&lt;/ul>
+&lt;h4 id="a-dot-3-syntax-notation">A.3 Syntax Notation&lt;/h4>
+&lt;h4 id="a-dot-4-meaning-of-identifiers">A.4 Meaning of Identifiers&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.4.1 Storage Class&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.4.2 Basic Types&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.4.3 Derived types&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.4.4 Type Qualifiers&lt;/li>
+&lt;/ul>
+&lt;h4 id="a-dot-5-objects-and-lvalues">A.5 Objects and Lvalues&lt;/h4>
+&lt;h4 id="a-dot-6-conversions">A.6 Conversions&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.6.1 Integral Promotion&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.6.2 Integral Conversions&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.6.3 Integer and Floating&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.6.4 Floating Types&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.6.5 Arithmetic Conversions&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.6.6 Pointers and Integers&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.6.7 Void&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.6.8 Pointers to Void&lt;/li>
+&lt;/ul>
+&lt;h4 id="a-dot-7-expressions">A.7 Expressions&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.1 Pointer Conversion&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.2 Primary Expressions&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>A.7.3 Postfix Expressions&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.3.1 Array References&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.3.2 Function Calls&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.3.3 Structure References&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.3.4 Postfix Incrementation&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>A.7.4 Unary Operators&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.4.1 Prefix Incrementation Operators&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.4.2 Address Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.4.3 Indirection Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.4.4 Unary Plus Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.4.5 Unary Minus Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.4.6 One&amp;rsquo;s Complement Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.4.7 Logical Negation Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.4.8 Sizeof Operator&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.5 Casts&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.6 Multiplicative Operators&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.7 Additive Operators&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.8 Shift Operators&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.9 Relational Operators&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.10 Equality Operators&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.11 Bitwise AND Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.12 Bitwise Exclusive OR Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.13 Bitwise Inclusive OR Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.14 Logical AND Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.15 Logical OR Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.16 Conditional Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.17 Assignment Expressions&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.18 Comma Operator&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.7.19 Constant Expressions&lt;/li>
+&lt;/ul>
+&lt;h4 id="a-dot-8-declarations">A.8 Declarations&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.1 Storage Class Specifiers&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.2 Type Specifiers&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.3 Structure and Union Declarations&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.4 Enumerations&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.5 Declarators&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>A.8.6 Meaning of Declarators&lt;/p>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.6.1 Pointer Declarators&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.6.2 Array Declarators&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.6.3 Function Declarators&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.7 Initialization&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.8 Type names&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.9 Typedef&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.8.10 Type Equivalence&lt;/li>
+&lt;/ul>
+&lt;h4 id="a-dot-9-statements">A.9 Statements&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.9.1 Labeled Statements&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.9.2 Expression Statement&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.9.3 Compound Statement&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.9.4 Selection Statements&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.9.5 Iteration Statements&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.9.6 Jump statements&lt;/li>
+&lt;/ul>
+&lt;h4 id="a-dot-10-external-declarations">A.10 External Declarations&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.10.1 Function Definitions&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.10.2 External Declarations&lt;/li>
+&lt;/ul>
+&lt;h4 id="a-dot-11-scope-and-linkage">A.11 Scope and Linkage&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.11.1 Lexical Scope&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.11.2 Linkage&lt;/li>
+&lt;/ul>
+&lt;h4 id="a-dot-12-preprocessing">A.12 Preprocessing&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.12.1 Trigraph Sequences&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.12.2 Line Splicing&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.12.3 Macro Definition and Expansion&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.12.4 File Inclusion&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.12.5 Conditional Compilation&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.12.6 Line Control&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.12.7 Error Generation&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.12.8 Pragmas&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.12.9 Null directive&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>A.12.10 Predefined names&lt;/li>
+&lt;/ul>
+&lt;h4 id="a-dot-13-grammar">A.13 Grammar&lt;/h4>
+&lt;h3 id="appendix-b-standard-library">Appendix B - Standard Library&lt;/h3>
+&lt;h4 id="b-dot-1-input-and-output-stdio-dot-h">B.1 Input and Output: &amp;lt;stdio.h&amp;gt;&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>B.1.1 File Operations&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>B.1.2 Formatted Output&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>B.1.3 Formatted Input&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>B.1.4 Character Input and Output Functions&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>B.1.5 Direct Input and Output Functions&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>B.1.6 File Positioning Functions&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>B.1.7 Error Functions&lt;/li>
+&lt;/ul>
+&lt;h4 id="b-dot-2-character-class-tests-ctype-dot-h">B.2 Character Class Tests: &amp;lt;ctype.h&amp;gt;&lt;/h4>
+&lt;h4 id="b-dot-3-string-functions-string-dot-h">B.3 String Functions: &amp;lt;string.h&amp;gt;&lt;/h4>
+&lt;h4 id="b-dot-4-mathematical-functions-math-dot-h">B.4 Mathematical Functions: &amp;lt;math.h&amp;gt;&lt;/h4>
+&lt;h4 id="b-dot-5-utility-functions-stdlib-dot-h">B.5 Utility Functions: &amp;lt;stdlib.h&amp;gt;&lt;/h4>
+&lt;h4 id="b-dot-6-diagnostics-assert-dot-h">B.6 Diagnostics: &amp;lt;assert.h&amp;gt;&lt;/h4>
+&lt;h4 id="b-dot-7-variable-argument-lists-stdarg-dot-h">B.7 Variable Argument Lists: &amp;lt;stdarg.h&amp;gt;&lt;/h4>
+&lt;h4 id="b-dot-8-non-local-jumps-setjmp-dot-h">B.8 Non-local Jumps: &amp;lt;setjmp.h&amp;gt;&lt;/h4>
+&lt;h4 id="b-dot-9-signals-signal-dot-h">B.9 Signals: &amp;lt;signal.h&amp;gt;&lt;/h4>
+&lt;h4 id="b-dot-10-date-and-time-functions-time-dot-h">B.10 Date and Time Functions: &amp;lt;time.h&amp;gt;&lt;/h4>
+&lt;h4 id="b-dot-11-implementation-defined-limits-limits-dot-h-and-float-dot-h">B.11 Implementation-defined Limits: &amp;lt;limits.h&amp;gt; and &amp;lt;float.h&amp;gt;&lt;/h4>
+&lt;h3 id="appendix-c-summary-of-changes">Appendix C - Summary of Changes&lt;/h3></description></item><item><title>The clean coder: A code of conduct for professional programmers</title><link>https://inomoz.com/posts/martincleancodercode2011/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/martincleancodercode2011/</guid><description>&lt;h2 id="martinCleanCoderCode2011">The clean coder: A code of conduct for professional programmers&lt;/h2></description></item><item><title>The pragmatic programmer: From journeyman to master</title><link>https://inomoz.com/posts/huntpragmaticprogrammerjourneyman1999/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/huntpragmaticprogrammerjourneyman1999/</guid><description>&lt;h2 id="huntPragmaticProgrammerJourneyman1999">The pragmatic programmer: From journeyman to master&lt;/h2></description></item><item><title>Two scoops of django 3.x</title><link>https://inomoz.com/posts/feldroytwoscoopsdjango101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/feldroytwoscoopsdjango101/</guid><description>&lt;h2 id="feldroyTwoScoopsDjango101">Two scoops of django 3.x&lt;/h2></description></item><item><title>UTF</title><link>https://inomoz.com/posts/20220123015058-utf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220123015058-utf/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Unicode">https://en.wikipedia.org/wiki/Unicode&lt;/a>&lt;/p>
+&lt;p>Unicode, formally the Unicode Standard, is an information technology standard for the consistent encoding, representation, and handling of text expressed in most of the world&amp;rsquo;s writing systems. The standard, which is maintained by the Unicode Consortium, defines 144,697 characters[1][2] covering 159 modern and historic scripts, as well as symbols, emoji, and non-visual control and formatting codes.&lt;/p></description></item><item><title>Код: тайный язык информатики</title><link>https://inomoz.com/posts/petzoldkodtaynyyyazyk101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/petzoldkodtaynyyyazyk101/</guid><description>&lt;h2 id="petzoldKodTaynyyYazyk101">Код: тайный язык информатики&lt;/h2>
+&lt;h3 id="предисловие-к-оригинальному-изданию">Предисловие к оригинальному изданию&lt;/h3>
+&lt;h4 id="разница-между-оперативной-и-дисковой-памятью">Разница между оперативной и дисковой памятью&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Чем обсуловлена разница между оперативной и дисковой памятью?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Эта разница довольно условна (исскуственная), она обусловлена лишь тем что в настоящий момент отсутсвует единый энергонезависимый и быстродействующий носитель (но есть тенденция к изменениям - SSD NVRAM, etc&amp;hellip;)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="иерархичность-компьютеров">Иерархичность компьютеров&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Какие уровни иерархии компьютера вы знаете?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>По своей сути компьютеры (и я так думаю сопутствующие технологии) иерархичны.&lt;/p>
+&lt;ol>
+&lt;li>Самый нижний уровень, транзисторы.&lt;/li>
+&lt;li>&amp;hellip;&lt;/li>
+&lt;li>Информация которая выводится на монитор (пиксели).&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="код-это">Код это&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Какие определения кода вы знаете?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;ol>
+&lt;li>Система сигналов для представления букв и цифр при передачи сообщений.&lt;/li>
+&lt;li>Система символов, букв или слов, которым присваиваются некоторые произвольно подобранные значения (для передачи конфендициальной информации).&lt;/li>
+&lt;li>Система символов, применяемая для представления компьютерных команд&amp;hellip;&lt;/li>
+&lt;/ol>
+&lt;p>Глава 1 лучшие друзья&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="глава-1-dot-лучшие-друзья">Глава 1. Лучшие друзья&lt;/h3>
+&lt;h4 id="обмен-информацией">Обмен информацией&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Допустим вы владеете алфавитом и у вас есть 2 фонарика, каким образом можно обменятся информацией при их помощи?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Можно рисовать буквы в воздухе, но этот метод крайне неточен и малоэффективен.&lt;/p>
+&lt;p>Можно кодировать каждую букву алфавита последовательностями бликов, А - 1 блик, Б - 2 блика и т.д.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="коммуникация">Коммуникация&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Стремится ли человек к коммуникаци? Что обеспечивает коммуникацию?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Человек стремится (желает) к коммуникации - считается что это одно из множества
+характеризующих человека качеств.
+Человек это социальное существо, ему необходимо общество других людей.&lt;/p>
+&lt;p>Код обеспечивает коммуникацию (при помощи кода можно организовать коммуникацию).&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="азбука-морзе">Азбука морзе&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Сколько видов сигналов в азбуке морзе?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>В азбуке морзе 2 вида бликов / звуков (сигналов). короткие и долгие (точки и тире).&lt;/p>
+&lt;p>&lt;img src="https://inomoz.com/ox-hugo/20220130-223511_screenshot.png" alt="">
+Рис. Азбука морзе.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="cловарь">Cловарь&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Является ли словарь кодом?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Можно сказать что словарь, это своеобразный код.
+При этом словарь описывает человечекую речь.
+Речь так-же можно охаректиризовать как код, так-как мы используем различные звуки и слова для кодирования информации.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="виды-кодов">Виды кодов&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>В реальной жизни мы используем множество различных кодов, речь, писменность, азбука морзе и т.д. Прослеживается ли такая тенденция в компьютере?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Да, в компьютере применяются различные типы кодов для хранения и передачи чисел, текста, звуков, музыки, изображений и видео. Причем для каждого типа используется множество различных кодов.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="основы-азбуки-морзе">Основы азбуки морзе&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Какие основы азбуки Морзе вы знаете?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Точка - базовый сигнал (допустим 1 секунда).
+Тире - втрое длинее точки - вторичный сигнал (длительность 3*длительность точки).&lt;/p>
+&lt;p>Пауза между безовым и вторичным сигналом равна длительности точки (допустим 1 секунда).
+Пауза между словами 2 тире (допустим 1 * 3 * 2 = 6 секунд)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="способ-кодирования">Способ кодирования&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Выбраны ли коды в азбуке морзе произвольно или использовался какой-то принцип?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>В азбуе морзе (как и в схожих по своей сути кодах) используется частотный принцип. То есть чем чаще используется кусок информации (частотность букв, символов и т.д.) тем проще он закодирован.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="глава-2-dot-коды-и-комбинации">Глава 2. Коды и комбинации&lt;/h3>
+&lt;p>что значит двоичный?
+что такое комбинаторный анализ?&lt;/p>
+&lt;h4 id="комбинации-в-коде">Комбинации в коде&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Комбинация - это?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Последовательность кодовых символов, соответствующих одному элементу (символу) дискретного сообщении.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="значность">Значность&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Число символов в кодовой комбинации называется?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Значностью кода.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="зависимость-количества-символов-и-кодов">Зависимость количества символов и кодов&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Как найти количество кодов в азбуке морзе? Если мы знаем количество точек и тире.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>\(codes=2^{number}\)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="граф-азбуки-морзе">Граф азбуки морзе&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Попробуйте описать схему азбуки морзе для определения кода морзе (комбинация -&amp;gt; символ). Схема выполнена в виде графа связей.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>В схеме постепенно усложняются последовательности точек и тире. Для расшифровки читаем схему слева направо.
+Декодируется в таком порядке: разбиваем комбинацию на символы (точка или тире), ищем начальный символ в графе, затем следующий символ в графе и так пока мы не пройдем через все символы.
+Соответственно у нас есть граф связей по 1 символу (символ -&amp;gt; стрелка), и они определены в соответствии с частотой символов. Точки у нас всегда слева, тире всегда справа. Определяем комбинацию по стрелкам.&lt;/p>
+&lt;figure>&lt;img src="https://inomoz.com/ox-hugo/20220131-114323_screenshot.png"/>
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="двоичный">Двоичный&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Что значит двоичный на примере азбуки морзе?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Код морзе двоичный (буквально два на два), так-как каждая комбинация в этом коде включает только 2 символа - точку и тире.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="глава-3-dot-брайль-и-двоичные-коды">Глава 3. Брайль и двоичные коды&lt;/h3>
+&lt;h3 id="глава-4-dot-устройство-фонарика">Глава 4. Устройство фонарика&lt;/h3>
+&lt;h3 id="глава-5-dot-заглядывая-за-угол">Глава 5. Заглядывая за угол&lt;/h3>
+&lt;h3 id="глава-6-dot-телеграфы-и-реле">Глава 6. Телеграфы и реле&lt;/h3>
+&lt;h3 id="глава-7-dot-наши-десять-цифр">Глава 7. Наши десять цифр&lt;/h3>
+&lt;h3 id="глава-8-dot-альтернативы-десятке">Глава 8. Альтернативы десятке&lt;/h3>
+&lt;h3 id="глава-9-dot-за-битом-бит">Глава 9. За битом бит&lt;/h3>
+&lt;h3 id="глава-10-dot-логика-и-переключатели">Глава 10. Логика и переключатели&lt;/h3>
+&lt;h3 id="глава-11-dot-логические-вентили">Глава 11. Логические вентили&lt;/h3>
+&lt;h3 id="глава-12-dot-двоичный-сумматор">Глава 12. Двоичный сумматор&lt;/h3>
+&lt;h3 id="глава-13-dot-а-как-насчет-вычитания">Глава 13. А как насчет вычитания?&lt;/h3>
+&lt;h3 id="глава-14-dot-обратная-связь-и-триггеры">Глава 14. Обратная связь и триггеры&lt;/h3>
+&lt;h3 id="глава-15-dot-байты-и-шестнадцатеричные-числа">Глава 15. Байты и шестнадцатеричные числа&lt;/h3>
+&lt;h3 id="глава-16-dot-сборка-памяти">Глава 16. Сборка памяти&lt;/h3>
+&lt;h3 id="глава-17-dot-автоматизация">Глава 17. Автоматизация&lt;/h3>
+&lt;h3 id="глава-18-dot-от-счетов-к-микросхемам">Глава 18. От счетов к микросхемам&lt;/h3>
+&lt;h3 id="глава-19-dot-два-классических-микропроцессора">Глава 19. Два классических микропроцессора&lt;/h3>
+&lt;h3 id="глава-20-dot-набор-символов-ascii">Глава 20. Набор символов ASCII&lt;/h3>
+&lt;h3 id="глава-21-dot-шины">Глава 21. Шины&lt;/h3>
+&lt;h3 id="глава-22-dot-операционная-система">Глава 22. Операционная система&lt;/h3>
+&lt;h3 id="глава-23-dot-фиксированная-точка-плавающая-точка">Глава 23. Фиксированная точка, плавающая точка&lt;/h3>
+&lt;h3 id="глава-24-dot-языки-высокого-и-низкого-уровня">Глава 24. Языки высокого и низкого уровня&lt;/h3>
+&lt;h3 id="глава-25-dot-графическая-революция">Глава 25. Графическая революция&lt;/h3>
+&lt;h3 id="благодарности">Благодарности&lt;/h3>
+&lt;p>Электронная теория - господствующая научная мудрость, характеризующая природу электричества.&lt;/p>
+&lt;p>Любая материя вещества состоит из атомов.&lt;/p>
+&lt;p>В атом входят (в порядке важности/структуры): ядро (как в нашей планете или как солнце) состоящее из нейтронов и протонов и электроны (которые вращаются вокруг ядра, как вокруг солнца).
+Это планетарная модель (не совсем соответсвует действительности).&lt;/p>
+&lt;p>Атомное число указывает сколько протонов в ядре у атома. При этом зная атомную массу, можно найти количество нейтронов. N = M - n, где N - количество нейтронов, M - атомная масса, n - атомный номер (равен числу протонов).&lt;/p>
+&lt;p>Молекулы одного типа (воды, соли и т.д.) образуют соединение.&lt;/p>
+&lt;p>Соединение молекул обычно образуют смесь (например водно-соляной раствор, в котором вода и соль сохраняют свои свойства).&lt;/p>
+&lt;p>Количество электронов в атоме обычно равно количеству протонов (бывает что электроны вышибаются из атомов, образуя электричество).&lt;/p>
+&lt;p>У протонов и электронов есть общее свойство - электрический заряд. У протона положительный, а у электрона отрицательный, нейтроны при этом нейтральны.&lt;/p>
+&lt;p>Взаимосвязь между протонами и электронами можно описать как противоположные заряды притягиваются, одноименные отталкиваются.&lt;/p>
+&lt;p>Протоны удерживаются в ядре благодоря сильному взаимодействию (цветовое взаимодействие, ядерное взаимодействие).&lt;/p>
+&lt;p>Электричество в цепи это переход электронов от атома к атому.&lt;/p>
+&lt;p>Минус батарейки - катод, или отрицательная клемма.&lt;/p>
+&lt;p>Плюс батарейки - анод, или положительная клемма.&lt;/p>
+&lt;p>Электроны идентичны&lt;/p>
+&lt;p>Батареи можно подключить параллельно (для увеличения общего заряда ) или последовательно (для увеличения мощности).&lt;/p>
+&lt;p>Проводник - обычно это вещество у которого на внешней оболочке (энергетический уровень или орбиталь) всего один электрон, и это вещество легко отдает его.&lt;/p>
+&lt;p>Некоторые вещества сильнее сопротивляются току (это называется сопротивлением) их называют резисторы.&lt;/p>
+&lt;p>При достаточно высоком напряжении практически любой материал приобретатет электропроводность.&lt;/p>
+&lt;p>Чем толще провод тем выше его проводимость.&lt;/p>
+&lt;p>Напряжение описывает потенциал для выполнения работы.&lt;/p>
+&lt;p>Сила тока зависит от того сколько электронов мчится по проводнику.&lt;/p>
+&lt;p>Ток подобен объему воды проходящему через трубу в ед. времени.
+Напряжение давлению воды.
+Сопротовиление ширина трубы.&lt;/p>
+&lt;p>Объем воды текущий через трубу (ток) в еденицу времени прямо пропорионален давлению воды (напряжению) и обратно пропорионален толщине трубы (сопротивлению).&lt;/p></description></item><item><title>Кратчайший Курс Школьной Математики</title><link>https://inomoz.com/posts/alexandremelinkratchayshiykursshkolnoy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/alexandremelinkratchayshiykursshkolnoy/</guid><description>&lt;h2 id="alexandremelinKratchayshiyKursShkolnoy">Кратчайший Курс Школьной Математики&lt;/h2>
+&lt;h3 id="числа">Числа&lt;/h3>
+&lt;p>Цифры - это числовые символы при помощи который записываются &lt;strong>числа&lt;/strong>.&lt;/p>
+&lt;p>Исторически первыми числами были натуральные числа, для подсчета людей, кур, овец, монет и т.д.&lt;/p>
+&lt;p>Для краткости множесто натуральных чисел \(\{1,2,3,4,5,6,7,8,9,10,11,12,\ldots\}\) обозначают буквой \(N\).&lt;/p>
+&lt;p>Римский вариант натуральных чисел \(\{I,II,III,IV,V,VI,VII,VIII,IXX\}\)&lt;/p>
+&lt;p>Иногда к множеству натуральных чисел относят ноль: \(0 \in N\)&lt;/p>
+&lt;p>Значок \(\in\) символизирует принадлежность к множеству.&lt;/p>
+&lt;p>Элементы произвольного множества принято записывать в \(\{\}\) фигурных скобках.&lt;/p>
+&lt;p>Если множество не содержит элементов, то его называют пустым и обозначают символом \(\varnothing\).&lt;/p>
+&lt;p>Если к множеству \(N\) присоеденить ноль и те-же отрицательные числа (с противоположным знаком), ты мы получим &lt;strong>множество целых чисел&lt;/strong> \(Z\).&lt;/p>
+&lt;p>\(Z=\{\ldots,-3,-2,-1,0,1,2,3,\ldots\}\) \(Z=\{0,\pm 1,\pm 2\,\pm 3,\ldots\}\)&lt;/p>
+&lt;p>Натуральные числа являются &lt;strong>подмножеством&lt;/strong> множества &lt;strong>&lt;strong>целых&lt;/strong>&lt;/strong> чисел \(N \subset Z\) (\(\subset\) знак включения).&lt;/p>
+&lt;h3 id="признаки-делимости-числа">Признаки делимости числа&lt;/h3>
+&lt;ul>
+&lt;li>целое число делится на 2 без остатка, если оно заканичается на 0, 2, 4, 6 или 8 (четное число)&lt;/li>
+&lt;li>целое число делится на 3 без остатка, если сумма входящих в него цифр делится на 3.&lt;/li>
+&lt;li>целое число делится на 5, если оно заканичается пятеркой или нулем.&lt;/li>
+&lt;li>целое число делится на 10, если оно заканичается на 0.
+для того чтобы разделить на 10 нужно просто убрать 0, на 100 два нуля, на 1000 три нуля и т.д.&lt;/li>
+&lt;/ul>
+&lt;h3 id="рациональные-числа">Рациональные числа&lt;/h3>
+&lt;p>Дале идет множетсво &lt;strong>рациональных&lt;/strong> чисел.&lt;/p>
+&lt;p>\(Q = \{\frac{m}{n} \mid m \in Z, n \in N\}\)&lt;/p>
+&lt;p>Любое рациональное число можно представить как обыкновенную дробь \(\frac{m}{n}\) с целым числителем (верхнее число) и натуральным знаменателем (нижнее число).&lt;/p>
+&lt;p>Рис. Привильная дробь на примере разделения торта.&lt;/p>
+&lt;p>Правильная дробь - эта та у которой числитель меньше знаменателя.
+Правильная дробь обязательно меньше еденицы.&lt;/p>
+&lt;p>Если взять все куски торта (или дополнительно добавить еще куски), то мы получим неправильную дробь, например \(\frac{10}{10}\), \(\frac{7}{4}\).&lt;/p>
+&lt;p>Дроби с целой и дробной частью (например \(1\frac{3}{4}\)) называют &lt;strong>смешанными&lt;/strong>.&lt;/p>
+&lt;h3 id="опозновательные-знаки-рациональных-чисел">Опозновательные знаки рациональных чисел&lt;/h3>
+&lt;p>при делении числителя на знаменатель получается&lt;/p>
+&lt;ul>
+&lt;li>целое число \(\frac{-3}{1} = -3\)&lt;/li>
+&lt;li>конечная десятичная дробь \(\frac{3}{8} = 0.375\)&lt;/li>
+&lt;li>бесконечная периодическая десятичная дробь (повтор может начаться не сразу) \(\frac{7}{11} = 0.6363636363 \ldots\)&lt;/li>
+&lt;/ul>
+&lt;h3 id="аксиома-все-действия-выполняем-в-дробях">Аксиома - все действия выполняем в дробях&lt;/h3>
+&lt;p>&lt;strong>&lt;strong>В высшей математике все действия стремимся выполнять в обыкновенных (правильных и неправильных) дробях, НЕ в десятичных&lt;/strong>&lt;/strong>&lt;/p>
+&lt;h3 id="иррациональные-числа">Иррациональные числа&lt;/h3>
+&lt;p>Следущее множество - это множество &lt;strong>иррациональных чисел&lt;/strong>, каждое такое число представлено в виде бесконечной НЕПЕРИОДИЧЕСКОЙ десятичной дроби.&lt;/p>
+&lt;p>Примеры таких чисел:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">import&lt;/span> math
+print(&lt;span style="color:#e6db74">f&lt;/span>&lt;span style="color:#e6db74">&amp;#34;sqrt(2) &lt;/span>&lt;span style="color:#ae81ff">\t&lt;/span>&lt;span style="color:#e6db74"> &lt;/span>&lt;span style="color:#e6db74">{&lt;/span>math&lt;span style="color:#f92672">.&lt;/span>sqrt(&lt;span style="color:#ae81ff">2&lt;/span>)&lt;span style="color:#e6db74">:&lt;/span>&lt;span style="color:#e6db74">.50f&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">...&amp;#34;&lt;/span>)
+print(&lt;span style="color:#e6db74">f&lt;/span>&lt;span style="color:#e6db74">&amp;#34;pi &lt;/span>&lt;span style="color:#ae81ff">\t\t&lt;/span>&lt;span style="color:#e6db74"> &lt;/span>&lt;span style="color:#e6db74">{&lt;/span>math&lt;span style="color:#f92672">.&lt;/span>pi&lt;span style="color:#e6db74">:&lt;/span>&lt;span style="color:#e6db74">.50f&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">...&amp;#34;&lt;/span>)
+print(&lt;span style="color:#e6db74">f&lt;/span>&lt;span style="color:#e6db74">&amp;#34;e &lt;/span>&lt;span style="color:#ae81ff">\t\t&lt;/span>&lt;span style="color:#e6db74"> &lt;/span>&lt;span style="color:#e6db74">{&lt;/span>math&lt;span style="color:#f92672">.&lt;/span>e&lt;span style="color:#e6db74">:&lt;/span>&lt;span style="color:#e6db74">.50f&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">...&amp;#34;&lt;/span>)
+print(&lt;span style="color:#e6db74">f&lt;/span>&lt;span style="color:#e6db74">&amp;#34;golden &lt;/span>&lt;span style="color:#ae81ff">\t&lt;/span>&lt;span style="color:#e6db74"> &lt;/span>&lt;span style="color:#e6db74">{&lt;/span>(&lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">5&lt;/span> &lt;span style="color:#f92672">**&lt;/span> &lt;span style="color:#ae81ff">0.5&lt;/span>) &lt;span style="color:#f92672">/&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>&lt;span style="color:#e6db74">:&lt;/span>&lt;span style="color:#e6db74">.50f&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">...&amp;#34;&lt;/span>)
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="правило-округления-дробей">Правило округления дробей&lt;/h3>
+&lt;p>Округление десятичных дробей - допустим мы округляем до некоторого знака
+1,33333333333336789999999
+^ округляем до этого знака (до 12 знака после запятой)&lt;/p>
+&lt;p>Нам нужно посмотреть на следующий разряд, если там 0,1,2,3,4 ДО 5, округляем в меньшую сторону ( +0 к 12 знаку ), иначе (5, 6, 7, 8, 9) в большую сторону (+1 к 12 знаку).&lt;/p>
+&lt;p>Проверка, должно получится 1,333333333333&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">print(&lt;span style="color:#e6db74">&amp;#34;in 1.333333333333&amp;#34;&lt;/span>)
+print(&lt;span style="color:#e6db74">f&lt;/span>&lt;span style="color:#e6db74">&amp;#34;out &lt;/span>&lt;span style="color:#e6db74">{&lt;/span>round(&lt;span style="color:#ae81ff">1.33333333333336789999999&lt;/span>, &lt;span style="color:#ae81ff">12&lt;/span>)&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>)
+print(&lt;span style="color:#e6db74">&amp;#34;in 1.36&amp;#34;&lt;/span>)
+print(&lt;span style="color:#e6db74">f&lt;/span>&lt;span style="color:#e6db74">&amp;#34;out &lt;/span>&lt;span style="color:#e6db74">{&lt;/span>round(&lt;span style="color:#ae81ff">1.356&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>)&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>)
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Смотрим на N+1 знак если &amp;lt; 5 +0, иначе +1&lt;/p>
+&lt;h3 id="действительные-числа">Действительные числа&lt;/h3>
+&lt;p>Объединение рациональных и иррациональных чисел образует множество &lt;strong>действительных (вещественных) чисел&lt;/strong>:
+\(Q \cup I = R\) (\(\cup\) - значок объединения множеств).&lt;/p>
+&lt;p>&lt;img src="https://inomoz.com/ox-hugo/20220129-010029_screenshot.png" alt="">
+Рис. - Пример геометрической интерпретации множества \(R\) (действительных чисел).&lt;/p>
+&lt;p>Каждому действительному числу соответствует определенная точка числовой прямой,
+и наооборот - каждой точке числовой прямой соответсвует действительное число.&lt;/p>
+&lt;h3 id="числовая-прямая--ось">Числовая прямая (ось)&lt;/h3>
+&lt;figure>&lt;img src="https://inomoz.com/ox-hugo/20220129-122432_screenshot.png"/>
+&lt;/figure>
+&lt;p>Числовая ось обозначается буквами \(OX\), где \(O\) это 0 (совмещено с нулем). Точка \(O\) называется
+&lt;strong>началом координат&lt;/strong>.&lt;/p>
+&lt;p>Здесь \(x\) принадлежит множеству действительных чисел (\(x\) - действительное число).
+\(x \in R\); \(x\in ( -\infty; +\infty )\)&lt;/p>
+&lt;p>Числовую прямую такаже обозначают &lt;strong>бесконечным интервалом&lt;/strong> \(-\infty; +\infty\).&lt;/p>
+&lt;h3 id="числовые-промежутки">Числовые промежутки&lt;/h3>
+&lt;p>&lt;a id="org649230e">&lt;/a>&lt;/p>
+&lt;p>Числовые промежутки - множество чисел соответствуещее числовому промежутку (интервалу).
+Виды числовых промежутков:&lt;/p>
+&lt;figure>&lt;img src="https://inomoz.com/ox-hugo/20220129-104230_screenshot.png"/>
+&lt;/figure>
+&lt;p>Круглая скобка означает что крайнее значение не входит в промежуток, а квадратная что входит.
+Соответсвенно так-же обозначаются на графике в виде выколотых или закрашеных точках.&lt;/p>
+&lt;h3 id="модуль-числа">Модуль числа&lt;/h3>
+&lt;p>&lt;strong>Модуль&lt;/strong> или &lt;strong>абслютное значение&lt;/strong> числа - это его расстояние от начала координат.
+Так как расстояние не может быть отрицательным, то модуль любого числа \(\geq0\).
+Модуль &amp;ldquo;уничтожает&amp;rdquo; возможный знак &amp;ldquo;минуса&amp;rdquo;.&lt;/p>
+&lt;figure>&lt;img src="https://inomoz.com/ox-hugo/20220129-105000_screenshot.png"/>
+&lt;/figure>
+&lt;p>\(|-4| = 4\), \(|0| = 0\), \(|2| = 2\)&lt;/p>
+&lt;p>Числа, равные по модулю (напрмер, \(4\) и \(-4\)) называются &lt;strong>противоположными&lt;/strong>, так-как они равноудалены от начала координат (от нуля).&lt;/p>
+&lt;p>Расстояние между двумя числами равно модулю их разности, например, получается что расстояние можно измерить с любого числа:
+\(5 - 3 = |5-3| = |2| = 2\), \(3 - 5 = |3 - 5| = |-2| = 2\)&lt;/p>
+&lt;h3 id="буквы">Буквы&lt;/h3>
+&lt;p>Буквы - &lt;strong>переменные велечины&lt;/strong>, используются для записи формул, функция и математических фактов в общем виде.&lt;/p>
+&lt;p>При помощи букв можно определять &lt;a href="#org649230e">1&lt;/a>.&lt;/p>
+&lt;p>Интервал \((a;b)\), здесь \(a\) и \(b\) - произвольные действительные числа. При этом \(a &amp;lt; b\).
+Полуинтервалы \([a;b)\), \((a;b]\) - произвольные действительные числа. При этом \(a &amp;lt; b\).
+Отрезок \([a;b]\) - тут уже допустимо строгое неравенство \(a \leq b\). При этом если \(a = b\), то отрезок вырождается в точку и имеет нулевую длину.&lt;/p>
+&lt;h3 id="формулы">Формулы&lt;/h3>
+&lt;h2 id="база">База&lt;/h2>
+&lt;h3 id="элементарные-действия">Элементарные действия&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">from&lt;/span> math &lt;span style="color:#f92672">import&lt;/span> sqrt
+&lt;span style="color:#f92672">from&lt;/span> fractions &lt;span style="color:#f92672">import&lt;/span> Fraction
+print(Fraction(&lt;span style="color:#ae81ff">1&lt;/span>,&lt;span style="color:#ae81ff">2&lt;/span>) &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#ae81ff">0.5&lt;/span>)
+print(sqrt(&lt;span style="color:#ae81ff">25&lt;/span>))
+print(&lt;span style="color:#ae81ff">5&lt;/span>&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">8&lt;/span>&lt;span style="color:#f92672">==&lt;/span>&lt;span style="color:#ae81ff">8&lt;/span>&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">5&lt;/span>)
+print(&lt;span style="color:#ae81ff">5&lt;/span>&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#ae81ff">8&lt;/span>&lt;span style="color:#f92672">==&lt;/span>&lt;span style="color:#ae81ff">8&lt;/span>&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#ae81ff">5&lt;/span>)
+print(&lt;span style="color:#ae81ff">3&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#ae81ff">7&lt;/span>&lt;span style="color:#f92672">==&lt;/span>&lt;span style="color:#ae81ff">7&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#ae81ff">3&lt;/span>)
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="числа-dot-кратко-о-главном-dot">Числа. Кратко о главном.&lt;/h3>
+&lt;h2 id="база">База&lt;/h2>
+&lt;h3 id="элементарные-действия">Элементарные действия&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">from&lt;/span> math &lt;span style="color:#f92672">import&lt;/span> sqrt
+&lt;span style="color:#f92672">from&lt;/span> fractions &lt;span style="color:#f92672">import&lt;/span> Fraction
+print(Fraction(&lt;span style="color:#ae81ff">1&lt;/span>,&lt;span style="color:#ae81ff">2&lt;/span>) &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#ae81ff">0.5&lt;/span>)
+print(sqrt(&lt;span style="color:#ae81ff">25&lt;/span>))
+print(&lt;span style="color:#ae81ff">5&lt;/span>&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">8&lt;/span>&lt;span style="color:#f92672">==&lt;/span>&lt;span style="color:#ae81ff">8&lt;/span>&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">5&lt;/span>)
+print(&lt;span style="color:#ae81ff">5&lt;/span>&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#ae81ff">8&lt;/span>&lt;span style="color:#f92672">==&lt;/span>&lt;span style="color:#ae81ff">8&lt;/span>&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#ae81ff">5&lt;/span>)
+print(&lt;span style="color:#ae81ff">3&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#ae81ff">7&lt;/span>&lt;span style="color:#f92672">==&lt;/span>&lt;span style="color:#ae81ff">7&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#ae81ff">3&lt;/span>)
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="правила-раскрытия-скобок">Правила раскрытия скобок&lt;/h3>
+&lt;h3 id="числа-dot-кратко-о-главном-dot">Числа. Кратко о главном.&lt;/h3>
+&lt;p>Цифры - это числовые символы при помощи который записываются &lt;strong>числа&lt;/strong>.&lt;/p>
+&lt;p>Исторически первыми числами были натуральные числа, для подсчета людей, кур, овец, монет и т.д.&lt;/p>
+&lt;p>Для краткости множесто натуральных чисел \({1,2,3,4,5,6,7,8,9,10,11,12,&amp;hellip;}\) обозначают буквой \(N\).&lt;/p>
+&lt;p>Римский вариант натуральных чисел \({I,II,III,IV,V,VI,VII,VIII,IXX}\)&lt;/p>
+&lt;p>Иногда к множеству натуральных чисел относят ноль: \(0 \in N\)&lt;/p>
+&lt;p>Элементы произвольного множества принято записывать в &lt;code>{}&lt;/code> фигурных скобках.&lt;/p>
+&lt;p>Если множество не содержит элементов, то его называют пустым и обозначают символом \(\varnothing\).&lt;/p>
+&lt;p>Babel example:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">import&lt;/span> matplotlib
+&lt;span style="color:#f92672">import&lt;/span> matplotlib.pyplot &lt;span style="color:#66d9ef">as&lt;/span> plt
+fig&lt;span style="color:#f92672">=&lt;/span>plt&lt;span style="color:#f92672">.&lt;/span>figure(figsize&lt;span style="color:#f92672">=&lt;/span>(&lt;span style="color:#ae81ff">10&lt;/span>,&lt;span style="color:#ae81ff">10&lt;/span>))
+plt&lt;span style="color:#f92672">.&lt;/span>plot([&lt;span style="color:#ae81ff">1&lt;/span>,&lt;span style="color:#ae81ff">3&lt;/span>,&lt;span style="color:#ae81ff">2&lt;/span>,&lt;span style="color:#ae81ff">2&lt;/span>,&lt;span style="color:#ae81ff">2&lt;/span>,&lt;span style="color:#ae81ff">2&lt;/span>])
+fig&lt;span style="color:#f92672">.&lt;/span>tight_layout()
+fname &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;images/myfig.svg&amp;#39;&lt;/span>
+plt&lt;span style="color:#f92672">.&lt;/span>savefig(fname)
+fname &lt;span style="color:#75715e"># return this to org-mode&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Свет и освещение</title><link>https://inomoz.com/posts/davidsvetosveshchenie2001/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/davidsvetosveshchenie2001/</guid><description>&lt;h2 id="davidSvetOsveshchenie2001">Свет и освещение&lt;/h2></description></item><item><title>Чистый Код</title><link>https://inomoz.com/posts/martinchistyykod101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/martinchistyykod101/</guid><description>&lt;h2 id="martinChistyyKod101">Предисловие&lt;/h2>
+&lt;p>Честность в мелочах вовсе не честность&lt;/p>
+&lt;h3 id="честность-в-мелочах-вовсе-не-мелочь">Честность в мелочах вовсе не мелочь&lt;/h3>
+&lt;p>Датская поговорка. Альтернативы - бог скрывается в мелочах. Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.&lt;/p>
+&lt;h3 id="сопровождение">Сопровождение&lt;/h3>
+&lt;p>В программировании 80+% того что мы делаем мы называем сопровождением.&lt;/p>
+&lt;p>1951 г. - появилась методология TPM (Total Productive maintenance). Ориентирована прежде всего на сопровождение а не на производство. Основаня на приципах 5S.
+Ее принципы заложены в методолгии &lt;a href="https://inomoz.com/posts/20220123190452-lean/">LEAN&lt;/a>.&lt;/p>
+&lt;p>Хорошая практика программирования требует сосредоточенность, присутствие духа и мышление.&lt;/p>
+&lt;p>Философия 5S:&lt;/p>
+&lt;ul>
+&lt;li>Организация (сейри), грамотное именование.&lt;/li>
+&lt;li>Аккуратность (сейтон), всему своё место.&lt;/li>
+&lt;li>Чистка (сейсо), код не должен быть захламлённым.&lt;/li>
+&lt;li>Стандартизация (сэйкэцу), придерживайтесь единого стиля в коде.&lt;/li>
+&lt;li>Дисциплина (сюцукэ), нужно следовать правилам, размышлять о работе и быть готовым к изменениям в самом себе.&lt;/li>
+&lt;/ul>
+&lt;h3 id="описание-принципов">Описание принципов&lt;/h3>
+&lt;p>Следуя этим принципам вы значительно уменьшаете вероятность возникновения ошибок, вы стараетесть переработать уже существующий код под эти принципы, ваш код удобочитаем, спорные части вы переписываете сразу-же.&lt;/p>
+&lt;blockquote>
+&lt;p>Чистота ведет к божественности.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Тот кто верен в мелочах, верен во всем.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Ранняя пташка червяка ловит.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Не откладывай на завтра то, что можно сделать сегодня.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Из маленьких желудей вырастают большие дубы.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Дорога ложка к обеду.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Яблочко на ужин и доктор не нужен.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="непрерывное-улучшение">Непрерывное улучшение&lt;/h3>
+&lt;p>Каждое действие для проектирования можно рассматривать как атомарное восстановление. Стихотвроение никогда не бывает законченным, оно требует непрерывного улучшения, прекратить работу над ним значит бросить его.&lt;/p>
+&lt;p>Невнимательность к мелочам или их игнорирование, зацикливание на внешнем виде в конечном итоге обходится недёшево.&lt;/p>
+&lt;h3 id="зависимость-ошибок-от-стиля-программирования">Зависимость ошибок от стиля программирования&lt;/h3>
+&lt;p>В ходе исследований в BELL labs выяснилось что последовательный стиль применения отступов является одним из самых статистически значимых признаков низкой плотности ошибок.&lt;/p>
+&lt;p>Качество кода возникает в результате миллиона проявлений нбезразличного отношения к коду, а не от применения супер методов.&lt;/p>
+&lt;h3 id="рассматривайте-свой-код-dot-dot-dot">Рассматривайте свой код&amp;hellip;&lt;/h3>
+&lt;p>Рассматривайте свой код как красивое воплощение благородных усилий по проектированию - как процесс, а не статистически конечной точки.&lt;/p>
+&lt;h3 id="честность">Честность&lt;/h3>
+&lt;p>Как уже было сказано важно быть честным в мелочах. Нужно делать все возможное для улучшеня вашего кода и стараться делать его лучше чем он был.&lt;/p>
+&lt;h3 id="flashcards">Flashcards&lt;/h3>
+&lt;h4 id="мелочи-важны">Мелочи важны&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Обращая внимание на мелочи вы приобретаете, вы приобретаете?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.&lt;/p>
+&lt;p>Как уже было сказано важно быть честным в мелочах. Нужно делать все возможное для улучшеня вашего кода и стараться делать его лучше чем он был.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="5s">5S&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Назовите основые принципы философии 5S&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;ul>
+&lt;li>Организация (сейри), грамотное именование.&lt;/li>
+&lt;li>Аккуратность (сейтон), всему своё место.&lt;/li>
+&lt;li>Чистка (сейсо), код не должен быть захламлённым.&lt;/li>
+&lt;li>Стандартизация (сэйкэцу), придерживайтесь единого стиля в коде.&lt;/li>
+&lt;li>Дисциплина (сюцукэ), нужно следовать правилам, размышлять о работе и быть готовым к изменениям в самом себе.&lt;/li>
+&lt;/ul>
+&lt;p>Следуя этим принципам вы значительно уменьшаете вероятность возникновения ошибок, вы стараетесть переработать уже существующий код под эти принципы, ваш код удобочитаем, спорные части вы переписываете сразу-же.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="зачем">Зачем&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Почему важно обращать внимание на мелочи в контексте разработки, в чем основная суть?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Невнимательность к мелочам или их игнорирование, зацикливание на внешнем виде в конечном итоге обходится недёшево.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="небезразличие">Небезразличие&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Есть ли какие либо сверх-универсальные методы для достижения качества кода? Или нужно просто придерживаться небезразличного отношения к коду?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Скорее второе, я думаю есть методы позволяющие улучшить код, но они могут быть не всегда применимы, а если придерживаться второго пункта то качество кода улучшиться.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="идеальный-код">Идеальный код&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Когда ваш код становится идеальным?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Я думаю никогда.
+Рассматривайте свой код как красивое воплощение благородных усилий по проектированию - как процесс, а не статистически конечной точки.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="введение">Введение&lt;/h2>
+&lt;h3 id="профессионализм">Профессионализм&lt;/h3>
+&lt;figure>&lt;img src="https://inomoz.com/ox-hugo/20220123-212705_screenshot.png"/>
+&lt;/figure>
+&lt;p>Что позволяет избежать поток ужасных ошибок, отладку в панике, напор начальства? Правильный ответ профессионализм.&lt;/p></description></item></channel></rss>

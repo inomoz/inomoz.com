@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on Inomoz</title>
+    <link>https://inomoz.com/categories/life/</link>
+    <description>Recent content in Life on Inomoz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Apr 2021 11:08:57 +0300</lastBuildDate><atom:link href="https://inomoz.com/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://inomoz.com/posts/about-me/</link>
+      <pubDate>Tue, 20 Apr 2021 11:08:57 +0300</pubDate>
+      
+      <guid>https://inomoz.com/posts/about-me/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s explain a little about myself (typical about-me webpage).&lt;/p&gt;
+&lt;p&gt;My name is Inom, I&amp;rsquo;m web and software developer. Right now I&amp;rsquo;m working as freelancer.&lt;/p&gt;
+&lt;p&gt;I like learn something new, for example
+open-source software (especially if it something lightweight &amp;amp; fast), best practises and automation techniques.
+I also like web-design, CG - and trying work more with it. They can be very inspiring and eye-catching.&lt;/p&gt;
+&lt;p&gt;I tried to start running the site for a very long time, but without success,
+perhaps I lack motivation or something else. But if you see this page it means I successfully started 🙂.&lt;/p&gt;
+&lt;p&gt;If you have some ideas or questions, related to website content, feel free to contact with me.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

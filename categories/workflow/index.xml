@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workflow on Inomoz</title>
+    <link>https://inomoz.com/categories/workflow/</link>
+    <description>Recent content in Workflow on Inomoz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Apr 2021 11:08:57 +0300</lastBuildDate><atom:link href="https://inomoz.com/categories/workflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software which I use</title>
+      <link>https://inomoz.com/posts/software-which-i-use/</link>
+      <pubDate>Wed, 21 Apr 2021 11:08:57 +0300</pubDate>
+      
+      <guid>https://inomoz.com/posts/software-which-i-use/</guid>
+      <description>&lt;p&gt;Since I really like use some configured workflow, here some like &amp;ldquo;structure&amp;rdquo; which I use right now.&lt;/p&gt;
+&lt;h2 id=&#34;list-of-what-i-usualy-use-and-recommend&#34;&gt;List of what I usualy use and recommend.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;pycharm (main IDE)&lt;/li&gt;
+&lt;li&gt;i3wm&lt;/li&gt;
+&lt;li&gt;brave&lt;/li&gt;
+&lt;li&gt;neovim&lt;/li&gt;
+&lt;li&gt;neomutt&lt;/li&gt;
+&lt;li&gt;weechat (with plugins)&lt;/li&gt;
+&lt;li&gt;blender, inkscape, gimp&lt;/li&gt;
+&lt;li&gt;mpd, ncmpcpp, beats (new for me)&lt;/li&gt;
+&lt;li&gt;ncmppp&lt;/li&gt;
+&lt;li&gt;anki&lt;/li&gt;
+&lt;li&gt;zeal&lt;/li&gt;
+&lt;li&gt;calibre&lt;/li&gt;
+&lt;li&gt;zathura&lt;/li&gt;
+&lt;li&gt;sxiv&lt;/li&gt;
+&lt;li&gt;sc-im (new for me)&lt;/li&gt;
+&lt;li&gt;aria2c&lt;/li&gt;
+&lt;li&gt;wget&lt;/li&gt;
+&lt;li&gt;htop&lt;/li&gt;
+&lt;li&gt;nethogs&lt;/li&gt;
+&lt;li&gt;figlet&lt;/li&gt;
+&lt;li&gt;jp2a&lt;/li&gt;
+&lt;li&gt;paru&lt;/li&gt;
+&lt;li&gt;ytcc&lt;/li&gt;
+&lt;li&gt;hack.sh&lt;/li&gt;
+&lt;li&gt;gtypist&lt;/li&gt;
+&lt;li&gt;ansiweather (alias weather)&lt;/li&gt;
+&lt;li&gt;buku (alias b)&lt;/li&gt;
+&lt;li&gt;obs&lt;/li&gt;
+&lt;li&gt;tldr&lt;/li&gt;
+&lt;li&gt;translate-shell&lt;/li&gt;
+&lt;li&gt;dotfiles&lt;/li&gt;
+&lt;li&gt;trans-shell&lt;/li&gt;
+&lt;li&gt;anki&lt;/li&gt;
+&lt;li&gt;git, bash, tmux&lt;/li&gt;
+&lt;li&gt;tldr&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;plan-to-use--check&#34;&gt;Plan to use / check&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Anakonda, ipython&lt;/li&gt;
+&lt;li&gt;LaTeX, pandoc&lt;/li&gt;
+&lt;li&gt;blender&lt;/li&gt;
+&lt;li&gt;hledger&lt;/li&gt;
+&lt;li&gt;samba&lt;/li&gt;
+&lt;li&gt;qemu&lt;/li&gt;
+&lt;li&gt;ffmpeg&lt;/li&gt;
+&lt;li&gt;audacity&lt;/li&gt;
+&lt;li&gt;obs&lt;/li&gt;
+&lt;li&gt;imagemagic&lt;/li&gt;
+&lt;li&gt;gnupg&lt;/li&gt;
+&lt;li&gt;aria2, AriaNg&lt;/li&gt;
+&lt;li&gt;pass&lt;/li&gt;
+&lt;li&gt;wmctrl&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>VIM Notes</title>
+      <link>https://inomoz.com/posts/vim-notes/</link>
+      <pubDate>Wed, 21 Apr 2021 11:08:57 +0300</pubDate>
+      
+      <guid>https://inomoz.com/posts/vim-notes/</guid>
+      <description>&lt;p&gt;Here I collect, various VIM tips, shortcuts, keybindings, etc. Also, here some information how I handle daily usage of text editing.&lt;/p&gt;
+&lt;p&gt;This not absolute beginner cheatsheet, just some short basic commands/tips.&lt;/p&gt;
+&lt;p&gt;Recommendation - just use it &amp;amp; check it every day (training)&lt;/p&gt;
+&lt;h1 id=&#34;base&#34;&gt;Base&lt;/h1&gt;
+&lt;h2 id=&#34;navigation&#34;&gt;Navigation&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;h j k l&lt;/code&gt; cursor move.
+This also work in Vimium, NNN, Zathura and other programs with Vim keyboard shortcuts.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;w b&lt;/code&gt; move to Word &amp;lt;- -&amp;gt;.&lt;br&gt;
+&lt;code&gt;w&lt;/code&gt; - mv/cp as (NNN)&lt;br&gt;
+&lt;code&gt;b&lt;/code&gt; - bookmark (Vimium/NNN)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;]w ]b&lt;/code&gt; move to Word &amp;lt;- -&amp;gt; also, but support CamelHumps and separated_word words&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;W B&lt;/code&gt; move to Word (ignore punctuation like .,) &amp;lt;- -&amp;gt;.&lt;br&gt;
+&lt;code&gt;B&lt;/code&gt; - open bookmark in new tab (Vimium).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;e ge&lt;/code&gt; move to worD  &amp;lt;- -&amp;gt;&lt;br&gt;
+&lt;code&gt;e&lt;/code&gt; - edit file (NNN)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;^ g_&lt;/code&gt; move to ..^lineg_..  &amp;lt;- -&amp;gt;. I think this is more useful than next shortcuts.&lt;br&gt;
+&lt;code&gt;0 $&lt;/code&gt; move to 0..line..$  &amp;lt;- -&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;^e ^y&lt;/code&gt; move document ↑ ↓. Sometimes useful if need check few lines above/below.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{ }&lt;/code&gt; paragraph ↑ ↓. Also useful with &lt;code&gt;V&lt;/code&gt; selection.&lt;/p&gt;
+&lt;h2 id=&#34;go-to&#34;&gt;Go to&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;:[num]&lt;/code&gt; to line number&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;f F [char]&lt;/code&gt; to &lt;em&gt;C&lt;/em&gt;har in line  &amp;lt;- -&amp;gt;. Upper - back direction.&lt;br&gt;
+&lt;code&gt;f&lt;/code&gt; - Open link in current tab (Vimium).&lt;br&gt;
+&lt;code&gt;F&lt;/code&gt; - Open link in new tab and not change active tab (Vimium).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;t T [char]&lt;/code&gt; to &lt;em&gt;t&lt;/em&gt;char in line  &amp;lt;- -&amp;gt;. More useful than &lt;em&gt;f/F&lt;/em&gt; if need for example delete from char to quote.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;, ; [char]&lt;/code&gt; repeat search  &amp;lt;- -&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;%&lt;/code&gt; jump between () or {}. Append arguments? Or add code?&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;^o ^i&lt;/code&gt; go to older/newer jump item in jump list (also work in Zathura). You can check this list by &lt;code&gt;:jumps&lt;/code&gt; command.&lt;br&gt;
+A &lt;em&gt;jump&lt;/em&gt; is one of the following commands: &lt;code&gt;&#39;&lt;/code&gt;&#39;, ```, &lt;code&gt;G&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt;, &lt;code&gt;?&lt;/code&gt;, &lt;code&gt;n&lt;/code&gt;,
+&lt;code&gt;N&lt;/code&gt;, &lt;code&gt;%&lt;/code&gt;, &lt;code&gt;(&lt;/code&gt;, &lt;code&gt;)&lt;/code&gt;, &lt;code&gt;[[&lt;/code&gt;, &lt;code&gt;]]&lt;/code&gt;, &lt;code&gt;{&lt;/code&gt;, &lt;code&gt;}&lt;/code&gt;, &lt;code&gt;:s&lt;/code&gt;, &lt;code&gt;:tag&lt;/code&gt;, &lt;code&gt;L&lt;/code&gt;, &lt;code&gt;M&lt;/code&gt;, &lt;code&gt;H&lt;/code&gt; and
+the commands that start editing a new file.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;^d ^u&lt;/code&gt; up/down half page ↑ ↓. But this is not universal, I use custom keyboard and &lt;code&gt;FNd&lt;/code&gt; &lt;code&gt;FNu&lt;/code&gt; keys (works everywhere!).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gg G&lt;/code&gt; home / end  ↑ ↓. &lt;em&gt;gg&lt;/em&gt; is like go go go (starting). &lt;em&gt;G&lt;/em&gt; is like Gone.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gT gt&lt;/code&gt; go to &amp;lt;- tab -&amp;gt; (also work in Vimium).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gv&lt;/code&gt; - reselect(select last selected block of text)&lt;/p&gt;
+&lt;h2 id=&#34;editing-text&#34;&gt;Editing text&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;i a&lt;/code&gt; enter edit i&amp;lt;-cursor-&amp;gt;a. &lt;em&gt;i&lt;/em&gt; - left side of cursor/character, &lt;em&gt;a&lt;/em&gt; - right side of cursor/character.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;I A&lt;/code&gt; enter edit I..&amp;lt;-line-&amp;gt;..A&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;o O&lt;/code&gt; enter edit ↑↓..line..&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;X x&lt;/code&gt; &lt;em&gt;cut&lt;/em&gt; char &amp;lt;- -&amp;gt; use this instead &lt;code&gt;vd&lt;/code&gt;, &lt;code&gt;d[motion]&lt;/code&gt; cut motion, &lt;code&gt;dd&lt;/code&gt; cut line&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;c[motion]&lt;/code&gt;  cut &amp;amp; edit motion, &lt;code&gt;cc&lt;/code&gt; - line&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;r[char]&lt;/code&gt; replace char, &lt;code&gt;R&lt;/code&gt; replace mode&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;J&lt;/code&gt; join line ↑, if you see 1 empty line below, just use &lt;code&gt;3J&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;y[motion]&lt;/code&gt; yank motion, &lt;code&gt;yy&lt;/code&gt; line (also work in Vimium - copy current url)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;p P&lt;/code&gt; paste  &amp;lt;- -&amp;gt; ↑ ↓ depends on clipboard content (also work in Vimium - open clipboard URL).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;^r+0&lt;/code&gt; - in insert mode inserts the last yanked text, working in command mode&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;^r+&amp;quot;&lt;/code&gt; - in insert mode inserts clipboard, working in command mode&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;^o[command]&lt;/code&gt; - run command in insert mode once&lt;/p&gt;
+&lt;h2 id=&#34;delete-text-not-cut&#34;&gt;Delete text (not cut)&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;&#39;d[motion]&lt;/code&gt; delete text with motion. &lt;code&gt;&#39;dd&lt;/code&gt; delete line, &lt;code&gt;&#39;dw&lt;/code&gt; delete word.&lt;br&gt;
+This bindings require custom remap in vimrc file: &lt;code&gt; noremap &#39; &amp;quot;_&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&#39;d[P]&lt;/code&gt; delete selected text (optional paste text)&lt;/p&gt;
+&lt;h2 id=&#34;text-objects&#34;&gt;Text objects&lt;/h2&gt;
+&lt;p&gt;Example: &lt;code&gt;def (arg1, arg2, arg3)&lt;/code&gt; - &lt;code&gt;di(&lt;/code&gt; deletes everything between the parenthesis&lt;/p&gt;
+&lt;h3 id=&#34;words&#34;&gt;Words&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;aw&lt;/code&gt; – a word (with spaces), &lt;code&gt;iw&lt;/code&gt; – inner word (without spaces)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;daw/diw&lt;/code&gt; - delete word (any cursor position)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dw&lt;/code&gt; - delete part or word&lt;/p&gt;
+&lt;h3 id=&#34;sentences&#34;&gt;Sentences&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;as&lt;/code&gt; – a sentence, &lt;code&gt;is&lt;/code&gt; – inner sentence&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cas/cis&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;paragraphs&#34;&gt;Paragraphs&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;ap&lt;/code&gt; – a paragraph, &lt;code&gt;ip&lt;/code&gt; – inner paragraph&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dap/dip&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;programming-language-text-objects&#34;&gt;Programming Language Text Objects&lt;/h2&gt;
+&lt;h3 id=&#34;strings&#34;&gt;strings&lt;/h3&gt;
+&lt;p&gt;example - &lt;code&gt;ci&amp;quot;, yi&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a”&lt;/code&gt; – a double quoted string,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;i”&lt;/code&gt; – inner double quoted string,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a’&lt;/code&gt; – a single quoted string,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;i’&lt;/code&gt; – inner single quoted string,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_a` &lt;/code&gt; – a back quoted string,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_i` &lt;/code&gt; – inner back quoted string&lt;/p&gt;
+&lt;h3 id=&#34;parenthesesbrackets&#34;&gt;Parentheses/Brackets&lt;/h3&gt;
+&lt;p&gt;example - &lt;code&gt;da)/da}&lt;/code&gt;, &lt;code&gt;Project.all(:conditions =&amp;gt; { :published =&amp;gt; true })&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a)/a}&lt;/code&gt; – a parenthesized block&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;i)/i}&lt;/code&gt; – inner parenthesized block&lt;/p&gt;
+&lt;h3 id=&#34;markup-language-tags&#34;&gt;Markup Language Tags&lt;/h3&gt;
+&lt;p&gt;example - &lt;code&gt;cit&lt;/code&gt;, &lt;code&gt;&amp;lt;h2&amp;gt;Sample Title&amp;lt;/h2&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;at&lt;/code&gt; – a tag block&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;it&lt;/code&gt; – inner tag block&lt;/p&gt;
+&lt;h3 id=&#34;quickly-replace-tag-content&#34;&gt;Quickly replace tag content&lt;/h3&gt;
+&lt;p&gt;example - &lt;code&gt;di&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;div id=&amp;quot;content&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a&amp;gt;&lt;/code&gt; – a single tag&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;i&amp;gt;&lt;/code&gt; – inner single tag&lt;/p&gt;
+&lt;h2 id=&#34;marking-text-visual-mode&#34;&gt;Marking text (visual mode)&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;v[motion] V ^v&lt;/code&gt; select motion / line / vertical&lt;/p&gt;
+&lt;h2 id=&#34;search--replace&#34;&gt;Search / replace&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;/... ?... /...\C&lt;/code&gt; search &amp;lt;- -&amp;gt; ↑ ↓ / case sensitive&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;n N&lt;/code&gt; search results &amp;lt;- -&amp;gt; ↑ ↓&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:%s/old/new/g :%s/old/new/gc&lt;/code&gt; find &amp;amp; replace / conf.&lt;/p&gt;
+&lt;h1 id=&#34;operations&#34;&gt;Operations&lt;/h1&gt;
+&lt;h2 id=&#34;base-commands&#34;&gt;Base Commands&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;u ^r&lt;/code&gt; undo/redo&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:w :x&lt;/code&gt; save / save and exit&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:q :q!&lt;/code&gt; exit / exit &amp;amp; ignore changes&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:e [file]&lt;/code&gt; edit↓ file&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:vsp [file]&lt;/code&gt; split &amp;amp; open file&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;^ws ^wv&lt;/code&gt; split ↓ -&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;^wc ^wq&lt;/code&gt; unsplit / unsplit all&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;c-w&amp;gt;hjkl ^ww&lt;/code&gt; focus pane / focus pane ↑ &amp;lt;-&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;m{a-z} m{A-Z}&lt;/code&gt; set mark / bookmark&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&#39;{a-z} &#39;&#39;&lt;/code&gt; jump to mark / before mark&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:![command]&lt;/code&gt; exec command&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.&lt;/code&gt; repeat&lt;/p&gt;
+&lt;h2 id=&#34;specific&#34;&gt;Specific&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;!&amp;lt;Return&amp;gt;&lt;/code&gt; more actions, fix&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;zo zc zR zM&lt;/code&gt; folding / all folds&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gd&lt;/code&gt; go to declaration&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;zj zk&lt;/code&gt; create new line&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gq gqap&lt;/code&gt; reformat selection / all&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_q _Q&lt;/code&gt; close / reopen tabs&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_d&lt;/code&gt; ShowErrorDescription&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_x&lt;/code&gt; GotoNextError&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_X&lt;/code&gt; GotoPreviousError&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_/ _\&lt;/code&gt; - Find / FindInPath&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[e ]e&lt;/code&gt; - MoveLineUp MoveLineDown&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[s ]s&lt;/code&gt; - MoveStatementUp MoveStatementDown&lt;/p&gt;
+&lt;h2 id=&#34;refactorings&#34;&gt;Refactorings&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;_T&lt;/code&gt; Refactorings.QuickListPopupAction&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_rr&lt;/code&gt; RenameElement&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_rg&lt;/code&gt; Generate&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_rI _rc&lt;/code&gt; OptimizeImports /InspectCode&lt;/p&gt;
+&lt;h1 id=&#34;navigation-1&#34;&gt;Navigation&lt;/h1&gt;
+&lt;h2 id=&#34;panes-activation&#34;&gt;Panes Activation&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;a-1&lt;/code&gt; NerdTree&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a-2&lt;/code&gt; Terminal&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a-3&lt;/code&gt; Structure&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a-4&lt;/code&gt; Commit&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a-5&lt;/code&gt; Debug&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a-6&lt;/code&gt; TODO&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a-7&lt;/code&gt; PythonConsole&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a-8&lt;/code&gt; FindTool&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a-9&lt;/code&gt; Database&lt;/p&gt;
+&lt;h2 id=&#34;navigation-2&#34;&gt;Navigation&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;_h _l&lt;/code&gt; Back / Forward&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_L _e _a&lt;/code&gt; RecentLocations RecentFiles RecentChangedFiles&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_b&lt;/code&gt; ShowBookmarks&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_g _i _t&lt;/code&gt; GotoDeclaration GotoImplementation  GotoTest&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_u _I&lt;/code&gt; FindUsages SelectIn&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_f _c _s&lt;/code&gt; GotoFile  GotoClass  GotoSymbol&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_; _ww&lt;/code&gt; FileStructurePopup  JumpToLastWindow&lt;/p&gt;
+&lt;h2 id=&#34;vcs-operations&#34;&gt;VCS operations&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;_yp _yl&lt;/code&gt; QuickListPopupAction / Log&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_yd _ya&lt;/code&gt; Compare.LastVersion / Annotate&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[q ]q&lt;/code&gt; PreviousOccurence / NextOccurence&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[m ]m&lt;/code&gt; MethodUp / MethodDown&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[c ]c&lt;/code&gt; PrevChangeMarker / NextChangeMarker&lt;/p&gt;
+&lt;h2 id=&#34;building-running-and-debugging&#34;&gt;Building, Running and Debugging&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;,c ,r&lt;/code&gt; - CompileDirty / Run&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;,R ,b&lt;/code&gt; - RunAnything Debug&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;,c ,d&lt;/code&gt; - RunClass / DebugClass&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;,t ,T&lt;/code&gt; - RerunTests / RerunFailedTests&lt;/p&gt;
+&lt;h2 id=&#34;nerdtree&#34;&gt;Nerdtree&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;o O x X&lt;/code&gt; - open close&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;go&lt;/code&gt; - preview file&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;t T&lt;/code&gt; - open node in new tab&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;i gi s gs&lt;/code&gt; - open file in split window&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;p P K J ^j ^k&lt;/code&gt; - jump in nodes&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;r R&lt;/code&gt; - refresh directory root&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;A&lt;/code&gt; - maximize minimize NERDTree&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;m c&lt;/code&gt; - menu, close menu&lt;/p&gt;
+&lt;h2 id=&#34;easymotion&#34;&gt;Easymotion&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;ll&amp;gt;fF&lt;/code&gt; - move forward/backward&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;ll&amp;gt;tT&lt;/code&gt; - move forward/backward (before char)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;ll&amp;gt;wW&lt;/code&gt; - move forward/backward word&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;ll&amp;gt;jk&lt;/code&gt; - move up/down&lt;/p&gt;
+&lt;h3 id=&#34;commentary&#34;&gt;Commentary&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;gcc gc[motion] [v]gc&lt;/code&gt; comment line / motion / visual&lt;/p&gt;
+&lt;h3 id=&#34;replace-with-register&#34;&gt;Replace with register&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;gr[motion] grr&lt;/code&gt; replace with register (yanked) motion / line&lt;/p&gt;
+&lt;h2 id=&#34;surround&#34;&gt;Surround&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;operate[find][replace]&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;delete-surroundings&#34;&gt;Delete surroundings&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;ds&lt;/code&gt; delete surround, example: &lt;code&gt;ds&lt;/code&gt;, &lt;code&gt;ds&amp;quot;&lt;/code&gt;, &lt;code&gt;ds)&lt;/code&gt;, &lt;code&gt;dst&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cs&lt;/code&gt; change surround, example: &lt;code&gt;cs&amp;quot;&#39;&lt;/code&gt; (&amp;quot; -&amp;gt; &amp;lsquo;), &lt;code&gt;cs&amp;quot;&amp;lt;q&amp;gt;&lt;/code&gt;, &lt;code&gt;cs)]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ys&lt;/code&gt; create surround, example: &lt;code&gt;ysiw)&lt;/code&gt; (inner word), &lt;code&gt;yss]&lt;/code&gt; (line)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;S&lt;/code&gt; - surround selected text, example: &lt;code&gt;S&amp;quot;&lt;/code&gt;, &lt;code&gt;S&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ysWf ysWF&lt;/code&gt; - functions example, wrap text/word&lt;/p&gt;
+&lt;h4 id=&#34;targets&#34;&gt;Targets&lt;/h4&gt;
+&lt;p&gt;All targets are currently just one character.&lt;/p&gt;
+&lt;p&gt;(, ), {, }, [, ], &amp;lt;, and &amp;gt;&lt;/p&gt;
+&lt;p&gt;The targets b, B, r, and a are aliases for ), }, ], and &amp;gt; &amp;lsquo;, &amp;ldquo;, `,&lt;/p&gt;
+&lt;p&gt;A t is a pair of HTML or XML tags.&lt;/p&gt;
+&lt;p&gt;The letters w, W, and s correspond to a |word|, a |WORD|, and a |sentence|.&lt;/p&gt;
+&lt;p&gt;A p represents a |paragraph|&lt;/p&gt;
+&lt;h2 id=&#34;argtextobj&#34;&gt;Argtextobj&lt;/h2&gt;
+&lt;p&gt;Additional text objects: &lt;code&gt;aa&lt;/code&gt; - argument, &lt;code&gt;ia&lt;/code&gt; - inner argument&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;function(1, (20&amp;lt;press &#39;daa&#39; here&amp;gt;*30)+40, somefunc2(3, 4))&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;function(1, (20&amp;lt;press &#39;cia&#39; here&amp;gt;*30)+40, somefunc2(3, 4))&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;exchange&#34;&gt;Exchange&lt;/h2&gt;
+&lt;p&gt;To exchange two words, place your cursor on the first word and type &lt;code&gt;cxiw&lt;/code&gt;. Then move to the second word and type &lt;code&gt;cxiw&lt;/code&gt; again. Note: the &lt;code&gt;{motion}&lt;/code&gt; used in the first and second use of &lt;code&gt;cx&lt;/code&gt; don&amp;rsquo;t have to be the same.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cx[motion]&lt;/code&gt; Base exchange&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cxx&lt;/code&gt; Like &lt;code&gt;cx&lt;/code&gt;, but use the current line.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;X&lt;/code&gt; Like &lt;code&gt;cx&lt;/code&gt;, but for Visual mode.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cxc&lt;/code&gt; Clear any &lt;code&gt;{motion}&lt;/code&gt; pending for exchange.&lt;/p&gt;
+&lt;h3 id=&#34;some-notes&#34;&gt;Some notes&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re using the same motion again (e.g. exchanging two words using &lt;code&gt;cxiw&lt;/code&gt;), you can use &lt;code&gt;.&lt;/code&gt; the second time.&lt;/p&gt;
+&lt;p&gt;If one region is fully contained within the other, it will replace the containing region.&lt;/p&gt;
+&lt;h3 id=&#34;swap-chars-built-in&#34;&gt;Swap chars (built-in)&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;xp&lt;/code&gt; Swap the current character (the character under the cursor) with the next&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Xp&lt;/code&gt; Swap the current character with the previous&lt;/p&gt;
+&lt;h2 id=&#34;text-objects-for-entire-buffers&#34;&gt;Text objects for entire buffers&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ae&lt;/code&gt; targets the entire content of the current buffer.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ie&lt;/code&gt; is similar to ae, but ie does not include leading and trailing empty lines&lt;/p&gt;
+&lt;h1 id=&#34;scenarios&#34;&gt;Scenarios&lt;/h1&gt;
+&lt;p&gt;Use &lt;code&gt;^[&lt;/code&gt; as key to exit insert mode, &lt;code&gt;Esc&lt;/code&gt; has some restrictions.&lt;/p&gt;
+&lt;p&gt;Pycharm - by default it&amp;rsquo;s remove focus from pane&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s easier (faster) to press, less delay&lt;/p&gt;
+&lt;p&gt;Other app can close / stop something&lt;/p&gt;
+&lt;h2 id=&#34;keyboard-specific&#34;&gt;Keyboard Specific&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;FN hjkl&lt;/code&gt; - arrows&lt;/p&gt;
+&lt;h3 id=&#34;arrow-up--down-with-fn-key-jk&#34;&gt;arrow up / down with FN key (jk)&lt;/h3&gt;
+&lt;p&gt;Pycharm Editor Insert mode up/left/down. IS NOT recommended, use &lt;code&gt;^o[command]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Pycharm Editor Suggestions/Popup menu - is recommended up/down&lt;/p&gt;
+&lt;p&gt;Browser - &lt;code&gt;o O b B&lt;/code&gt; - is recommended up/down&lt;/p&gt;
+&lt;p&gt;Dmenu - is recommended up/down&lt;/p&gt;
+&lt;p&gt;Terminal - is recommended history up/down&lt;/p&gt;
+&lt;p&gt;FZF - is recommended up/down&lt;/p&gt;
+&lt;h3 id=&#34;page-up--page-down-with-fn-key-du&#34;&gt;page up / page down with FN key (du)&lt;/h3&gt;
+&lt;p&gt;Any text editor, great alternative to ^d/^u&lt;/p&gt;
+&lt;p&gt;Browser, great alternative to d/u - vim mode not available some times (insert/other modes)&lt;/p&gt;
+&lt;p&gt;Dmenu - just working&lt;/p&gt;
+&lt;p&gt;Terminal - better use just jk&lt;/p&gt;
+&lt;p&gt;FZF - just working&lt;/p&gt;
+&lt;p&gt;Open recent file:
+&lt;code&gt;Esc_L Esc_e Esc_a&lt;/code&gt; - &lt;code&gt;Esc&lt;/code&gt; is optional, just when you not in editor window. First is recent with preview (preferred)&lt;/p&gt;
+&lt;h3 id=&#34;end--home-with-fn-key-in-just-ignore-it-use-only-if-its-required&#34;&gt;end / home with FN key (in) JUST ignore it, use only if it&amp;rsquo;s required&lt;/h3&gt;
+&lt;p&gt;Text editor - can be usable, but just use VIM mode&lt;/p&gt;
+&lt;p&gt;Text editor with VIM mode IS NOT recommended!&lt;/p&gt;
+&lt;p&gt;Browser - just use VIM mode&lt;/p&gt;
+&lt;p&gt;Dmenu - not working&lt;/p&gt;
+&lt;p&gt;Terminal - use vim mode&lt;/p&gt;
+&lt;p&gt;FZF - not working / usable&lt;/p&gt;
+&lt;h1 id=&#34;terminal&#34;&gt;Terminal&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;v&lt;/code&gt; in normal mode allow edit command in vim&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Typography &amp; Markdown cheatsheet</title>
+      <link>https://inomoz.com/posts/typography/</link>
+      <pubDate>Tue, 20 Apr 2021 11:08:57 +0300</pubDate>
+      
+      <guid>https://inomoz.com/posts/typography/</guid>
+      <description>&lt;p&gt;Markdown generated HTML code which I use on my site. Useful to copy code samples, when it needed.&lt;/p&gt;
+&lt;p&gt;Original source: &lt;a href=&#34;https://gist.github.com/jonschlinkert/5854601&#34;&gt;https://gist.github.com/jonschlinkert/5854601&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Also see &lt;a href=&#34;https://github.com/jonschlinkert/remarkable&#34;&gt;remarkable&lt;/a&gt;, the markdown parser created by the author of this cheatsheet)&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#standard-features&#34;&gt;Standard features&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headings&#34;&gt;Headings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#paragraphs&#34;&gt;Paragraphs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#breaks&#34;&gt;Breaks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#horizontal-rule&#34;&gt;Horizontal Rule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#emphasis&#34;&gt;Emphasis&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#bold&#34;&gt;Bold&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#italics&#34;&gt;Italics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#blockquotes&#34;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#lists&#34;&gt;Lists&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#unordered&#34;&gt;Unordered&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ordered&#34;&gt;Ordered&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#time-saving-tip&#34;&gt;Time-saving Tip&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#code&#34;&gt;Code&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#inline-code&#34;&gt;Inline code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#fenced-code-block&#34;&gt;&amp;ldquo;Fenced&amp;rdquo; code block&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#indented-code&#34;&gt;Indented code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#syntax-highlighting&#34;&gt;Syntax highlighting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#links&#34;&gt;Links&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#autolinks&#34;&gt;Autolinks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#inline-links&#34;&gt;Inline links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#link-titles&#34;&gt;Link titles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#named-anchors&#34;&gt;Named Anchors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#images&#34;&gt;Images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#raw-html&#34;&gt;Raw HTML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#escaping-with-backslashes&#34;&gt;Escaping with backslashes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#non-standard-features&#34;&gt;Non-standard features&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#strikethrough&#34;&gt;Strikethrough&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#todo-list&#34;&gt;Todo List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tables&#34;&gt;Tables&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#aligning-cells&#34;&gt;Aligning cells&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#footnotes&#34;&gt;Footnotes&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#inline-footnotes&#34;&gt;Inline footnotes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#additional-information&#34;&gt;Additional Information&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#what-is-markdown&#34;&gt;What is markdown?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#other-resources&#34;&gt;Other Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#contributing&#34;&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;standard-features&#34;&gt;Standard features&lt;/h1&gt;
+&lt;p&gt;The following markdown features are defined by the &lt;a href=&#34;https://commonmark.org/&#34;&gt;CommonMark&lt;/a&gt; standard, and are generally supported by all markdown parsers and editors.&lt;/p&gt;
+&lt;h2 id=&#34;headings&#34;&gt;Headings&lt;/h2&gt;
+&lt;p&gt;Headings from &lt;code&gt;h1&lt;/code&gt; through &lt;code&gt;h6&lt;/code&gt; are constructed with a &lt;code&gt;#&lt;/code&gt; for each level:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to this HTML:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;h1 Heading&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt;&amp;gt;h2 Heading&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h3&lt;/span&gt;&amp;gt;h3 Heading&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h3&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h4&lt;/span&gt;&amp;gt;h4 Heading&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h4&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h5&lt;/span&gt;&amp;gt;h5 Heading&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h5&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h6&lt;/span&gt;&amp;gt;h6 Heading&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h6&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Which looks like this in the browser:&lt;/p&gt;
+&lt;h1 id=&#34;h1-heading&#34;&gt;h1 Heading&lt;/h1&gt;
+&lt;h2 id=&#34;h2-heading&#34;&gt;h2 Heading&lt;/h2&gt;
+&lt;h3 id=&#34;h3-heading&#34;&gt;h3 Heading&lt;/h3&gt;
+&lt;h4 id=&#34;h4-heading&#34;&gt;h4 Heading&lt;/h4&gt;
+&lt;h5 id=&#34;h5-heading&#34;&gt;h5 Heading&lt;/h5&gt;
+&lt;h6 id=&#34;h6-heading&#34;&gt;h6 Heading&lt;/h6&gt;
+&lt;p&gt;&lt;strong&gt;A note about &amp;ldquo;Setext&amp;rdquo; Headings&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Note that this document only describes &lt;a href=&#34;https://spec.commonmark.org/0.28/#atx-headings&#34;&gt;ATX headings&lt;/a&gt;, as it is the preferred syntax for writing headings. However, the CommonMark specification also describes &lt;a href=&#34;https://spec.commonmark.org/0.28/#setext-headings&#34;&gt;Setext headings&lt;/a&gt;, a heading format that is denoted by a line of dashes or equal signes following the heading. It&amp;rsquo;s recommended by the author of this guide that you use only ATX headings, as they are easier to write and read in text editors, and are less likeley to conflict with other syntaxes and demarcations from language extensions.&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;paragraphs&#34;&gt;Paragraphs&lt;/h2&gt;
+&lt;p&gt;Body copy written as normal plain-text will be wrapped with &lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt; tags in the rendered HTML.&lt;/p&gt;
+&lt;p&gt;So this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to this HTML:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;breaks&#34;&gt;Breaks&lt;/h2&gt;
+&lt;p&gt;You can use multiple consecutive newline characters (&lt;code&gt;\n&lt;/code&gt;) to create extra spacing between sections in a markdown document. However, if you need to ensure that extra newlines are not collapsed, you can use as many HTML &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; elements as you want.&lt;/p&gt;
+&lt;h2 id=&#34;horizontal-rule&#34;&gt;Horizontal Rule&lt;/h2&gt;
+&lt;p&gt;The HTML &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; element is for creating a &amp;ldquo;thematic break&amp;rdquo; between paragraph-level elements. In markdown, you can use of the following for this purpose:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;___&lt;/code&gt;: three consecutive underscores&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;---&lt;/code&gt;: three consecutive dashes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;***&lt;/code&gt;: three consecutive asterisks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h2&gt;
+&lt;h3 id=&#34;bold&#34;&gt;Bold&lt;/h3&gt;
+&lt;p&gt;For emphasizing a snippet of text with a heavier font-weight.&lt;/p&gt;
+&lt;p&gt;The following snippet of text is &lt;strong&gt;rendered as bold text&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;**rendered as bold text**
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;renders to:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;rendered as bold text&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;and this HTML&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;rendered as bold text&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;italics&#34;&gt;Italics&lt;/h3&gt;
+&lt;p&gt;For emphasizing a snippet of text with italics.&lt;/p&gt;
+&lt;p&gt;The following snippet of text is &lt;em&gt;rendered as italicized text&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;_rendered as italicized text_
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;renders to:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;rendered as italicized text&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;and this HTML:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;em&lt;/span&gt;&amp;gt;rendered as italicized text&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;em&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;Used for defining a section of quoting text from another source, within your document.&lt;/p&gt;
+&lt;p&gt;To create a blockquote, use &lt;code&gt;&amp;gt;&lt;/code&gt; before any text you want to quote.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And the generated HTML from a markdown parser might look something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;blockquote&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;blockquote&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Blockquotes can also be nested:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
+&amp;gt;&amp;gt; Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
+odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
+&amp;gt;&amp;gt;&amp;gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
+odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;lists&#34;&gt;Lists&lt;/h2&gt;
+&lt;h3 id=&#34;unordered-lists&#34;&gt;Unordered Lists&lt;/h3&gt;
+&lt;p&gt;A list of items in which the order of the items does not explicitly matter.&lt;/p&gt;
+&lt;p&gt;You may use any of the following symbols to denote bullets for each list item:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;* valid bullet
+- valid bullet
++ valid bullet
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;+ Lorem ipsum dolor sit amet
++ Consectetur adipiscing elit
++ Integer molestie lorem at massa
++ Facilisis in pretium nisl aliquet
++ Nulla volutpat aliquam velit
+  - Phasellus iaculis neque
+  - Purus sodales ultricies
+  - Vestibulum laoreet porttitor sem
+  - Ac tristique libero volutpat at
++ Faucibus porta lacus fringilla vel
++ Aenean sit amet erat nunc
++ Eget porttitor lorem
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+&lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+&lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+&lt;li&gt;Nulla volutpat aliquam velit
+&lt;ul&gt;
+&lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+&lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+&lt;li&gt;Vestibulum laoreet porttitor sem&lt;/li&gt;
+&lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+&lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+&lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And this HTML&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Lorem ipsum dolor sit amet&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Consectetur adipiscing elit&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Integer molestie lorem at massa&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Facilisis in pretium nisl aliquet&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Nulla volutpat aliquam velit
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
+      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Phasellus iaculis neque&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Purus sodales ultricies&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Vestibulum laoreet porttitor sem&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Ac tristique libero volutpat at&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+    &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Faucibus porta lacus fringilla vel&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Aenean sit amet erat nunc&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Eget porttitor lorem&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;ordered-lists&#34;&gt;Ordered Lists&lt;/h3&gt;
+&lt;p&gt;A list of items in which the order of items does explicitly matter.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+4. Facilisis in pretium nisl aliquet
+5. Nulla volutpat aliquam velit
+6. Faucibus porta lacus fringilla vel
+7. Aenean sit amet erat nunc
+8. Eget porttitor lorem
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+&lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+&lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+&lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+&lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+&lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+&lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And this HTML:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;ol&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Lorem ipsum dolor sit amet&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Consectetur adipiscing elit&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Integer molestie lorem at massa&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Facilisis in pretium nisl aliquet&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Nulla volutpat aliquam velit&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Faucibus porta lacus fringilla vel&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Aenean sit amet erat nunc&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;Eget porttitor lorem&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;ol&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;time-saving-tip&#34;&gt;Time-saving Tip!&lt;/h3&gt;
+&lt;p&gt;Sometimes lists change, and when they do it&amp;rsquo;s a pain to re-order all of the numbers. Markdown solves this problem by allowing you to simply use &lt;code&gt;1.&lt;/code&gt; before each item in the list.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. Lorem ipsum dolor sit amet
+1. Consectetur adipiscing elit
+1. Integer molestie lorem at massa
+1. Facilisis in pretium nisl aliquet
+1. Nulla volutpat aliquam velit
+1. Faucibus porta lacus fringilla vel
+1. Aenean sit amet erat nunc
+1. Eget porttitor lorem
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Automatically re-numbers the items and renders to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+&lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+&lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+&lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+&lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+&lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+&lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;h3 id=&#34;inline-code&#34;&gt;Inline code&lt;/h3&gt;
+&lt;p&gt;Wrap inline snippets of code with a single backtick: &lt;code&gt;`&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For example, to show &lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt; inline with other text, just wrap it in backticks.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;For example, to show `&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;` inline with other text, just wrap it in backticks.
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;fenced-code-block&#34;&gt;&amp;ldquo;Fenced&amp;rdquo; code block&lt;/h3&gt;
+&lt;p&gt;Three consecutive backticks, referred to as &amp;ldquo;code fences&amp;rdquo;, are used to denote multiple lines of code: &lt;code&gt;```&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For example, this:&lt;/p&gt;
+&lt;pre&gt;
+```html
+Example text here...
+```
+&lt;/pre&gt;
+&lt;p&gt;Renders to something like this in HTML:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;pre&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;Example text here...&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;pre&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;And appears like this when viewed in a browser:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Example text here...
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;indented-code&#34;&gt;Indented code&lt;/h3&gt;
+&lt;p&gt;You may also indent several lines of code by at least four spaces, but this is not recommended as it is harder to read, harder to maintain, and doesn&amp;rsquo;t support syntax highlighting.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;syntax-highlighting&#34;&gt;Syntax highlighting&lt;/h3&gt;
+&lt;p&gt;Various markdown parsers, such as &lt;a href=&#34;https://github.com/jonschlinkert/remarkable&#34;&gt;remarkable&lt;/a&gt;, support syntax highlighting with fenced code blocks. To activate the correct styling for the language inside the code block, simply add the file extension of the language you want to use directly after the first code &amp;ldquo;fence&amp;rdquo;: &lt;code&gt;```js&lt;/code&gt;, and syntax highlighting will automatically be applied in the rendered HTML (if supported by the parser). For example, to apply syntax highlighting to JavaScript code:&lt;/p&gt;
+&lt;pre&gt;
+```js
+grunt.initConfig({
+  assemble: {
+    options: {
+      assets: &#39;docs/assets&#39;,
+      data: &#39;src/data/*.{json,yml}&#39;,
+      helpers: &#39;src/custom-helpers.js&#39;,
+      partials: [&#39;src/partials/**/*.{hbs,md}&#39;]
+    },
+    pages: {
+      options: {
+        layout: &#39;default.hbs&#39;
+      },
+      files: {
+        &#39;./&#39;: [&#39;src/templates/pages/index.hbs&#39;]
+      }
+    }
+  }
+});
+```
+&lt;/pre&gt;
+&lt;p&gt;Which renders to:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;grunt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;initConfig&lt;/span&gt;({
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;assemble&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;options&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;assets&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;docs/assets&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;src/data/*.{json,yml}&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;helpers&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;src/custom-helpers.js&amp;#39;&lt;/span&gt;,
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;partials&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;src/partials/**/*.{hbs,md}&amp;#39;&lt;/span&gt;]
+    },
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;pages&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;options&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;layout&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;default.hbs&amp;#39;&lt;/span&gt;
+      },
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;files&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;./&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;src/templates/pages/index.hbs&amp;#39;&lt;/span&gt;]
+      }
+    }
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;And this complicated HTML is an example of what might be generated by the markdown parser, when syntax highlighting is applied by a library like &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;19
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;highlight&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;grunt&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;.&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;initConfig&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;({&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;assemble&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;{&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;{&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;assets&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&amp;#39;docs/assets&amp;#39;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&amp;#39;src/data/*.{json,yml}&amp;#39;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;helpers&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&amp;#39;src/custom-helpers.js&amp;#39;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;partials&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&amp;#39;src/partials/**/*.{hbs,md}&amp;#39;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;},&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;pages&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;{&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;{&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;layout&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&amp;#39;default.hbs&amp;#39;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;},&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nx&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;files&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;{&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&amp;#39;./&amp;#39;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;o&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&amp;#39;src/templates/pages/index.hbs&amp;#39;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;});&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h3 id=&#34;autolinks&#34;&gt;Autolinks&lt;/h3&gt;
+&lt;p&gt;Autolinks are absolute URIs and email addresses inside &lt;code&gt;&amp;lt;&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt;. They are parsed as links, where the URI or email address itself is used as the link&amp;rsquo;s label.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;http://foo.bar.baz&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://foo.bar.baz&#34;&gt;http://foo.bar.baz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;URIs or email addresses that are not wrapped in angle brackets are not recognized as valid autolinks by markdown parsers.&lt;/p&gt;
+&lt;h3 id=&#34;inline-links&#34;&gt;Inline links&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;[Assemble](http://assemble.io)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to (hover over the link, there is no tooltip):&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://assemble.io&#34;&gt;Assemble&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HTML:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://assemble.io&amp;#34;&lt;/span&gt;&amp;gt;Assemble&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;link-titles&#34;&gt;Link titles&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;[Assemble](https://github.com/assemble/ &amp;quot;Visit Assemble!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to (hover over the link, there should be a tooltip):&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/assemble/&#34; title=&#34;Visit Assemble!&#34;&gt;Assemble&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HTML:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://github.com/assemble/&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Visit Assemble!&amp;#34;&lt;/span&gt;&amp;gt;Assemble&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;named-anchors&#34;&gt;Named Anchors&lt;/h3&gt;
+&lt;p&gt;Named anchors enable you to jump to the specified anchor point on the same page.&lt;/p&gt;
+&lt;p&gt;For example, the following &amp;ldquo;chapter&amp;rdquo; links:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Table of Contents
+  * [Chapter 1](#chapter-1)
+  * [Chapter 2](#chapter-2)
+  * [Chapter 3](#chapter-3)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;hellip;will jump to these sections:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Chapter 1 &amp;lt;a name=&amp;quot;chapter-1&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+Content for chapter one.
+
+## Chapter 2 &amp;lt;a name=&amp;quot;chapter-2&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+Content for chapter one.
+
+## Chapter 3 &amp;lt;a name=&amp;quot;chapter-3&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+Content for chapter one.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Anchor placement&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Note that placement of achors is arbitrary, you can put them anywhere you want, not just in headings. This makes adding cross-references easy when writing markdown.&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
+&lt;p&gt;Images have a similar syntax to links but include a preceding exclamation point.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;![Minion](http://octodex.github.com/images/minion.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/minion.png&#34; alt=&#34;Minion&#34;&gt;&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;![Alt text](http://octodex.github.com/images/stormtroopocat.jpg &amp;quot;The Stormtroopocat&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/stormtroopocat.jpg&#34; alt=&#34;Alt text&#34; title=&#34;The Stormtroopocat&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Like links, Images also have a footnote style syntax&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;![Alt text][id]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;http://octodex.github.com/images/dojocat.jpg&#34; alt=&#34;Alt text&#34; title=&#34;The Dojocat&#34;&gt;&lt;/p&gt;
+&lt;p&gt;With a reference later in the document defining the URL location:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[id]: http://octodex.github.com/images/dojocat.jpg  &amp;quot;The Dojocat&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;raw-html&#34;&gt;Raw HTML&lt;/h2&gt;
+&lt;p&gt;Any text between &lt;code&gt;&amp;lt;&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt; that looks like an HTML tag will be parsed as a raw HTML tag and rendered to HTML without escaping.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Note that markdown parsers do not attempt to validate your HTML).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;**Visit &amp;lt;a href=&amp;quot;https://github.com&amp;quot;&amp;gt;Jon Schlinkert&#39;s GitHub Profile&amp;lt;/a&amp;gt;.**
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Visit &lt;a href=&#34;https://github.com&#34;&gt;Jon Schlinkert&amp;rsquo;s GitHub Profile&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;escaping-with-backslashes&#34;&gt;Escaping with backslashes&lt;/h2&gt;
+&lt;p&gt;Any ASCII punctuation character may be escaped using a single backslash.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\*this is not italic*
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;p&gt;*this is not italic*&lt;/p&gt;
+&lt;h1 id=&#34;non-standard-features&#34;&gt;Non-standard features&lt;/h1&gt;
+&lt;p&gt;The following markdown features are not defined by the &lt;a href=&#34;https://commonmark.org/&#34;&gt;CommonMark&lt;/a&gt; specification, but they are commonly supported by markdown parsers and editors, as well as sites like GitHub and GitLab.&lt;/p&gt;
+&lt;h2 id=&#34;strikethrough&#34;&gt;Strikethrough&lt;/h2&gt;
+&lt;p&gt;In GitHub Flavored Markdown (GFM) you can do strickthroughs.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;~~Strike through this text.~~
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Which renders to:&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Strike through this text.&lt;/del&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;todo-list&#34;&gt;Todo List&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;- [ ] Lorem ipsum dolor sit amet
+- [ ] Consectetur adipiscing elit
+- [ ] Integer molestie lorem at massa
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Lorem ipsum dolor sit amet&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Consectetur adipiscing elit&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Integer molestie lorem at massa&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Links in todo lists&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- [ ] [foo](#bar)
+- [ ] [baz](#qux)
+- [ ] [fez](#faz)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;#bar&#34;&gt;foo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;#qux&#34;&gt;baz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;#faz&#34;&gt;fez&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+&lt;p&gt;Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header &lt;em&gt;(this line of dashes is required)&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pipes do not need to be vertically aligned.&lt;/li&gt;
+&lt;li&gt;pipes on the left and right sides of the table are sometimes optional&lt;/li&gt;
+&lt;li&gt;three or more dashes must be used for each cell in the &lt;em&gt;separator&lt;/em&gt; row (between the table header and body)&lt;/li&gt;
+&lt;li&gt;the left and right pipes are optional with some markdown parsers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;| Option | Description |
+| --- | --- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Option&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;data&lt;/td&gt;
+&lt;td&gt;path to data files to supply the data that will be passed into templates.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;engine&lt;/td&gt;
+&lt;td&gt;engine to be used for processing templates. Handlebars is the default.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ext&lt;/td&gt;
+&lt;td&gt;extension to be used for dest files.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And this HTML:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;table&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;th&lt;/span&gt;&amp;gt;Option&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;th&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;th&lt;/span&gt;&amp;gt;Description&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;th&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;data&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;path to data files to supply the data that will be passed into templates.&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;engine&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;engine to be used for processing templates. Handlebars is the default.&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;ext&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;extension to be used for dest files.&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;td&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;tr&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;table&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;aligning-cells&#34;&gt;Aligning cells&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Center text in a column&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To center the text in a column, add a colon to the middle of the dashes in the row beneath the header.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;| Option | Description |
+| -:- | -:- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;| Option | Description |
+| -:- | -:- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Right-align the text in a column&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To right-align the text in a column, add a colon to the middle of the dashes in the row beneath the header.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;| Option | Description |
+| --: | --:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Renders to:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Option&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;data&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;path to data files to supply the data that will be passed into templates.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;engine&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;engine to be used for processing templates. Handlebars is the default.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;ext&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;extension to be used for dest files.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Markdown footnotes are not officially suppored by the &lt;a href=&#34;https://commonmark.org/&#34;&gt;CommonMark&lt;/a&gt; specification. However, the feature is supported by &lt;a href=&#34;https://github.com/jonschlinkert/remarkable&#34;&gt;remarkable&lt;/a&gt; and other markdown parsers, and it&amp;rsquo;s very useful when available.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Markdown footnotes are denoted by an opening square bracket, followed by a caret, followed by a number and a closing square bracket: &lt;code&gt;[^1]&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;This is some text[^1] with a footnote reference link.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The accompanying text for the footnote can be added elsewhere in the document using the following syntax:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[^1]: &amp;quot;This is a footnote&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When rendered to HTML, footnotes are &amp;ldquo;stacked&amp;rdquo; by the markdown parser at the bottom of the file, in the order in which the footnotes were defined.&lt;/p&gt;
+&lt;h3 id=&#34;inline-footnotes&#34;&gt;Inline footnotes&lt;/h3&gt;
+&lt;p&gt;Some markdown parsers like &lt;a href=&#34;https://github.com/jonschlinkert/remarkable&#34;&gt;Remarkable&lt;/a&gt; also support inline footnotes. Inline footnotes are written using the following syntax: &lt;code&gt;[^2 &amp;quot;This is an inline footnote&amp;quot;]&lt;/code&gt;.&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;additional-information&#34;&gt;Additional Information&lt;/h2&gt;
+&lt;h3 id=&#34;what-is-markdown&#34;&gt;What is markdown?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Markdown is &amp;ldquo;a plain text format for writing structured documents, based on formatting conventions from email and usenet&amp;rdquo; &amp;ndash; &lt;a href=&#34;https://commonmark.org/&#34;&gt;CommonMark&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sites like GitHub and Stackoverflow have popularized the use markdown as a plain-text alternative to traditional text editors, for writing things like documentation and comments.&lt;/p&gt;
+&lt;h3 id=&#34;other-resources&#34;&gt;Other Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/&#34;&gt;We&amp;rsquo;ve been trained to make paper&lt;/a&gt; - A great blog post about why markdown frees us from the shackles of proprietary formats imposed by bloated word processors, such as Microsoft Word.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://commonmark.org/&#34;&gt;CommonMark&lt;/a&gt; - &amp;ldquo;A strongly defined, highly compatible specification of Markdown&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;contributing&#34;&gt;Contributing&lt;/h3&gt;
+&lt;p&gt;All contributions are welcome!&lt;/p&gt;
+&lt;p&gt;Please let me know if you find typos, grammar or spelling mistakes, or have a suggestion for improving the cheatsheet (since GitHub does not send notifications for gists, it might be better to contact me on twitter, at &lt;a href=&#34;https://twitter.com/jonschlinkert&#34;&gt;@jonschlinkert&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Thanks for reading!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

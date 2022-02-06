@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8"><title>Typography &amp; Markdown cheatsheet - Inomoz</title><meta name="description" content="Inomoz - personal website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Inomoz">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content=""/>
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://inomoz.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://inomoz.com/css/main.css" />
+</head>
+<body><header class="header">
+  <h1 class="header-title">
+    <a href="https://inomoz.com/">
+<pre>
+██╗███╗░░██╗░█████╗░███╗░░░███╗░█████╗░███████╗
+██║████╗░██║██╔══██╗████╗░████║██╔══██╗╚════██║
+██║██╔██╗██║██║░░██║██╔████╔██║██║░░██║░░███╔═╝
+██║██║╚████║██║░░██║██║╚██╔╝██║██║░░██║██╔══╝░░
+██║██║░╚███║╚█████╔╝██║░╚═╝░██║╚█████╔╝███████╗
+╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░░░░╚═╝░╚════╝░╚══════╝</pre>
+      </a>
+  </h1>
+  <nav class="navbar">
+    <ul class="navbar-section">
+        
+		    <li><a href="/categories/workflow/"> Workflow</a></li>
+		
+		    <li><a href="/categories/life/"> Life</a></li>
+		
+		    <li><a href="/posts/about-me/"> About Me</a></li>
+		
+    </ul>
+  </nav>
+</header>
+
+<section class="list">
+    <article>
+        <header>
+            <h1>Typography &amp; Markdown cheatsheet</h1>
+        </header>
+        
+
+        <section class="body">
+            <p>Markdown generated HTML code which I use on my site. Useful to copy code samples, when it needed.</p>
+<p>Original source: <a href="https://gist.github.com/jonschlinkert/5854601">https://gist.github.com/jonschlinkert/5854601</a></p>
+<p><em>(Also see <a href="https://github.com/jonschlinkert/remarkable">remarkable</a>, the markdown parser created by the author of this cheatsheet)</em></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#standard-features">Standard features</a>
+<ul>
+<li><a href="#headings">Headings</a></li>
+<li><a href="#paragraphs">Paragraphs</a></li>
+<li><a href="#breaks">Breaks</a></li>
+<li><a href="#horizontal-rule">Horizontal Rule</a></li>
+<li><a href="#emphasis">Emphasis</a>
+<ul>
+<li><a href="#bold">Bold</a></li>
+<li><a href="#italics">Italics</a></li>
+</ul>
+</li>
+<li><a href="#blockquotes">Blockquotes</a></li>
+<li><a href="#lists">Lists</a>
+<ul>
+<li><a href="#unordered">Unordered</a></li>
+<li><a href="#ordered">Ordered</a></li>
+<li><a href="#time-saving-tip">Time-saving Tip</a></li>
+</ul>
+</li>
+<li><a href="#code">Code</a>
+<ul>
+<li><a href="#inline-code">Inline code</a></li>
+<li><a href="#fenced-code-block">&ldquo;Fenced&rdquo; code block</a></li>
+<li><a href="#indented-code">Indented code</a></li>
+<li><a href="#syntax-highlighting">Syntax highlighting</a></li>
+</ul>
+</li>
+<li><a href="#links">Links</a>
+<ul>
+<li><a href="#autolinks">Autolinks</a></li>
+<li><a href="#inline-links">Inline links</a></li>
+<li><a href="#link-titles">Link titles</a></li>
+<li><a href="#named-anchors">Named Anchors</a></li>
+</ul>
+</li>
+<li><a href="#images">Images</a></li>
+<li><a href="#raw-html">Raw HTML</a></li>
+<li><a href="#escaping-with-backslashes">Escaping with backslashes</a></li>
+</ul>
+</li>
+<li><a href="#non-standard-features">Non-standard features</a>
+<ul>
+<li><a href="#strikethrough">Strikethrough</a></li>
+<li><a href="#todo-list">Todo List</a></li>
+<li><a href="#tables">Tables</a>
+<ul>
+<li><a href="#aligning-cells">Aligning cells</a></li>
+</ul>
+</li>
+<li><a href="#footnotes">Footnotes</a>
+<ul>
+<li><a href="#inline-footnotes">Inline footnotes</a></li>
+</ul>
+</li>
+<li><a href="#additional-information">Additional Information</a>
+<ul>
+<li><a href="#what-is-markdown">What is markdown?</a></li>
+<li><a href="#other-resources">Other Resources</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<h1 id="standard-features">Standard features</h1>
+<p>The following markdown features are defined by the <a href="https://commonmark.org/">CommonMark</a> standard, and are generally supported by all markdown parsers and editors.</p>
+<h2 id="headings">Headings</h2>
+<p>Headings from <code>h1</code> through <code>h6</code> are constructed with a <code>#</code> for each level:</p>
+<pre><code># h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+</code></pre><p>Renders to this HTML:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span>&gt;h1 Heading&lt;/<span style="color:#f92672">h1</span>&gt;
+&lt;<span style="color:#f92672">h2</span>&gt;h2 Heading&lt;/<span style="color:#f92672">h2</span>&gt;
+&lt;<span style="color:#f92672">h3</span>&gt;h3 Heading&lt;/<span style="color:#f92672">h3</span>&gt;
+&lt;<span style="color:#f92672">h4</span>&gt;h4 Heading&lt;/<span style="color:#f92672">h4</span>&gt;
+&lt;<span style="color:#f92672">h5</span>&gt;h5 Heading&lt;/<span style="color:#f92672">h5</span>&gt;
+&lt;<span style="color:#f92672">h6</span>&gt;h6 Heading&lt;/<span style="color:#f92672">h6</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>Which looks like this in the browser:</p>
+<h1 id="h1-heading">h1 Heading</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+<p><strong>A note about &ldquo;Setext&rdquo; Headings</strong></p>
+<p>Note that this document only describes <a href="https://spec.commonmark.org/0.28/#atx-headings">ATX headings</a>, as it is the preferred syntax for writing headings. However, the CommonMark specification also describes <a href="https://spec.commonmark.org/0.28/#setext-headings">Setext headings</a>, a heading format that is denoted by a line of dashes or equal signes following the heading. It&rsquo;s recommended by the author of this guide that you use only ATX headings, as they are easier to write and read in text editors, and are less likeley to conflict with other syntaxes and demarcations from language extensions.</p>
+<br>
+<br>
+<h2 id="paragraphs">Paragraphs</h2>
+<p>Body copy written as normal plain-text will be wrapped with <code>&lt;p&gt;&lt;/p&gt;</code> tags in the rendered HTML.</p>
+<p>So this:</p>
+<pre><code>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
+</code></pre><p>Renders to this HTML:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span>&gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.&lt;/<span style="color:#f92672">p</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><br>
+<br>
+<h2 id="breaks">Breaks</h2>
+<p>You can use multiple consecutive newline characters (<code>\n</code>) to create extra spacing between sections in a markdown document. However, if you need to ensure that extra newlines are not collapsed, you can use as many HTML <code>&lt;br&gt;</code> elements as you want.</p>
+<h2 id="horizontal-rule">Horizontal Rule</h2>
+<p>The HTML <code>&lt;hr&gt;</code> element is for creating a &ldquo;thematic break&rdquo; between paragraph-level elements. In markdown, you can use of the following for this purpose:</p>
+<ul>
+<li><code>___</code>: three consecutive underscores</li>
+<li><code>---</code>: three consecutive dashes</li>
+<li><code>***</code>: three consecutive asterisks</li>
+</ul>
+<p>Renders to:</p>
+<hr>
+<hr>
+<hr>
+<br>
+<br>
+<h2 id="emphasis">Emphasis</h2>
+<h3 id="bold">Bold</h3>
+<p>For emphasizing a snippet of text with a heavier font-weight.</p>
+<p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+<pre><code>**rendered as bold text**
+</code></pre><p>renders to:</p>
+<p><strong>rendered as bold text</strong></p>
+<p>and this HTML</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">strong</span>&gt;rendered as bold text&lt;/<span style="color:#f92672">strong</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="italics">Italics</h3>
+<p>For emphasizing a snippet of text with italics.</p>
+<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+<pre><code>_rendered as italicized text_
+</code></pre><p>renders to:</p>
+<p><em>rendered as italicized text</em></p>
+<p>and this HTML:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">em</span>&gt;rendered as italicized text&lt;/<span style="color:#f92672">em</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="blockquotes">Blockquotes</h2>
+<p>Used for defining a section of quoting text from another source, within your document.</p>
+<p>To create a blockquote, use <code>&gt;</code> before any text you want to quote.</p>
+<pre><code>&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante
+</code></pre><p>Renders to:</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+<p>And the generated HTML from a markdown parser might look something like this:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">blockquote</span>&gt;
+  &lt;<span style="color:#f92672">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;/<span style="color:#f92672">blockquote</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>Blockquotes can also be nested:</p>
+<pre><code>&gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
+&gt;&gt; Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
+odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
+&gt;&gt;&gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
+</code></pre><p>Renders to:</p>
+<blockquote>
+<p>Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
+<blockquote>
+<p>Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
+odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.</p>
+<blockquote>
+<p>Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<br>
+<br>
+<h2 id="lists">Lists</h2>
+<h3 id="unordered-lists">Unordered Lists</h3>
+<p>A list of items in which the order of the items does not explicitly matter.</p>
+<p>You may use any of the following symbols to denote bullets for each list item:</p>
+<pre><code>* valid bullet
+- valid bullet
++ valid bullet
+</code></pre><p>For example</p>
+<pre><code>+ Lorem ipsum dolor sit amet
++ Consectetur adipiscing elit
++ Integer molestie lorem at massa
++ Facilisis in pretium nisl aliquet
++ Nulla volutpat aliquam velit
+  - Phasellus iaculis neque
+  - Purus sodales ultricies
+  - Vestibulum laoreet porttitor sem
+  - Ac tristique libero volutpat at
++ Faucibus porta lacus fringilla vel
++ Aenean sit amet erat nunc
++ Eget porttitor lorem
+</code></pre><p>Renders to:</p>
+<ul>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit
+<ul>
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+<li>Vestibulum laoreet porttitor sem</li>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ul>
+<p>And this HTML</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ul</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Lorem ipsum dolor sit amet&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Consectetur adipiscing elit&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Integer molestie lorem at massa&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Facilisis in pretium nisl aliquet&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Nulla volutpat aliquam velit
+    &lt;<span style="color:#f92672">ul</span>&gt;
+      &lt;<span style="color:#f92672">li</span>&gt;Phasellus iaculis neque&lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">li</span>&gt;Purus sodales ultricies&lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">li</span>&gt;Vestibulum laoreet porttitor sem&lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">li</span>&gt;Ac tristique libero volutpat at&lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;/<span style="color:#f92672">ul</span>&gt;
+  &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Faucibus porta lacus fringilla vel&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Aenean sit amet erat nunc&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Eget porttitor lorem&lt;/<span style="color:#f92672">li</span>&gt;
+&lt;/<span style="color:#f92672">ul</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="ordered-lists">Ordered Lists</h3>
+<p>A list of items in which the order of items does explicitly matter.</p>
+<pre><code>1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+4. Facilisis in pretium nisl aliquet
+5. Nulla volutpat aliquam velit
+6. Faucibus porta lacus fringilla vel
+7. Aenean sit amet erat nunc
+8. Eget porttitor lorem
+</code></pre><p>Renders to:</p>
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+<p>And this HTML:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ol</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Lorem ipsum dolor sit amet&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Consectetur adipiscing elit&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Integer molestie lorem at massa&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Facilisis in pretium nisl aliquet&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Nulla volutpat aliquam velit&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Faucibus porta lacus fringilla vel&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Aenean sit amet erat nunc&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;<span style="color:#f92672">li</span>&gt;Eget porttitor lorem&lt;/<span style="color:#f92672">li</span>&gt;
+&lt;/<span style="color:#f92672">ol</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="time-saving-tip">Time-saving Tip!</h3>
+<p>Sometimes lists change, and when they do it&rsquo;s a pain to re-order all of the numbers. Markdown solves this problem by allowing you to simply use <code>1.</code> before each item in the list.</p>
+<p>For example:</p>
+<pre><code>1. Lorem ipsum dolor sit amet
+1. Consectetur adipiscing elit
+1. Integer molestie lorem at massa
+1. Facilisis in pretium nisl aliquet
+1. Nulla volutpat aliquam velit
+1. Faucibus porta lacus fringilla vel
+1. Aenean sit amet erat nunc
+1. Eget porttitor lorem
+</code></pre><p>Automatically re-numbers the items and renders to:</p>
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+<br>
+<br>
+<h2 id="code">Code</h2>
+<h3 id="inline-code">Inline code</h3>
+<p>Wrap inline snippets of code with a single backtick: <code>`</code>.</p>
+<p>For example, to show <code>&lt;div&gt;&lt;/div&gt;</code> inline with other text, just wrap it in backticks.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">For example, to show `&lt;<span style="color:#f92672">div</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;` inline with other text, just wrap it in backticks.
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="fenced-code-block">&ldquo;Fenced&rdquo; code block</h3>
+<p>Three consecutive backticks, referred to as &ldquo;code fences&rdquo;, are used to denote multiple lines of code: <code>```</code>.</p>
+<p>For example, this:</p>
+<pre>
+```html
+Example text here...
+```
+</pre>
+<p>Renders to something like this in HTML:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">pre</span>&gt;
+  &lt;<span style="color:#f92672">p</span>&gt;Example text here...&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;/<span style="color:#f92672">pre</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>And appears like this when viewed in a browser:</p>
+<pre><code>Example text here...
+</code></pre><h3 id="indented-code">Indented code</h3>
+<p>You may also indent several lines of code by at least four spaces, but this is not recommended as it is harder to read, harder to maintain, and doesn&rsquo;t support syntax highlighting.</p>
+<p>Example:</p>
+<pre><code>    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+</code></pre><pre><code>// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+</code></pre>
+<h3 id="syntax-highlighting">Syntax highlighting</h3>
+<p>Various markdown parsers, such as <a href="https://github.com/jonschlinkert/remarkable">remarkable</a>, support syntax highlighting with fenced code blocks. To activate the correct styling for the language inside the code block, simply add the file extension of the language you want to use directly after the first code &ldquo;fence&rdquo;: <code>```js</code>, and syntax highlighting will automatically be applied in the rendered HTML (if supported by the parser). For example, to apply syntax highlighting to JavaScript code:</p>
+<pre>
+```js
+grunt.initConfig({
+  assemble: {
+    options: {
+      assets: 'docs/assets',
+      data: 'src/data/*.{json,yml}',
+      helpers: 'src/custom-helpers.js',
+      partials: ['src/partials/**/*.{hbs,md}']
+    },
+    pages: {
+      options: {
+        layout: 'default.hbs'
+      },
+      files: {
+        './': ['src/templates/pages/index.hbs']
+      }
+    }
+  }
+});
+```
+</pre>
+<p>Which renders to:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">initConfig</span>({
+  <span style="color:#a6e22e">assemble</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">assets</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;docs/assets&#39;</span>,
+      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;src/data/*.{json,yml}&#39;</span>,
+      <span style="color:#a6e22e">helpers</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;src/custom-helpers.js&#39;</span>,
+      <span style="color:#a6e22e">partials</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/partials/**/*.{hbs,md}&#39;</span>]
+    },
+    <span style="color:#a6e22e">pages</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+        <span style="color:#a6e22e">layout</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;default.hbs&#39;</span>
+      },
+      <span style="color:#a6e22e">files</span><span style="color:#f92672">:</span> {
+        <span style="color:#e6db74">&#39;./&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/templates/pages/index.hbs&#39;</span>]
+      }
+    }
+  }
+});
+</code></pre></td></tr></table>
+</div>
+</div><p>And this complicated HTML is an example of what might be generated by the markdown parser, when syntax highlighting is applied by a library like <a href="https://highlightjs.org/">highlight.js</a>:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;div</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;highlight&#34;</span><span style="color:#f92672">&gt;&lt;pre&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>grunt<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>.<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>initConfig<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>({<span style="color:#f92672">&lt;/span&gt;</span>
+  <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>assemble<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>{<span style="color:#f92672">&lt;/span&gt;</span>
+    <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>options<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>{<span style="color:#f92672">&lt;/span&gt;</span>
+      <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>assets<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;s1&#34;</span><span style="color:#f92672">&gt;</span>&#39;docs/assets&#39;<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;/span&gt;</span>
+      <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>data<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;s1&#34;</span><span style="color:#f92672">&gt;</span>&#39;src/data/*.{json,yml}&#39;<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;/span&gt;</span>
+      <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>helpers<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;s1&#34;</span><span style="color:#f92672">&gt;</span>&#39;src/custom-helpers.js&#39;<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;/span&gt;</span>
+      <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>partials<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>[<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;s1&#34;</span><span style="color:#f92672">&gt;</span>&#39;src/partials/**/*.{hbs,md}&#39;<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>]<span style="color:#f92672">&lt;/span&gt;</span>
+    <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>},<span style="color:#f92672">&lt;/span&gt;</span>
+    <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>pages<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>{<span style="color:#f92672">&lt;/span&gt;</span>
+      <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>options<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>{<span style="color:#f92672">&lt;/span&gt;</span>
+        <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>layout<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;s1&#34;</span><span style="color:#f92672">&gt;</span>&#39;default.hbs&#39;<span style="color:#f92672">&lt;/span&gt;</span>
+      <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>},<span style="color:#f92672">&lt;/span&gt;</span>
+      <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;nx&#34;</span><span style="color:#f92672">&gt;</span>files<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>{<span style="color:#f92672">&lt;/span&gt;</span>
+        <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;s1&#34;</span><span style="color:#f92672">&gt;</span>&#39;./&#39;<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;o&#34;</span><span style="color:#f92672">&gt;</span>:<span style="color:#f92672">&lt;/span&gt;</span> <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>[<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;s1&#34;</span><span style="color:#f92672">&gt;</span>&#39;src/templates/pages/index.hbs&#39;<span style="color:#f92672">&lt;/span&gt;&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>]<span style="color:#f92672">&lt;/span&gt;</span>
+      <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>}<span style="color:#f92672">&lt;/span&gt;</span>
+    <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>}<span style="color:#f92672">&lt;/span&gt;</span>
+  <span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>}<span style="color:#f92672">&lt;/span&gt;</span>
+<span style="color:#f92672">&lt;span</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">&gt;</span>});<span style="color:#f92672">&lt;/span&gt;</span>
+<span style="color:#f92672">&lt;/pre&gt;&lt;/div&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><br>
+<br>
+<h2 id="links">Links</h2>
+<h3 id="autolinks">Autolinks</h3>
+<p>Autolinks are absolute URIs and email addresses inside <code>&lt;</code> and <code>&gt;</code>. They are parsed as links, where the URI or email address itself is used as the link&rsquo;s label.</p>
+<pre><code>&lt;http://foo.bar.baz&gt;
+</code></pre><p>Renders to:</p>
+<p><a href="http://foo.bar.baz">http://foo.bar.baz</a></p>
+<p>URIs or email addresses that are not wrapped in angle brackets are not recognized as valid autolinks by markdown parsers.</p>
+<h3 id="inline-links">Inline links</h3>
+<pre><code>[Assemble](http://assemble.io)
+</code></pre><p>Renders to (hover over the link, there is no tooltip):</p>
+<p><a href="http://assemble.io">Assemble</a></p>
+<p>HTML:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://assemble.io&#34;</span>&gt;Assemble&lt;/<span style="color:#f92672">a</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="link-titles">Link titles</h3>
+<pre><code>[Assemble](https://github.com/assemble/ &quot;Visit Assemble!&quot;)
+</code></pre><p>Renders to (hover over the link, there should be a tooltip):</p>
+<p><a href="https://github.com/assemble/" title="Visit Assemble!">Assemble</a></p>
+<p>HTML:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/assemble/&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Visit Assemble!&#34;</span>&gt;Assemble&lt;/<span style="color:#f92672">a</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="named-anchors">Named Anchors</h3>
+<p>Named anchors enable you to jump to the specified anchor point on the same page.</p>
+<p>For example, the following &ldquo;chapter&rdquo; links:</p>
+<pre><code># Table of Contents
+  * [Chapter 1](#chapter-1)
+  * [Chapter 2](#chapter-2)
+  * [Chapter 3](#chapter-3)
+</code></pre><p>&hellip;will jump to these sections:</p>
+<pre><code>## Chapter 1 &lt;a name=&quot;chapter-1&quot;&gt;&lt;/a&gt;
+Content for chapter one.
+
+## Chapter 2 &lt;a name=&quot;chapter-2&quot;&gt;&lt;/a&gt;
+Content for chapter one.
+
+## Chapter 3 &lt;a name=&quot;chapter-3&quot;&gt;&lt;/a&gt;
+Content for chapter one.
+</code></pre><p><strong>Anchor placement</strong></p>
+<p>Note that placement of achors is arbitrary, you can put them anywhere you want, not just in headings. This makes adding cross-references easy when writing markdown.</p>
+<br>
+<br>
+<h2 id="images">Images</h2>
+<p>Images have a similar syntax to links but include a preceding exclamation point.</p>
+<pre><code>![Minion](http://octodex.github.com/images/minion.png)
+</code></pre><p><img src="http://octodex.github.com/images/minion.png" alt="Minion"></p>
+<p>or</p>
+<pre><code>![Alt text](http://octodex.github.com/images/stormtroopocat.jpg &quot;The Stormtroopocat&quot;)
+</code></pre><p><img src="http://octodex.github.com/images/stormtroopocat.jpg" alt="Alt text" title="The Stormtroopocat"></p>
+<p>Like links, Images also have a footnote style syntax</p>
+<pre><code>![Alt text][id]
+</code></pre><p><img src="http://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat"></p>
+<p>With a reference later in the document defining the URL location:</p>
+<pre><code>[id]: http://octodex.github.com/images/dojocat.jpg  &quot;The Dojocat&quot;
+</code></pre><h2 id="raw-html">Raw HTML</h2>
+<p>Any text between <code>&lt;</code> and <code>&gt;</code> that looks like an HTML tag will be parsed as a raw HTML tag and rendered to HTML without escaping.</p>
+<p><em>(Note that markdown parsers do not attempt to validate your HTML).</em></p>
+<p>Example:</p>
+<pre><code>**Visit &lt;a href=&quot;https://github.com&quot;&gt;Jon Schlinkert's GitHub Profile&lt;/a&gt;.**
+</code></pre><p>Renders to:</p>
+<p><strong>Visit <a href="https://github.com">Jon Schlinkert&rsquo;s GitHub Profile</a>.</strong></p>
+<h2 id="escaping-with-backslashes">Escaping with backslashes</h2>
+<p>Any ASCII punctuation character may be escaped using a single backslash.</p>
+<p>Example:</p>
+<pre><code>\*this is not italic*
+</code></pre><p>Renders to:</p>
+<p>*this is not italic*</p>
+<h1 id="non-standard-features">Non-standard features</h1>
+<p>The following markdown features are not defined by the <a href="https://commonmark.org/">CommonMark</a> specification, but they are commonly supported by markdown parsers and editors, as well as sites like GitHub and GitLab.</p>
+<h2 id="strikethrough">Strikethrough</h2>
+<p>In GitHub Flavored Markdown (GFM) you can do strickthroughs.</p>
+<pre><code>~~Strike through this text.~~
+</code></pre><p>Which renders to:</p>
+<p><del>Strike through this text.</del></p>
+<br>
+<br>
+<h3 id="todo-list">Todo List</h3>
+<pre><code>- [ ] Lorem ipsum dolor sit amet
+- [ ] Consectetur adipiscing elit
+- [ ] Integer molestie lorem at massa
+</code></pre><p>Renders to:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Lorem ipsum dolor sit amet</li>
+<li><input disabled="" type="checkbox"> Consectetur adipiscing elit</li>
+<li><input disabled="" type="checkbox"> Integer molestie lorem at massa</li>
+</ul>
+<p><strong>Links in todo lists</strong></p>
+<pre><code>- [ ] [foo](#bar)
+- [ ] [baz](#qux)
+- [ ] [fez](#faz)
+</code></pre><p>Renders to:</p>
+<ul>
+<li><input disabled="" type="checkbox"> <a href="#bar">foo</a></li>
+<li><input disabled="" type="checkbox"> <a href="#qux">baz</a></li>
+<li><input disabled="" type="checkbox"> <a href="#faz">fez</a></li>
+</ul>
+<br>
+<br>
+<h2 id="tables">Tables</h2>
+<p>Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header <em>(this line of dashes is required)</em>.</p>
+<ul>
+<li>pipes do not need to be vertically aligned.</li>
+<li>pipes on the left and right sides of the table are sometimes optional</li>
+<li>three or more dashes must be used for each cell in the <em>separator</em> row (between the table header and body)</li>
+<li>the left and right pipes are optional with some markdown parsers</li>
+</ul>
+<p>Example:</p>
+<pre><code>| Option | Description |
+| --- | --- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+</code></pre><p>Renders to:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td>engine</td>
+<td>engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td>ext</td>
+<td>extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<p>And this HTML:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">table</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">th</span>&gt;Option&lt;/<span style="color:#f92672">th</span>&gt;
+    &lt;<span style="color:#f92672">th</span>&gt;Description&lt;/<span style="color:#f92672">th</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;data&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;path to data files to supply the data that will be passed into templates.&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;engine&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;engine to be used for processing templates. Handlebars is the default.&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;ext&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;extension to be used for dest files.&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+&lt;/<span style="color:#f92672">table</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="aligning-cells">Aligning cells</h3>
+<p><strong>Center text in a column</strong></p>
+<p>To center the text in a column, add a colon to the middle of the dashes in the row beneath the header.</p>
+<pre><code>| Option | Description |
+| -:- | -:- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+</code></pre><p>| Option | Description |
+| -:- | -:- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |</p>
+<p><strong>Right-align the text in a column</strong></p>
+<p>To right-align the text in a column, add a colon to the middle of the dashes in the row beneath the header.</p>
+<pre><code>| Option | Description |
+| --: | --:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+</code></pre><p>Renders to:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Option</th>
+<th style="text-align:right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">data</td>
+<td style="text-align:right">path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td style="text-align:right">engine</td>
+<td style="text-align:right">engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td style="text-align:right">ext</td>
+<td style="text-align:right">extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<h2 id="footnotes">Footnotes</h2>
+<blockquote>
+<p>Markdown footnotes are not officially suppored by the <a href="https://commonmark.org/">CommonMark</a> specification. However, the feature is supported by <a href="https://github.com/jonschlinkert/remarkable">remarkable</a> and other markdown parsers, and it&rsquo;s very useful when available.</p>
+</blockquote>
+<p>Markdown footnotes are denoted by an opening square bracket, followed by a caret, followed by a number and a closing square bracket: <code>[^1]</code>.</p>
+<pre><code>This is some text[^1] with a footnote reference link.
+</code></pre><p>The accompanying text for the footnote can be added elsewhere in the document using the following syntax:</p>
+<pre><code>[^1]: &quot;This is a footnote&quot;
+</code></pre><p>When rendered to HTML, footnotes are &ldquo;stacked&rdquo; by the markdown parser at the bottom of the file, in the order in which the footnotes were defined.</p>
+<h3 id="inline-footnotes">Inline footnotes</h3>
+<p>Some markdown parsers like <a href="https://github.com/jonschlinkert/remarkable">Remarkable</a> also support inline footnotes. Inline footnotes are written using the following syntax: <code>[^2 &quot;This is an inline footnote&quot;]</code>.</p>
+<br>
+<br>
+<h2 id="additional-information">Additional Information</h2>
+<h3 id="what-is-markdown">What is markdown?</h3>
+<blockquote>
+<p>Markdown is &ldquo;a plain text format for writing structured documents, based on formatting conventions from email and usenet&rdquo; &ndash; <a href="https://commonmark.org/">CommonMark</a></p>
+</blockquote>
+<p>Sites like GitHub and Stackoverflow have popularized the use markdown as a plain-text alternative to traditional text editors, for writing things like documentation and comments.</p>
+<h3 id="other-resources">Other Resources</h3>
+<ul>
+<li><a href="https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/">We&rsquo;ve been trained to make paper</a> - A great blog post about why markdown frees us from the shackles of proprietary formats imposed by bloated word processors, such as Microsoft Word.</li>
+<li><a href="https://commonmark.org/">CommonMark</a> - &ldquo;A strongly defined, highly compatible specification of Markdown&rdquo;</li>
+</ul>
+<h3 id="contributing">Contributing</h3>
+<p>All contributions are welcome!</p>
+<p>Please let me know if you find typos, grammar or spelling mistakes, or have a suggestion for improving the cheatsheet (since GitHub does not send notifications for gists, it might be better to contact me on twitter, at <a href="https://twitter.com/jonschlinkert">@jonschlinkert</a>).</p>
+<p>Thanks for reading!</p>
+        </section>
+
+        <footer>
+            <p class="published-time">Created: Apr 20, 2021 | Updated: May 20, 2021  
+            
+                
+                    | <a href="/categories/workflow">Workflow</a>
+                
+            
+            </p>
+        </footer>
+
+        <section>
+            <div id="remark42"></div>
+        </section>
+    </article>
+</section>
+<footer class="footer"><a
+        href="https://inomoz.com/">Home</a> | <a href="mailto:inom@inomoz.com">Contact</a> | <a href="/index.xml">RSS</a></footer>
+
+
+    <script src="/js/copy-code-button.js"></script>
+
+
+
+<script>
+    var remark_config = {
+        host: "https://remark.inomoz.com", 
+        site_id: 'INOMOZ_COM',
+        components: ['embed'], 
+                               
+                               
+                               
+                               
+                               
+        max_shown_comments: 10, 
+        theme: 'light', 
+        page_title: 'Moving to Remark42', 
+        locale: 'en', 
+        show_email_subscription: false, 
+        simple_view: false 
+    };
+</script>
+<script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
+</body>
+</html>

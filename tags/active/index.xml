@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>active on Inomoz</title><link>https://inomoz.com/tags/active/</link><description>Recent content in active on Inomoz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://inomoz.com/tags/active/index.xml" rel="self" type="application/rss+xml"/><item><title>Effective python: 90 specific ways to write better python</title><link>https://inomoz.com/posts/slatkineffectivepython902019/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/slatkineffectivepython902019/</guid><description>&lt;h2 id="slatkinEffectivePython902019">Effective python: 90 specific ways to write better python&lt;/h2>
+&lt;h3 id="item-1-know-which-version-of-python-you-re-using">Item 1: Know which version of python you&amp;rsquo;re using&lt;/h3>
+&lt;h4 id="idioms-of-programming-language-are-defined-by-its-users">Idioms of programming language are defined by its users&lt;/h4>
+&lt;p>This means popular practices, formating rules, conventions, etc are defined by their users!&lt;/p>
+&lt;h4 id="python-version">Python version&lt;/h4>
+&lt;p>You can easily detect which python version you use right now.&lt;/p>
+&lt;h3 id="item-2-follow-the-pep8-style-guide">Item 2: Follow the PEP8 Style Guide&lt;/h3>
+&lt;h4 id="pep-is">PEP is&lt;/h4>
+&lt;p>Python Enhancement Proposal or PEP 8
+It&amp;rsquo;s Python formatting style guide.&lt;/p>
+&lt;h4 id="why-pep">Why PEP?&lt;/h4>
+&lt;p>Using consistent style, make your code much more approachable and readable.&lt;/p>
+&lt;h4 id="whitespace">Whitespace&lt;/h4>
+&lt;p>Since whitespaces are significant in Python, it&amp;rsquo;s recommend to follow this rules:&lt;/p>
+&lt;ul>
+&lt;li>Use 4 spaces insted tabs for indentation.&lt;/li>
+&lt;li>Indent a long lines by additional spaces if they splitted.&lt;/li>
+&lt;li>Functions and classes separated by 2 blank lines.&lt;/li>
+&lt;li>Class methods separated by 1 blank line.&lt;/li>
+&lt;li>&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;h4 id="naming">Naming&lt;/h4>
+&lt;ul>
+&lt;li>Functions, variables, and attributes in &lt;code>lowercas_underscore&lt;/code> format.&lt;/li>
+&lt;li>Protected instance attributes should be in &lt;code>_leading_underscore&lt;/code> format.&lt;/li>
+&lt;li>Classes (including exceptions) should be in &lt;code>CapitalizedWord&lt;/code> format.&lt;/li>
+&lt;li>Module-level constants should be in &lt;code>ALL_CAPS&lt;/code> format.&lt;/li>
+&lt;li>Instance methods in classes should use &lt;code>self&lt;/code> (ref to object), as the name of the first parameter.&lt;/li>
+&lt;li>Class methods should use &lt;code>cls&lt;/code>, which refers to the class, as the name of the first parameter.&lt;/li>
+&lt;/ul>
+&lt;h4 id="expressions-and-statements">Expressions and statements&lt;/h4>
+&lt;ul>
+&lt;li>Use inline negation &lt;code>if a is not b&lt;/code> instead negation of positive expression &lt;code>if not a is b&lt;/code>, some like &lt;code>if not CONDTION&lt;/code>. It&amp;rsquo;s really hard to understand.&lt;/li>
+&lt;li>Don&amp;rsquo;t check for empty/non-empty by comparing length to zero ([], &amp;lsquo;'), just use &lt;code>if/if not&lt;/code> something and you need assume that empty value will be evaluated to False, non-empty to True.&lt;/li>
+&lt;li>Avoid single-line if, for and while loops, except compound statements, spread them over multiple lines for clarity/readability (it&amp;rsquo;s actual for complex items).&lt;/li>
+&lt;li>Split long lines with parentheses if they are too long.&lt;/li>
+&lt;li>Prefer splitting with parentheses over using \ line conttinuation character.&lt;/li>
+&lt;/ul>
+&lt;h4 id="imports">Imports&lt;/h4>
+&lt;ul>
+&lt;li>Place imports at top.&lt;/li>
+&lt;li>Use absolute names when you import modules.&lt;/li>
+&lt;li>When you need do relative import, use explicit method &lt;code>from . import foo&lt;/code>&lt;/li>
+&lt;li>Follow ordering of module import: stdlib, thrid-party, own.&lt;/li>
+&lt;li>Use linters linke pylint, black, etc&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;h4 id="things-to-remember">Things to remember&lt;/h4>
+&lt;ul>
+&lt;li>Follow the PEP style guide.&lt;/li>
+&lt;li>Following common style facilitates collaboration with others.&lt;/li>
+&lt;li>Consistent code style make it easier to modify later (include automation?).&lt;/li>
+&lt;/ul>
+&lt;h3 id="item-3-know-the-differences-between-bytes-and-str">Item 3: Know the Differences Between bytes and str&lt;/h3>
+&lt;h4 id="sequence-data">Sequence data&lt;/h4>
+&lt;p>In python there are 2 types that represent sequences of characters
+bytes and str&lt;/p>
+&lt;ul>
+&lt;li>byte - RAW unsigned 8 bit value &lt;code>b'h\x65llo'&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;!--listend-->
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">a &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">b&lt;/span>&lt;span style="color:#e6db74">&amp;#39;h&lt;/span>&lt;span style="color:#ae81ff">\x65&lt;/span>&lt;span style="color:#e6db74">llo&lt;/span>&lt;span style="color:#ae81ff">\x55&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>
+print(list(a))
+print(a)
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>str instances - &lt;a href="https://inomoz.com/posts/20220123015058-utf/">Unicode&lt;/a> code points, that represent textual characters from human language
+str instances don&amp;rsquo;t have binary encoding&lt;/li>
+&lt;/ul>
+&lt;!--listend-->
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">a &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;a&lt;/span>&lt;span style="color:#ae81ff">\u0300&lt;/span>&lt;span style="color:#e6db74"> propos&amp;#39;&lt;/span>
+print(list(a))
+print(a)
+print(a&lt;span style="color:#f92672">.&lt;/span>encode(&lt;span style="color:#e6db74">&amp;#39;windows-1251&amp;#39;&lt;/span>, &lt;span style="color:#e6db74">&amp;#39;ignore&amp;#39;&lt;/span>))
+print(a&lt;span style="color:#f92672">.&lt;/span>encode()&lt;span style="color:#f92672">.&lt;/span>decode())
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The core of your program should use str type containg Unicode data, but can accept different encoding - latin1, big5 from interafaces.&lt;/p>
+&lt;p>Use helper function to ensure th e inputs you operate are the type of character sequence that you expect.&lt;/p>
+&lt;p>Bytes and str instances can be used together with operatos &amp;gt;, =, -, +, %&lt;/p>
+&lt;p>If you want read or write bin data, open it in &amp;lsquo;rb&amp;rsquo; &amp;lsquo;rw&amp;rsquo; modes.&lt;/p>
+&lt;p>If you want to read or write unicode data be careful about system encoding. Explictiy pass the encoding paramter to open if you want to avoid surprices.&lt;/p>
+&lt;p>prefer f-strings&lt;/p>
+&lt;p>format of f strinig: f&amp;rsquo;{key!r:&amp;lt;10} = {value:.2f}
+{key!r} - raw
+{key:&amp;lt;10} - left order (min width) - 10 characters
+{value:.2f} - precision formatting
+f&amp;rsquo;my number is {number:.{places}}?&lt;/p>
+&lt;p>F-strings are sucinot yet powerful, because they allow for arbitray Pytho expression to be directly embedded within format specifiers.&lt;/p>
+&lt;p>Write helperes functions instead of complex expressions&lt;/p>
+&lt;p>Python&amp;rsquo;s syntax makes it easy to write single line epxressions that are overly complicated and difficult to read.&lt;/p>
+&lt;p>Move complex expressions into helpere functions expeciialy if you need to use the same logic repeately&lt;/p></description></item></channel></rss>

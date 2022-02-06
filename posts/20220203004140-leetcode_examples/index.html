@@ -1,0 +1,125 @@
+<!doctype html><html><head>
+<meta charset=utf-8><title>LeetCode examples - Inomoz</title><meta name=description content="Inomoz - personal website">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta property="og:title" content="Inomoz">
+<meta property="og:type" content>
+<meta property="og:url" content>
+<meta property="og:image" content>
+<link rel=icon href=/favicon.ico>
+<link rel=icon href=/icon.svg type=image/svg+xml>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
+<link rel=manifest href=/manifest.webmanifest>
+<link rel=stylesheet type=text/css media=screen href=https://inomoz.com/css/normalize.css>
+<link rel=stylesheet type=text/css media=screen href=https://inomoz.com/css/main.css>
+</head>
+<body><header class=header>
+<h1 class=header-title>
+<a href=https://inomoz.com/>
+<pre>
+██╗███╗░░██╗░█████╗░███╗░░░███╗░█████╗░███████╗
+██║████╗░██║██╔══██╗████╗░████║██╔══██╗╚════██║
+██║██╔██╗██║██║░░██║██╔████╔██║██║░░██║░░███╔═╝
+██║██║╚████║██║░░██║██║╚██╔╝██║██║░░██║██╔══╝░░
+██║██║░╚███║╚█████╔╝██║░╚═╝░██║╚█████╔╝███████╗
+╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░░░░╚═╝░╚════╝░╚══════╝</pre>
+</a>
+</h1>
+<nav class=navbar>
+<ul class=navbar-section>
+<li><a href=/categories/workflow/> Workflow</a></li>
+<li><a href=/categories/life/> Life</a></li>
+</ul>
+</nav>
+</header>
+<section class=list>
+<article>
+<header>
+<h1>LeetCode examples</h1>
+</header>
+<section class=body>
+<h2 id=array-in-java>Array in Java</h2>
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Main</span> <span style=color:#f92672>{</span>
+    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>main</span><span style=color:#f92672>(</span>String<span style=color:#f92672>[]</span> args<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+        DVD<span style=color:#f92672>[]</span> dvdCollection <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> DVD<span style=color:#f92672>[</span>15<span style=color:#f92672>];</span>
+
+        <span style=color:#75715e>// Create avenger item
+</span><span style=color:#75715e></span>        DVD avengerDVD <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> DVD<span style=color:#f92672>(</span><span style=color:#e6db74>&#34;The avengers&#34;</span><span style=color:#f92672>,</span> 2012<span style=color:#f92672>,</span> <span style=color:#e6db74>&#34;Joss Wedon&#34;</span><span style=color:#f92672>);</span>
+        dvdCollection<span style=color:#f92672>[</span>7<span style=color:#f92672>]</span> <span style=color:#f92672>=</span> avengerDVD<span style=color:#f92672>;</span>
+        System<span style=color:#f92672>.</span><span style=color:#a6e22e>out</span><span style=color:#f92672>.</span><span style=color:#a6e22e>print</span><span style=color:#f92672>(</span><span style=color:#e6db74>&#34;hello, world&#34;</span><span style=color:#f92672>);</span>
+    <span style=color:#f92672>}</span>
+
+
+    <span style=color:#75715e>// A simple definition for a DVD.
+</span><span style=color:#75715e></span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>DVD</span> <span style=color:#f92672>{</span>
+        <span style=color:#66d9ef>public</span> String name<span style=color:#f92672>;</span>
+        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>int</span> releaseYear<span style=color:#f92672>;</span>
+        <span style=color:#66d9ef>public</span> String director<span style=color:#f92672>;</span>
+
+        <span style=color:#66d9ef>public</span> <span style=color:#a6e22e>DVD</span><span style=color:#f92672>(</span>String name<span style=color:#f92672>,</span> <span style=color:#66d9ef>int</span> releaseYear<span style=color:#f92672>,</span> String director<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+            <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>name</span> <span style=color:#f92672>=</span> name<span style=color:#f92672>;</span>
+            <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>releaseYear</span> <span style=color:#f92672>=</span> releaseYear<span style=color:#f92672>;</span>
+            <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>director</span> <span style=color:#f92672>=</span> director<span style=color:#f92672>;</span>
+        <span style=color:#f92672>}</span>
+
+        <span style=color:#66d9ef>public</span> String <span style=color:#a6e22e>toString</span><span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+            <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>name</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;, directed by &#34;</span> <span style=color:#f92672>+</span> <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>director</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;, released in &#34;</span> <span style=color:#f92672>+</span> <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>releaseYear</span><span style=color:#f92672>;</span>
+        <span style=color:#f92672>}</span>
+    <span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
+
+<span style=color:#75715e>// The actual code for creating an Array to hold DVD&#39;s.
+</span><span style=color:#75715e></span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</section>
+<footer>
+<p class=published-time>Created: Jan 1, 0001 | Updated: Feb 6, 2022
+</p>
+</footer>
+<section>
+<div id=remark42></div>
+</section>
+</article>
+</section>
+<footer class=footer><a href=https://inomoz.com/>Home</a> | <a href=mailto:inom@inomoz.com>Contact</a> | <a href=/index.xml>RSS</a></footer>
+<script src=/js/copy-code-button.js></script>
+<script>var remark_config={host:"https://remark.inomoz.com",site_id:'INOMOZ_COM',components:['embed'],max_shown_comments:10,theme:'light',page_title:'Moving to Remark42',locale:'en',show_email_subscription:!1,simple_view:!1}</script>
+<script>!function(d,b){for(var c=0,a,e,f;c<d.length;c++)a=b.createElement("script"),e=".js",f=b.head||b.body,"noModule"in a?(a.type="module",e=".mjs"):a.async=!0,a.defer=!0,a.src=remark_config.host+"/web/"+d[c]+e,f.appendChild(a)}(remark_config.components||["embed"],document)</script>
+</body>
+</html>

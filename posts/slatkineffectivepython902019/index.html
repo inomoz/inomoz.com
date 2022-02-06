@@ -1,0 +1,161 @@
+<!doctype html><html><head>
+<meta charset=utf-8><title>Effective python: 90 specific ways to write better python - Inomoz</title><meta name=description content="Inomoz - personal website">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta property="og:title" content="Inomoz">
+<meta property="og:type" content>
+<meta property="og:url" content>
+<meta property="og:image" content>
+<link rel=icon href=/favicon.ico>
+<link rel=icon href=/icon.svg type=image/svg+xml>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
+<link rel=manifest href=/manifest.webmanifest>
+<link rel=stylesheet type=text/css media=screen href=https://inomoz.com/css/normalize.css>
+<link rel=stylesheet type=text/css media=screen href=https://inomoz.com/css/main.css>
+</head>
+<body><header class=header>
+<h1 class=header-title>
+<a href=https://inomoz.com/>
+<pre>
+██╗███╗░░██╗░█████╗░███╗░░░███╗░█████╗░███████╗
+██║████╗░██║██╔══██╗████╗░████║██╔══██╗╚════██║
+██║██╔██╗██║██║░░██║██╔████╔██║██║░░██║░░███╔═╝
+██║██║╚████║██║░░██║██║╚██╔╝██║██║░░██║██╔══╝░░
+██║██║░╚███║╚█████╔╝██║░╚═╝░██║╚█████╔╝███████╗
+╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░░░░╚═╝░╚════╝░╚══════╝</pre>
+</a>
+</h1>
+<nav class=navbar>
+<ul class=navbar-section>
+<li><a href=/categories/workflow/> Workflow</a></li>
+<li><a href=/categories/life/> Life</a></li>
+</ul>
+</nav>
+</header>
+<section class=list>
+<article>
+<header>
+<h1>Effective python: 90 specific ways to write better python</h1>
+</header>
+<section class=body>
+<h2 id=slatkinEffectivePython902019>Effective python: 90 specific ways to write better python</h2>
+<h3 id=item-1-know-which-version-of-python-you-re-using>Item 1: Know which version of python you&rsquo;re using</h3>
+<h4 id=idioms-of-programming-language-are-defined-by-its-users>Idioms of programming language are defined by its users</h4>
+<p>This means popular practices, formating rules, conventions, etc are defined by their users!</p>
+<h4 id=python-version>Python version</h4>
+<p>You can easily detect which python version you use right now.</p>
+<h3 id=item-2-follow-the-pep8-style-guide>Item 2: Follow the PEP8 Style Guide</h3>
+<h4 id=pep-is>PEP is</h4>
+<p>Python Enhancement Proposal or PEP 8
+It&rsquo;s Python formatting style guide.</p>
+<h4 id=why-pep>Why PEP?</h4>
+<p>Using consistent style, make your code much more approachable and readable.</p>
+<h4 id=whitespace>Whitespace</h4>
+<p>Since whitespaces are significant in Python, it&rsquo;s recommend to follow this rules:</p>
+<ul>
+<li>Use 4 spaces insted tabs for indentation.</li>
+<li>Indent a long lines by additional spaces if they splitted.</li>
+<li>Functions and classes separated by 2 blank lines.</li>
+<li>Class methods separated by 1 blank line.</li>
+<li>&mldr;</li>
+</ul>
+<h4 id=naming>Naming</h4>
+<ul>
+<li>Functions, variables, and attributes in <code>lowercas_underscore</code> format.</li>
+<li>Protected instance attributes should be in <code>_leading_underscore</code> format.</li>
+<li>Classes (including exceptions) should be in <code>CapitalizedWord</code> format.</li>
+<li>Module-level constants should be in <code>ALL_CAPS</code> format.</li>
+<li>Instance methods in classes should use <code>self</code> (ref to object), as the name of the first parameter.</li>
+<li>Class methods should use <code>cls</code>, which refers to the class, as the name of the first parameter.</li>
+</ul>
+<h4 id=expressions-and-statements>Expressions and statements</h4>
+<ul>
+<li>Use inline negation <code>if a is not b</code> instead negation of positive expression <code>if not a is b</code>, some like <code>if not CONDTION</code>. It&rsquo;s really hard to understand.</li>
+<li>Don&rsquo;t check for empty/non-empty by comparing length to zero ([], &lsquo;'), just use <code>if/if not</code> something and you need assume that empty value will be evaluated to False, non-empty to True.</li>
+<li>Avoid single-line if, for and while loops, except compound statements, spread them over multiple lines for clarity/readability (it&rsquo;s actual for complex items).</li>
+<li>Split long lines with parentheses if they are too long.</li>
+<li>Prefer splitting with parentheses over using \ line conttinuation character.</li>
+</ul>
+<h4 id=imports>Imports</h4>
+<ul>
+<li>Place imports at top.</li>
+<li>Use absolute names when you import modules.</li>
+<li>When you need do relative import, use explicit method <code>from . import foo</code></li>
+<li>Follow ordering of module import: stdlib, thrid-party, own.</li>
+<li>Use linters linke pylint, black, etc&mldr;</li>
+</ul>
+<h4 id=things-to-remember>Things to remember</h4>
+<ul>
+<li>Follow the PEP style guide.</li>
+<li>Following common style facilitates collaboration with others.</li>
+<li>Consistent code style make it easier to modify later (include automation?).</li>
+</ul>
+<h3 id=item-3-know-the-differences-between-bytes-and-str>Item 3: Know the Differences Between bytes and str</h3>
+<h4 id=sequence-data>Sequence data</h4>
+<p>In python there are 2 types that represent sequences of characters
+bytes and str</p>
+<ul>
+<li>byte - RAW unsigned 8 bit value <code>b'h\x65llo'</code></li>
+</ul>
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a <span style=color:#f92672>=</span> <span style=color:#e6db74>b</span><span style=color:#e6db74>&#39;h</span><span style=color:#ae81ff>\x65</span><span style=color:#e6db74>llo</span><span style=color:#ae81ff>\x55</span><span style=color:#e6db74>&#39;</span>
+print(list(a))
+print(a)
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>str instances - <a href=/posts/20220123015058-utf/>Unicode</a> code points, that represent textual characters from human language
+str instances don&rsquo;t have binary encoding</li>
+</ul>
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;a</span><span style=color:#ae81ff>\u0300</span><span style=color:#e6db74> propos&#39;</span>
+print(list(a))
+print(a)
+print(a<span style=color:#f92672>.</span>encode(<span style=color:#e6db74>&#39;windows-1251&#39;</span>, <span style=color:#e6db74>&#39;ignore&#39;</span>))
+print(a<span style=color:#f92672>.</span>encode()<span style=color:#f92672>.</span>decode())
+</code></pre></td></tr></table>
+</div>
+</div><p>The core of your program should use str type containg Unicode data, but can accept different encoding - latin1, big5 from interafaces.</p>
+<p>Use helper function to ensure th e inputs you operate are the type of character sequence that you expect.</p>
+<p>Bytes and str instances can be used together with operatos >, =, -, +, %</p>
+<p>If you want read or write bin data, open it in &lsquo;rb&rsquo; &lsquo;rw&rsquo; modes.</p>
+<p>If you want to read or write unicode data be careful about system encoding. Explictiy pass the encoding paramter to open if you want to avoid surprices.</p>
+<p>prefer f-strings</p>
+<p>format of f strinig: f&rsquo;{key!r:&lt;10} = {value:.2f}
+{key!r} - raw
+{key:&lt;10} - left order (min width) - 10 characters
+{value:.2f} - precision formatting
+f&rsquo;my number is {number:.{places}}?</p>
+<p>F-strings are sucinot yet powerful, because they allow for arbitray Pytho expression to be directly embedded within format specifiers.</p>
+<p>Write helperes functions instead of complex expressions</p>
+<p>Python&rsquo;s syntax makes it easy to write single line epxressions that are overly complicated and difficult to read.</p>
+<p>Move complex expressions into helpere functions expeciialy if you need to use the same logic repeately</p>
+</section>
+<footer>
+<p class=published-time>Created: Jan 1, 0001 | Updated: Feb 6, 2022
+</p>
+</footer>
+<section>
+<div id=remark42></div>
+</section>
+</article>
+</section>
+<footer class=footer><a href=https://inomoz.com/>Home</a> | <a href=mailto:inom@inomoz.com>Contact</a> | <a href=/index.xml>RSS</a></footer>
+<script src=/js/copy-code-button.js></script>
+<script>var remark_config={host:"https://remark.inomoz.com",site_id:'INOMOZ_COM',components:['embed'],max_shown_comments:10,theme:'light',page_title:'Moving to Remark42',locale:'en',show_email_subscription:!1,simple_view:!1}</script>
+<script>!function(d,b){for(var c=0,a,e,f;c<d.length;c++)a=b.createElement("script"),e=".js",f=b.head||b.body,"noModule"in a?(a.type="module",e=".mjs"):a.async=!0,a.defer=!0,a.src=remark_config.host+"/web/"+d[c]+e,f.appendChild(a)}(remark_config.components||["embed"],document)</script>
+</body>
+</html>

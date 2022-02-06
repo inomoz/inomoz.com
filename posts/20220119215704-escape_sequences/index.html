@@ -1,0 +1,87 @@
+<!doctype html><html><head>
+<meta charset=utf-8><title>escape sequences - Inomoz</title><meta name=description content="Inomoz - personal website">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta property="og:title" content="Inomoz">
+<meta property="og:type" content>
+<meta property="og:url" content>
+<meta property="og:image" content>
+<link rel=icon href=/favicon.ico>
+<link rel=icon href=/icon.svg type=image/svg+xml>
+<link rel=apple-touch-icon href=/apple-touch-icon.png>
+<link rel=manifest href=/manifest.webmanifest>
+<link rel=stylesheet type=text/css media=screen href=https://inomoz.com/css/normalize.css>
+<link rel=stylesheet type=text/css media=screen href=https://inomoz.com/css/main.css>
+</head>
+<body><header class=header>
+<h1 class=header-title>
+<a href=https://inomoz.com/>
+<pre>
+██╗███╗░░██╗░█████╗░███╗░░░███╗░█████╗░███████╗
+██║████╗░██║██╔══██╗████╗░████║██╔══██╗╚════██║
+██║██╔██╗██║██║░░██║██╔████╔██║██║░░██║░░███╔═╝
+██║██║╚████║██║░░██║██║╚██╔╝██║██║░░██║██╔══╝░░
+██║██║░╚███║╚█████╔╝██║░╚═╝░██║╚█████╔╝███████╗
+╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░░░░╚═╝░╚════╝░╚══════╝</pre>
+</a>
+</h1>
+<nav class=navbar>
+<ul class=navbar-section>
+<li><a href=/categories/workflow/> Workflow</a></li>
+<li><a href=/categories/life/> Life</a></li>
+</ul>
+</nav>
+</header>
+<section class=list>
+<article>
+<header>
+<h1>escape sequences</h1>
+</header>
+<section class=body>
+<p><a href=https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1>https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1</a>
+\a 07 Alert (Beep, Bell) (added in C89)[1]
+\b 08 Backspace
+\e 1B Escape character (non standart)
+\f 0C Formfeed Page Break
+\n 0A Newline (Line Feed); see notes below
+\r 0D Carriage Return
+\t 09 Horizontal Tab
+\v 0B Vertical Tab
+\\ 5C Backslash
+\' 27 Apostrophe or single quotation mark
+\" 22 Double quotation mark
+\? 3F Question mark (used to avoid trigraphs)
+\nnnnote 2 any The byte whose numerical value is given by nnn interpreted as an octal number
+\xhh… any The byte whose numerical value is given by hh… interpreted as a hexadecimal number
+\uhhhhnote 3 none Unicode code point below 10000 hexadecimal (added in C99)[1]: 26
+\Uhhhhhhhhnote 4 none Unicode code point where h is a hexadecimal digit</p>
+<p><a href=https://gist.github.com/hectoregm/1368066>https://gist.github.com/hectoregm/1368066</a>
+Escape Sequence Name Meaning
+\a Alert Produces an audible or visible alert.
+\b Backspace Moves the cursor back one position (non-destructive).
+\f Form Feed Moves the cursor to the first position of the next page.
+\n New Line Moves the cursor to the first position of the next line.
+\r Carriage Return Moves the cursor to the first position of the current line.
+\t Horizontal Tab Moves the cursor to the next horizontal tabular position.
+\v Vertical Tab Moves the cursor to the next vertical tabular position.
+\' Produces a single quote.
+\" Produces a double quote.
+\? Produces a question mark.
+\\ Produces a single backslash.
+\0 Produces a null character.
+\ddd Defines one character by the octal digits (base-8 number). Multiple characters may be defined in the same escape sequence, but the value is implementation-specific (see examples).
+\xdd Defines one character by the hexadecimal digit (base-16 number).</p>
+</section>
+<footer>
+<p class=published-time>Created: Jan 1, 0001 | Updated: Feb 6, 2022
+</p>
+</footer>
+<section>
+<div id=remark42></div>
+</section>
+</article>
+</section>
+<footer class=footer><a href=https://inomoz.com/>Home</a> | <a href=mailto:inom@inomoz.com>Contact</a> | <a href=/index.xml>RSS</a></footer>
+<script>var remark_config={host:"https://remark.inomoz.com",site_id:'INOMOZ_COM',components:['embed'],max_shown_comments:10,theme:'light',page_title:'Moving to Remark42',locale:'en',show_email_subscription:!1,simple_view:!1}</script>
+<script>!function(d,b){for(var c=0,a,e,f;c<d.length;c++)a=b.createElement("script"),e=".js",f=b.head||b.body,"noModule"in a?(a.type="module",e=".mjs"):a.async=!0,a.defer=!0,a.src=remark_config.host+"/web/"+d[c]+e,f.appendChild(a)}(remark_config.components||["embed"],document)</script>
+</body>
+</html>

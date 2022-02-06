@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8"><title>VIM Notes - Inomoz</title><meta name="description" content="Inomoz - personal website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Inomoz">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content=""/>
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://inomoz.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://inomoz.com/css/main.css" />
+</head>
+<body><header class="header">
+  <h1 class="header-title">
+    <a href="https://inomoz.com/">
+<pre>
+██╗███╗░░██╗░█████╗░███╗░░░███╗░█████╗░███████╗
+██║████╗░██║██╔══██╗████╗░████║██╔══██╗╚════██║
+██║██╔██╗██║██║░░██║██╔████╔██║██║░░██║░░███╔═╝
+██║██║╚████║██║░░██║██║╚██╔╝██║██║░░██║██╔══╝░░
+██║██║░╚███║╚█████╔╝██║░╚═╝░██║╚█████╔╝███████╗
+╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░░░░╚═╝░╚════╝░╚══════╝</pre>
+      </a>
+  </h1>
+  <nav class="navbar">
+    <ul class="navbar-section">
+        
+		    <li><a href="/categories/workflow/"> Workflow</a></li>
+		
+		    <li><a href="/categories/life/"> Life</a></li>
+		
+		    <li><a href="/posts/about-me/"> About Me</a></li>
+		
+    </ul>
+  </nav>
+</header>
+
+<section class="list">
+    <article>
+        <header>
+            <h1>VIM Notes</h1>
+        </header>
+        
+
+        <section class="body">
+            <p>Here I collect, various VIM tips, shortcuts, keybindings, etc. Also, here some information how I handle daily usage of text editing.</p>
+<p>This not absolute beginner cheatsheet, just some short basic commands/tips.</p>
+<p>Recommendation - just use it &amp; check it every day (training)</p>
+<h1 id="base">Base</h1>
+<h2 id="navigation">Navigation</h2>
+<p><code>h j k l</code> cursor move.
+This also work in Vimium, NNN, Zathura and other programs with Vim keyboard shortcuts.</p>
+<p><code>w b</code> move to Word &lt;- -&gt;.<br>
+<code>w</code> - mv/cp as (NNN)<br>
+<code>b</code> - bookmark (Vimium/NNN)</p>
+<p><code>]w ]b</code> move to Word &lt;- -&gt; also, but support CamelHumps and separated_word words</p>
+<p><code>W B</code> move to Word (ignore punctuation like .,) &lt;- -&gt;.<br>
+<code>B</code> - open bookmark in new tab (Vimium).</p>
+<p><code>e ge</code> move to worD  &lt;- -&gt;<br>
+<code>e</code> - edit file (NNN)</p>
+<p><code>^ g_</code> move to ..^lineg_..  &lt;- -&gt;. I think this is more useful than next shortcuts.<br>
+<code>0 $</code> move to 0..line..$  &lt;- -&gt;</p>
+<p><code>^e ^y</code> move document ↑ ↓. Sometimes useful if need check few lines above/below.</p>
+<p><code>{ }</code> paragraph ↑ ↓. Also useful with <code>V</code> selection.</p>
+<h2 id="go-to">Go to</h2>
+<p><code>:[num]</code> to line number</p>
+<p><code>f F [char]</code> to <em>C</em>har in line  &lt;- -&gt;. Upper - back direction.<br>
+<code>f</code> - Open link in current tab (Vimium).<br>
+<code>F</code> - Open link in new tab and not change active tab (Vimium).</p>
+<p><code>t T [char]</code> to <em>t</em>char in line  &lt;- -&gt;. More useful than <em>f/F</em> if need for example delete from char to quote.</p>
+<p><code>, ; [char]</code> repeat search  &lt;- -&gt;</p>
+<p><code>%</code> jump between () or {}. Append arguments? Or add code?</p>
+<p><code>^o ^i</code> go to older/newer jump item in jump list (also work in Zathura). You can check this list by <code>:jumps</code> command.<br>
+A <em>jump</em> is one of the following commands: <code>'</code>', ```, <code>G</code>, <code>/</code>, <code>?</code>, <code>n</code>,
+<code>N</code>, <code>%</code>, <code>(</code>, <code>)</code>, <code>[[</code>, <code>]]</code>, <code>{</code>, <code>}</code>, <code>:s</code>, <code>:tag</code>, <code>L</code>, <code>M</code>, <code>H</code> and
+the commands that start editing a new file.</p>
+<p><code>^d ^u</code> up/down half page ↑ ↓. But this is not universal, I use custom keyboard and <code>FNd</code> <code>FNu</code> keys (works everywhere!).</p>
+<p><code>gg G</code> home / end  ↑ ↓. <em>gg</em> is like go go go (starting). <em>G</em> is like Gone.</p>
+<p><code>gT gt</code> go to &lt;- tab -&gt; (also work in Vimium).</p>
+<p><code>gv</code> - reselect(select last selected block of text)</p>
+<h2 id="editing-text">Editing text</h2>
+<p><code>i a</code> enter edit i&lt;-cursor-&gt;a. <em>i</em> - left side of cursor/character, <em>a</em> - right side of cursor/character.</p>
+<p><code>I A</code> enter edit I..&lt;-line-&gt;..A</p>
+<p><code>o O</code> enter edit ↑↓..line..</p>
+<p><code>X x</code> <em>cut</em> char &lt;- -&gt; use this instead <code>vd</code>, <code>d[motion]</code> cut motion, <code>dd</code> cut line</p>
+<p><code>c[motion]</code>  cut &amp; edit motion, <code>cc</code> - line</p>
+<p><code>r[char]</code> replace char, <code>R</code> replace mode</p>
+<p><code>J</code> join line ↑, if you see 1 empty line below, just use <code>3J</code></p>
+<p><code>y[motion]</code> yank motion, <code>yy</code> line (also work in Vimium - copy current url)</p>
+<p><code>p P</code> paste  &lt;- -&gt; ↑ ↓ depends on clipboard content (also work in Vimium - open clipboard URL).</p>
+<p><code>^r+0</code> - in insert mode inserts the last yanked text, working in command mode</p>
+<p><code>^r+&quot;</code> - in insert mode inserts clipboard, working in command mode</p>
+<p><code>^o[command]</code> - run command in insert mode once</p>
+<h2 id="delete-text-not-cut">Delete text (not cut)</h2>
+<p><code>'d[motion]</code> delete text with motion. <code>'dd</code> delete line, <code>'dw</code> delete word.<br>
+This bindings require custom remap in vimrc file: <code> noremap ' &quot;_</code></p>
+<p><code>'d[P]</code> delete selected text (optional paste text)</p>
+<h2 id="text-objects">Text objects</h2>
+<p>Example: <code>def (arg1, arg2, arg3)</code> - <code>di(</code> deletes everything between the parenthesis</p>
+<h3 id="words">Words</h3>
+<p><code>aw</code> – a word (with spaces), <code>iw</code> – inner word (without spaces)</p>
+<p><code>daw/diw</code> - delete word (any cursor position)</p>
+<p><code>dw</code> - delete part or word</p>
+<h3 id="sentences">Sentences</h3>
+<p><code>as</code> – a sentence, <code>is</code> – inner sentence</p>
+<p><code>cas/cis</code></p>
+<h3 id="paragraphs">Paragraphs</h3>
+<p><code>ap</code> – a paragraph, <code>ip</code> – inner paragraph</p>
+<p><code>dap/dip</code></p>
+<h2 id="programming-language-text-objects">Programming Language Text Objects</h2>
+<h3 id="strings">strings</h3>
+<p>example - <code>ci&quot;, yi&quot;</code></p>
+<p><code>a”</code> – a double quoted string,</p>
+<p><code>i”</code> – inner double quoted string,</p>
+<p><code>a’</code> – a single quoted string,</p>
+<p><code>i’</code> – inner single quoted string,</p>
+<p><code>_a` </code> – a back quoted string,</p>
+<p><code>_i` </code> – inner back quoted string</p>
+<h3 id="parenthesesbrackets">Parentheses/Brackets</h3>
+<p>example - <code>da)/da}</code>, <code>Project.all(:conditions =&gt; { :published =&gt; true })</code></p>
+<p><code>a)/a}</code> – a parenthesized block</p>
+<p><code>i)/i}</code> – inner parenthesized block</p>
+<h3 id="markup-language-tags">Markup Language Tags</h3>
+<p>example - <code>cit</code>, <code>&lt;h2&gt;Sample Title&lt;/h2&gt;</code></p>
+<p><code>at</code> – a tag block</p>
+<p><code>it</code> – inner tag block</p>
+<h3 id="quickly-replace-tag-content">Quickly replace tag content</h3>
+<p>example - <code>di&gt;</code>, <code>&lt;div id=&quot;content&quot;&gt;&lt;/div&gt;</code></p>
+<p><code>a&gt;</code> – a single tag</p>
+<p><code>i&gt;</code> – inner single tag</p>
+<h2 id="marking-text-visual-mode">Marking text (visual mode)</h2>
+<p><code>v[motion] V ^v</code> select motion / line / vertical</p>
+<h2 id="search--replace">Search / replace</h2>
+<p><code>/... ?... /...\C</code> search &lt;- -&gt; ↑ ↓ / case sensitive</p>
+<p><code>n N</code> search results &lt;- -&gt; ↑ ↓</p>
+<p><code>:%s/old/new/g :%s/old/new/gc</code> find &amp; replace / conf.</p>
+<h1 id="operations">Operations</h1>
+<h2 id="base-commands">Base Commands</h2>
+<p><code>u ^r</code> undo/redo</p>
+<p><code>:w :x</code> save / save and exit</p>
+<p><code>:q :q!</code> exit / exit &amp; ignore changes</p>
+<p><code>:e [file]</code> edit↓ file</p>
+<p><code>:vsp [file]</code> split &amp; open file</p>
+<p><code>^ws ^wv</code> split ↓ -&gt;</p>
+<p><code>^wc ^wq</code> unsplit / unsplit all</p>
+<p><code>&lt;c-w&gt;hjkl ^ww</code> focus pane / focus pane ↑ &lt;-</p>
+<p><code>m{a-z} m{A-Z}</code> set mark / bookmark</p>
+<p><code>'{a-z} ''</code> jump to mark / before mark</p>
+<p><code>:![command]</code> exec command</p>
+<p><code>.</code> repeat</p>
+<h2 id="specific">Specific</h2>
+<p><code>!&lt;Return&gt;</code> more actions, fix</p>
+<p><code>zo zc zR zM</code> folding / all folds</p>
+<p><code>gd</code> go to declaration</p>
+<p><code>zj zk</code> create new line</p>
+<p><code>gq gqap</code> reformat selection / all</p>
+<p><code>_q _Q</code> close / reopen tabs</p>
+<p><code>_d</code> ShowErrorDescription</p>
+<p><code>_x</code> GotoNextError</p>
+<p><code>_X</code> GotoPreviousError</p>
+<p><code>_/ _\</code> - Find / FindInPath</p>
+<p><code>[e ]e</code> - MoveLineUp MoveLineDown</p>
+<p><code>[s ]s</code> - MoveStatementUp MoveStatementDown</p>
+<h2 id="refactorings">Refactorings</h2>
+<p><code>_T</code> Refactorings.QuickListPopupAction</p>
+<p><code>_rr</code> RenameElement</p>
+<p><code>_rg</code> Generate</p>
+<p><code>_rI _rc</code> OptimizeImports /InspectCode</p>
+<h1 id="navigation-1">Navigation</h1>
+<h2 id="panes-activation">Panes Activation</h2>
+<p><code>a-1</code> NerdTree</p>
+<p><code>a-2</code> Terminal</p>
+<p><code>a-3</code> Structure</p>
+<p><code>a-4</code> Commit</p>
+<p><code>a-5</code> Debug</p>
+<p><code>a-6</code> TODO</p>
+<p><code>a-7</code> PythonConsole</p>
+<p><code>a-8</code> FindTool</p>
+<p><code>a-9</code> Database</p>
+<h2 id="navigation-2">Navigation</h2>
+<p><code>_h _l</code> Back / Forward</p>
+<p><code>_L _e _a</code> RecentLocations RecentFiles RecentChangedFiles</p>
+<p><code>_b</code> ShowBookmarks</p>
+<p><code>_g _i _t</code> GotoDeclaration GotoImplementation  GotoTest</p>
+<p><code>_u _I</code> FindUsages SelectIn</p>
+<p><code>_f _c _s</code> GotoFile  GotoClass  GotoSymbol</p>
+<p><code>_; _ww</code> FileStructurePopup  JumpToLastWindow</p>
+<h2 id="vcs-operations">VCS operations</h2>
+<p><code>_yp _yl</code> QuickListPopupAction / Log</p>
+<p><code>_yd _ya</code> Compare.LastVersion / Annotate</p>
+<p><code>[q ]q</code> PreviousOccurence / NextOccurence</p>
+<p><code>[m ]m</code> MethodUp / MethodDown</p>
+<p><code>[c ]c</code> PrevChangeMarker / NextChangeMarker</p>
+<h2 id="building-running-and-debugging">Building, Running and Debugging</h2>
+<p><code>,c ,r</code> - CompileDirty / Run</p>
+<p><code>,R ,b</code> - RunAnything Debug</p>
+<p><code>,c ,d</code> - RunClass / DebugClass</p>
+<p><code>,t ,T</code> - RerunTests / RerunFailedTests</p>
+<h2 id="nerdtree">Nerdtree</h2>
+<p><code>o O x X</code> - open close</p>
+<p><code>go</code> - preview file</p>
+<p><code>t T</code> - open node in new tab</p>
+<p><code>i gi s gs</code> - open file in split window</p>
+<p><code>p P K J ^j ^k</code> - jump in nodes</p>
+<p><code>r R</code> - refresh directory root</p>
+<p><code>A</code> - maximize minimize NERDTree</p>
+<p><code>m c</code> - menu, close menu</p>
+<h2 id="easymotion">Easymotion</h2>
+<p><code>&lt;ll&gt;fF</code> - move forward/backward</p>
+<p><code>&lt;ll&gt;tT</code> - move forward/backward (before char)</p>
+<p><code>&lt;ll&gt;wW</code> - move forward/backward word</p>
+<p><code>&lt;ll&gt;jk</code> - move up/down</p>
+<h3 id="commentary">Commentary</h3>
+<p><code>gcc gc[motion] [v]gc</code> comment line / motion / visual</p>
+<h3 id="replace-with-register">Replace with register</h3>
+<p><code>gr[motion] grr</code> replace with register (yanked) motion / line</p>
+<h2 id="surround">Surround</h2>
+<p><code>operate[find][replace]</code></p>
+<h3 id="delete-surroundings">Delete surroundings</h3>
+<p><code>ds</code> delete surround, example: <code>ds</code>, <code>ds&quot;</code>, <code>ds)</code>, <code>dst</code></p>
+<p><code>cs</code> change surround, example: <code>cs&quot;'</code> (&quot; -&gt; &lsquo;), <code>cs&quot;&lt;q&gt;</code>, <code>cs)]</code></p>
+<p><code>ys</code> create surround, example: <code>ysiw)</code> (inner word), <code>yss]</code> (line)</p>
+<p><code>S</code> - surround selected text, example: <code>S&quot;</code>, <code>S&lt;p&gt;</code></p>
+<p><code>ysWf ysWF</code> - functions example, wrap text/word</p>
+<h4 id="targets">Targets</h4>
+<p>All targets are currently just one character.</p>
+<p>(, ), {, }, [, ], &lt;, and &gt;</p>
+<p>The targets b, B, r, and a are aliases for ), }, ], and &gt; &lsquo;, &ldquo;, `,</p>
+<p>A t is a pair of HTML or XML tags.</p>
+<p>The letters w, W, and s correspond to a |word|, a |WORD|, and a |sentence|.</p>
+<p>A p represents a |paragraph|</p>
+<h2 id="argtextobj">Argtextobj</h2>
+<p>Additional text objects: <code>aa</code> - argument, <code>ia</code> - inner argument</p>
+<p>Examples:</p>
+<p><code>function(1, (20&lt;press 'daa' here&gt;*30)+40, somefunc2(3, 4))</code></p>
+<p><code>function(1, (20&lt;press 'cia' here&gt;*30)+40, somefunc2(3, 4))</code></p>
+<h2 id="exchange">Exchange</h2>
+<p>To exchange two words, place your cursor on the first word and type <code>cxiw</code>. Then move to the second word and type <code>cxiw</code> again. Note: the <code>{motion}</code> used in the first and second use of <code>cx</code> don&rsquo;t have to be the same.</p>
+<p><code>cx[motion]</code> Base exchange</p>
+<p><code>cxx</code> Like <code>cx</code>, but use the current line.</p>
+<p><code>X</code> Like <code>cx</code>, but for Visual mode.</p>
+<p><code>cxc</code> Clear any <code>{motion}</code> pending for exchange.</p>
+<h3 id="some-notes">Some notes</h3>
+<p>If you&rsquo;re using the same motion again (e.g. exchanging two words using <code>cxiw</code>), you can use <code>.</code> the second time.</p>
+<p>If one region is fully contained within the other, it will replace the containing region.</p>
+<h3 id="swap-chars-built-in">Swap chars (built-in)</h3>
+<p><code>xp</code> Swap the current character (the character under the cursor) with the next</p>
+<p><code>Xp</code> Swap the current character with the previous</p>
+<h2 id="text-objects-for-entire-buffers">Text objects for entire buffers</h2>
+<p><code>ae</code> targets the entire content of the current buffer.</p>
+<p><code>ie</code> is similar to ae, but ie does not include leading and trailing empty lines</p>
+<h1 id="scenarios">Scenarios</h1>
+<p>Use <code>^[</code> as key to exit insert mode, <code>Esc</code> has some restrictions.</p>
+<p>Pycharm - by default it&rsquo;s remove focus from pane</p>
+<p>It&rsquo;s easier (faster) to press, less delay</p>
+<p>Other app can close / stop something</p>
+<h2 id="keyboard-specific">Keyboard Specific</h2>
+<p><code>FN hjkl</code> - arrows</p>
+<h3 id="arrow-up--down-with-fn-key-jk">arrow up / down with FN key (jk)</h3>
+<p>Pycharm Editor Insert mode up/left/down. IS NOT recommended, use <code>^o[command]</code></p>
+<p>Pycharm Editor Suggestions/Popup menu - is recommended up/down</p>
+<p>Browser - <code>o O b B</code> - is recommended up/down</p>
+<p>Dmenu - is recommended up/down</p>
+<p>Terminal - is recommended history up/down</p>
+<p>FZF - is recommended up/down</p>
+<h3 id="page-up--page-down-with-fn-key-du">page up / page down with FN key (du)</h3>
+<p>Any text editor, great alternative to ^d/^u</p>
+<p>Browser, great alternative to d/u - vim mode not available some times (insert/other modes)</p>
+<p>Dmenu - just working</p>
+<p>Terminal - better use just jk</p>
+<p>FZF - just working</p>
+<p>Open recent file:
+<code>Esc_L Esc_e Esc_a</code> - <code>Esc</code> is optional, just when you not in editor window. First is recent with preview (preferred)</p>
+<h3 id="end--home-with-fn-key-in-just-ignore-it-use-only-if-its-required">end / home with FN key (in) JUST ignore it, use only if it&rsquo;s required</h3>
+<p>Text editor - can be usable, but just use VIM mode</p>
+<p>Text editor with VIM mode IS NOT recommended!</p>
+<p>Browser - just use VIM mode</p>
+<p>Dmenu - not working</p>
+<p>Terminal - use vim mode</p>
+<p>FZF - not working / usable</p>
+<h1 id="terminal">Terminal</h1>
+<p><code>v</code> in normal mode allow edit command in vim</p>
+        </section>
+
+        <footer>
+            <p class="published-time">Created: Apr 21, 2021 | Updated: May 20, 2021  
+            
+                
+                    | <a href="/categories/workflow">Workflow</a>
+                
+            
+            </p>
+        </footer>
+
+        <section>
+            <div id="remark42"></div>
+        </section>
+    </article>
+</section>
+<footer class="footer"><a
+        href="https://inomoz.com/">Home</a> | <a href="mailto:inom@inomoz.com">Contact</a> | <a href="/index.xml">RSS</a></footer>
+
+
+
+<script>
+    var remark_config = {
+        host: "https://remark.inomoz.com", 
+        site_id: 'INOMOZ_COM',
+        components: ['embed'], 
+                               
+                               
+                               
+                               
+                               
+        max_shown_comments: 10, 
+        theme: 'light', 
+        page_title: 'Moving to Remark42', 
+        locale: 'en', 
+        show_email_subscription: false, 
+        simple_view: false 
+    };
+</script>
+<script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
+</body>
+</html>
