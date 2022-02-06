@@ -13,10 +13,6 @@ body {
     /*   background: linear-gradient(var(--main-hover-bg) 1px, transparent 1px) left top / 29px 29px; */
     font-family: Consolas, monospace;
     overflow-x: hidden;
-}
-
-
-body {
     font-size: 1rem;
     line-height: 1.8125rem;
 }
@@ -409,4 +405,8 @@ p code{
     color: #fff;
     border-radius: 2px;
     padding:0 4px;
+}
+
+img{
+    max-width: 100%;
 }
