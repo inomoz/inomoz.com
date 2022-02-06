@@ -11,17 +11,17 @@
             {{ .Content }}
         </section>
         <footer>
-            <p class="published-time">Created: {{ dateFormat "Jan
-            2, 2006" .Date }} | Updated: {{ dateFormat "Jan 2,
-            2006" .Lastmod }} {{ if .Draft }} <span class=
-            "draft-label">DRAFT</span> {{ end }} {{ if ne .Type
-            "page" }} {{ if gt .Params.categories 0 }} {{ range
-            .Params.categories }} | <a href="{{" rellangurl=""
-            urlize="">{{ . }}</a> {{ end }} {{ end }} {{ end }}</p>
+            <p class="published-time">
+                Created: {{ dateFormat "Jan 2, 2006" .Date }}
+                | Updated: {{ dateFormat "Jan 2, 2006" .Lastmod }}
+                {{ if .Draft }} <span class= "draft-label">DRAFT</span> {{ end }}
+                {{ if ne .Type "page" }}
+                {{ if gt .Params.categories 0 }} {{ range .Params.categories }}
+                | <a href="{{" rellangurl="" urlize="">{{ . }}</a>
+                {{ end }}
+                {{ end }}
+                {{ end }}</p>
         </footer>
-        <section>
-            <div id="remark42"></div>
-        </section>
     </article>
 </section>
 <script src="https://utteranc.es/client.js" repo=
