@@ -1,14 +1,11 @@
-<footer class="footer">
-    {{- if not .IsHome -}}<a href=
-    "{{%20.Site.BaseURL%20}}">Home</a> | {{ end }}<a href=
-    "mailto:inom@inomoz.com">Contact</a> | <a href=
-    "/index.xml">RSS</a>
-</footer>{{ if (findRE "
-<pre>
-<script src="/js/copy-code-button.js"></script>
+<footer class="footer">{{- if not .IsHome -}}<a
+        href="{{ .Site.BaseURL }}">Home</a> | {{ end }}<a href="mailto:inom@inomoz.com">Contact</a> | <a href="/index.xml">RSS</a></footer>
+
+{{ if (findRE "<pre" .Content 1) }}
+    <script src="/js/copy-code-button.js"></script>
+
+{{ end }}
+
 <script src="https://utteranc.es/client.js" repo=
 "inomoz/inomoz.com" issue-term="pathname" theme=
 "preferred-color-scheme" crossorigin="anonymous" async></script>
-{{ end }}
-
-</pre>
