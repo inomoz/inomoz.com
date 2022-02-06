@@ -1,6 +1,0 @@
-#!/bin/sh
-USER=root
-HOST=inomoz.com
-DIR=~/inomoz/public/
-hugo && rsync -e 'ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no' -avz --delete ${DIR} ${USER}@${HOST}:/usr/share/nginx/html/
-exit 0

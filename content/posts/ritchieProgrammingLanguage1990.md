@@ -94,7 +94,7 @@ draft = false
 
     -  Front
 
-        How much characters represent [escape sequences]({{< relref "../20220119215704-escape_sequences.md" >}})?
+        How much characters represent [escape sequences]({{< relref "20220119215704-escape_sequences.md" >}})?
 
     <!--list-separator-->
 

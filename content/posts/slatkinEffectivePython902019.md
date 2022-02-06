@@ -99,7 +99,7 @@ print(list(a))
 print(a)
 ```
 
--   str instances - [Unicode]({{< relref "../20220123015058-utf.md" >}}) code points, that represent textual characters from human language
+-   str instances - [Unicode]({{< relref "20220123015058-utf.md" >}}) code points, that represent textual characters from human language
     str instances don't have binary encoding
 
 <!--listend-->
