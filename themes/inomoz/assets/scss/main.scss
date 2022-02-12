@@ -30,6 +30,7 @@ $line-height-base:  1rem * $line-height-ratio;
     --main-link-color-visited: #ff867c;
     --main-link-color-hover: #f00;
     --main-body-color: #000;
+    --main-gray-color: #757575;
     --main-hover-bg: rgba(0, 0, 0, 3%);
 }
 
@@ -62,7 +63,7 @@ body > header, body > section, body > footer {
 }
 
 .article-w:visited {
-    color: var(--main-body-color);
+    color: var(--main-gray-color);
 }
 
 .article-w:hover,
@@ -421,9 +422,6 @@ section.tags-list{
 
 .tags-list li{
     display: inline-block;
-    border: 1px solid var(--main-link-color);
-    padding: 0 8px;
-    border-radius: 2px;
 }
 
 
@@ -433,6 +431,9 @@ section.tags-list{
 
 .tags-list li a{
     text-decoration: none;
+    border: 1px solid currentColor;
+    padding: 0 8px;
+    border-radius: 2px;
 }
 
 .pagination{
