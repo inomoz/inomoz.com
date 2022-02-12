@@ -31,6 +31,7 @@ $line-height-base:  1rem * $line-height-ratio;
     --main-link-color-hover: #f00;
     --main-body-color: #000;
     --main-gray-color: #757575;
+    --main-logo-color: #37474f;
     --main-hover-bg: rgba(0, 0, 0, 3%);
 }
 
@@ -86,17 +87,22 @@ body > header, body > section, body > footer {
     margin-top: -1px;
 }
 
+
+.article-w h1 {
+  @include vertical-rhythm(2rem, 1, 1);
+}
+
 h1, .h1 {
-  @include vertical-rhythm(2.7rem, 1, 1);
+  @include vertical-rhythm(2.6rem, 1, 1);
 }
 h2, .h2 {
   @include vertical-rhythm(2rem, 1, 1);
 }
 h3, .h3 {
-  @include vertical-rhythm(1.6rem, 1, 1);
+  @include vertical-rhythm(1.7rem, 1, 1);
 }
 h4, .h4 {
-  @include vertical-rhythm(1.3rem, 1, 1);
+  @include vertical-rhythm(1.4rem, 1, 1);
 }
 h5, .h5 {
   @include vertical-rhythm(1.2rem, 1, 1);
@@ -186,7 +192,7 @@ a:focus {
 }
 
 body > header {
-    border-bottom: 2px solid var(--main-border-color);
+    border-bottom: 2px solid var(--main-logo-color);
     margin-bottom: -2px;
 }
 
@@ -200,6 +206,7 @@ body > header {
 .header .header-title a {
     color: var(--main-body-color);
     text-decoration: none;
+    color: var(--main-logo-color);
 }
 
 .header .header-title pre {
@@ -236,10 +243,16 @@ body > header {
     color: rgba(0, 0, 0, .2);
 }
 
+body > .list{
+    border-bottom: 2px solid var(--main-logo-color);
+}
+
 .footer {
-    text-align: center;
+    color: rgba(0, 0, 0, .2);
+    margin-top: -2px;
+    text-align: right;
     padding: 0 20px;
-    @include vertical-rhythm(1rem, 1, 2);
+    @include vertical-rhythm(1rem, 1, 1);
 }
 
 article > header {
@@ -438,6 +451,10 @@ section.tags-list{
 
 .pagination{
     padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .pagination a{
