@@ -1,11 +1,17 @@
 +++
-title = "escape sequences"
+title = "Escape Sequences"
 author = ["Inom Turdikulov"]
+lastmod = 2022-02-12T18:28:56+03:00
 tags = ["C"]
 draft = false
 +++
 
+Combination of characters, which meaning something other than the literal characters contained therein.
+
+Usually 2 characters, one is preceding and second is actual character (which explain that escape sequence).
+
 <https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1>
+
 \a 07	Alert (Beep, Bell) (added in C89)[1]
 \b 08	Backspace
 \e 1B	Escape character (non standart)
@@ -24,6 +30,7 @@ draft = false
 \Uhhhhhhhhnote 4	none	Unicode code point where h is a hexadecimal digit
 
 <https://gist.github.com/hectoregm/1368066>
+
 Escape Sequence	Name	Meaning
 \a Alert	        Produces an audible or visible alert.
 \b Backspace	Moves the cursor back one position (non-destructive).

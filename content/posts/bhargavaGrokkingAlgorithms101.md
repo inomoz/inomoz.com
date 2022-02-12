@@ -1,8 +1,9 @@
 +++
 title = "Grokking Algorithms"
 author = ["Inom Turdikulov"]
-tags = ["CS,", "math"]
+lastmod = 2022-02-12T17:41:32+03:00
+tags = ["CS", "math"]
 draft = false
 +++
 
-## Grokking Algorithms {#bhargavaGrokkingAlgorithms101}
+## Grokking Algorithms v2 {#bhargavaGrokkingAlgorithms101}

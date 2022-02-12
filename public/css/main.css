@@ -178,8 +178,8 @@ body > header {
 
 .header .header-title {
     display: flex;
-    font-weight: 400;
-    font-size: .5rem;
+    font-weight: 700;
+    font-size: 3rem;
     line-height: 1;
     margin-top: .5rem;
     margin-bottom: .5rem;
@@ -187,7 +187,8 @@ body > header {
 }
 
 .header .header-title a {
-    color: var(--main-body-color)
+    color: var(--main-body-color);
+    text-decoration: none;
 }
 
 .header .header-title pre {

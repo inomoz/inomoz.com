@@ -1,7 +1,9 @@
 +++
-title = "Effective python: 90 specific ways to write better python"
+title = "Effective python"
 author = ["Inom Turdikulov"]
-tags = ["python,", "active"]
+date = 2022-02-11T00:00:00+03:00
+lastmod = 2022-02-12T18:18:58+03:00
+tags = ["python", "books"]
 draft = false
 +++
 

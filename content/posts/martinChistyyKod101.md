@@ -1,6 +1,8 @@
 +++
 title = "Чистый Код"
 author = ["Inom Turdikulov"]
+date = 2022-02-12T00:00:00+03:00
+lastmod = 2022-02-12T18:18:35+03:00
 tags = ["skills"]
 draft = false
 +++
