@@ -9,6 +9,7 @@
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
 				<section class="list-item">
+
                     <a href="{{ .RelPermalink }}" class="article-w">
                         <article>
                             <header>
@@ -18,8 +19,6 @@
                             <section class="summary-section">
                                 {{ if isset .Params "description" }}
                                 {{ .Description }}
-                                {{ else }}
-                                {{ .Summary }}
                                 {{ end }}
                             </section>
                             <footer>
@@ -29,7 +28,17 @@
                             </footer>
                         </article>
                     </a>
+
 				</section>
+                <section class="tags-list">
+                    <ul>
+                        {{ range $i, $e := .Params.tags -}}
+                        <li>
+                            <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+                        </li>
+                        {{- end -}}
+                    </ul>
+                </section>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}
 			</main>

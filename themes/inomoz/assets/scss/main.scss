@@ -1,3 +1,29 @@
+$font-size:    16px;
+$line-height-ratio: 1.5;
+$line-height-base:  1rem * $line-height-ratio;
+// base line-height = 16px * 1.5 = 24px
+
+@mixin vertical-rhythm($font-size, $bottom-rows: 1, $top-rows: 0, $use-height: false) {
+  $font-size: $font-size;
+  $multiplier: ceil($font-size / $line-height-base);
+
+  // check if height-based element
+  // if so use height property for height, otherwise use line-height property
+  @if $use-height {
+    $leftover:      $line-height-base * $multiplier - $font-size;
+    height:         $font-size;
+    margin-top:     $line-height-base * $top-rows + $leftover / 2;
+    margin-bottom:  $line-height-base * $bottom-rows + $leftover / 2;
+  }
+  @else { // text based element (uses line-height)
+    font-size:      $font-size;
+    line-height:    $line-height-base * $multiplier;
+    margin-top:     $line-height-base * $top-rows;
+    margin-bottom:  $line-height-base * $bottom-rows;
+  }
+}
+
+
 :root {
     --main-border-color: #000;
     --main-link-color: #ef5350;
@@ -7,13 +33,16 @@
     --main-hover-bg: rgba(0, 0, 0, 3%);
 }
 
+html {
+    font-size:    $font-size;
+    line-height:  $line-height-ratio;
+}
+
 body {
     max-width: 960px;
     margin: 0 auto;
     font-family: 'Lora', serif;
     overflow-x: hidden;
-    font-size: 1rem;
-    line-height: 1.8125rem;
 }
 
 h1.title{
@@ -57,46 +86,27 @@ body > header, body > section, body > footer {
 }
 
 h1, .h1 {
-  font-size: 2rem; /* 32px */
-  line-height: 1.8125rem; /* 58px */
-  margin-top: 0.9063rem;
-  margin-bottom: 0.9063rem;
+  @include vertical-rhythm(2.7rem, 1, 1);
 }
 h2, .h2 {
-  font-size: 1.625rem;
-  line-height: 1.8125rem;
-  margin-top: 1.8125rem;
-  margin-bottom: 1.8125rem;
+  @include vertical-rhythm(2rem, 1, 1);
 }
 h3, .h3 {
-  font-size: 1rem;
-  line-height: 1.8125rem;
-  margin-top: 1.8125rem;
-  margin-bottom: 0;
+  @include vertical-rhythm(1.6rem, 1, 1);
 }
 h4, .h4 {
-  font-size: 0.9rem;
-  line-height: 1.8125rem;
-  margin-top: 1.8125rem;
-  margin-bottom: 0;
+  @include vertical-rhythm(1.3rem, 1, 1);
 }
 h5, .h5 {
-    font-size: 0.8rem;
-    line-height: 1.8125rem;
-    margin-top: 1.8125rem;
-    margin-bottom: 0;
+  @include vertical-rhythm(1.2rem, 1, 1);
 }
-
 h6, .h6 {
-    font-size: 0.7rem;
-    line-height: 1.8125rem;
-    margin-top: 1.8125rem;
-    margin-bottom: 0;
+  @include vertical-rhythm(1.1rem, 1, 1);
 }
 
 p, ul, ol, pre, table, blockquote, figure, figcaption, audio, video, meter, progress, iframe {
     margin-top: 0;
-    margin-bottom: 1.8125rem;
+    @include vertical-rhythm(1rem, 1, 1);
 }
 
 ul ul, ol ol, ul ol, ol ul {
@@ -180,12 +190,9 @@ body > header {
 }
 
 .header .header-title {
+    @include vertical-rhythm(2rem, 0.5, 0.5);
     display: flex;
     font-style: italic;
-    font-size: 3rem;
-    line-height: 1;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
     cursor: default;
 }
 
@@ -199,10 +206,6 @@ body > header {
 }
 
 /* Custom styles */
-.navbar{
-    margin-bottom: .5rem;
-    margin-top: .5rem;
-}
 .navbar .navbar-section {
     align-items: center;
     display: flex;
@@ -233,11 +236,9 @@ body > header {
 }
 
 .footer {
-    margin-top: 1.8125rem;
-    margin-top: calc(1.8125rem - 2px);
-    border-top: 2px solid var(--main-border-color);
     text-align: center;
     padding: 0 20px;
+    @include vertical-rhythm(1rem, 1, 2);
 }
 
 article > header {
@@ -281,13 +282,7 @@ table th{
 
 .published-time {
     margin-bottom: 0;
-    font-size: 90%;
     font-style: italic;
-}
-
-.published-time::before,
-.published-time::after{
-    font-style: normal;
 }
 
 .published-time::before{
@@ -342,7 +337,7 @@ a:visited .gg-link{
 }
 
 .highlight{
-    margin-bottom: 1.8125rem;
+    @include vertical-rhythm(1rem, 1, 1);
 }
 
 .highlight > div{

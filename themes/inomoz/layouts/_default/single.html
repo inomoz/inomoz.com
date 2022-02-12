@@ -24,12 +24,17 @@
                 {{ end }}
             {{ end }}
             {{ end }}</p>
+
         </footer>
 
-        <section>
-            <script src="https://utteranc.es/client.js" repo=
-            "inomoz/inomoz.com" issue-term="pathname" theme=
-            "preferred-color-scheme" crossorigin="anonymous" async></script>
+        <section class="tags-list">
+            <ul>
+                {{ range $i, $e := .Params.tags -}}
+                <li>
+                    <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+                </li>
+                {{- end -}}
+            </ul>
         </section>
     </article>
 </section>

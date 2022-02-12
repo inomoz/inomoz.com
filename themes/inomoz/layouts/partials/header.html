@@ -26,5 +26,12 @@
 	{{ end -}}
 
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/main.css" />
+    {{ $mainStyle := resources.Get "scss/main.scss" }}
+    {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $styles := $mainStyle | resources.ToCSS $options }}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ $styles.Permalink }}" integrity="{{ $mainStyle.Data.Integrity }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
