@@ -1,5 +1,5 @@
 <!doctype html><html><head>
-<meta charset=utf-8><title>escape sequences - Inomoz</title><meta name=description content="Inomoz - personal website">
+<meta charset=utf-8><title>Escape Sequences - Inomoz</title><meta name=description content="Inomoz - personal website">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta property="og:title" content="Inomoz">
 <meta property="og:type" content>
@@ -10,19 +10,14 @@
 <link rel=apple-touch-icon href=/apple-touch-icon.png>
 <link rel=manifest href=/manifest.webmanifest>
 <link rel=stylesheet type=text/css media=screen href=https://inomoz.com/css/normalize.css>
-<link rel=stylesheet type=text/css media=screen href=https://inomoz.com/css/main.css>
+<link rel=stylesheet type=text/css media=screen href=https://inomoz.com/scss/main.css integrity>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
 </head>
 <body><header class=header>
 <h1 class=header-title>
-<a href=https://inomoz.com/>
-<pre>
-██╗███╗░░██╗░█████╗░███╗░░░███╗░█████╗░███████╗
-██║████╗░██║██╔══██╗████╗░████║██╔══██╗╚════██║
-██║██╔██╗██║██║░░██║██╔████╔██║██║░░██║░░███╔═╝
-██║██║╚████║██║░░██║██║╚██╔╝██║██║░░██║██╔══╝░░
-██║██║░╚███║╚█████╔╝██║░╚═╝░██║╚█████╔╝███████╗
-╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░░░░╚═╝░╚════╝░╚══════╝</pre>
-</a>
+<a href=https://inomoz.com/>Inomoz</a>
 </h1>
 <nav class=navbar>
 <ul class=navbar-section>
@@ -34,11 +29,13 @@
 <section class=list>
 <article>
 <header>
-<h1>escape sequences</h1>
+<h1>Escape Sequences</h1>
 </header>
 <section class=body>
-<p><a href=https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1>https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1</a>
-\a 07 Alert (Beep, Bell) (added in C89)[1]
+<p>Combination of characters, which meaning something other than the literal characters contained therein.</p>
+<p>Usually 2 characters, one is preceding and second is actual character (which explain that escape sequence).</p>
+<p><a href=https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1>https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1</a></p>
+<p>\a 07 Alert (Beep, Bell) (added in C89)[1]
 \b 08 Backspace
 \e 1B Escape character (non standart)
 \f 0C Formfeed Page Break
@@ -54,8 +51,8 @@
 \xhh… any The byte whose numerical value is given by hh… interpreted as a hexadecimal number
 \uhhhhnote 3 none Unicode code point below 10000 hexadecimal (added in C99)[1]: 26
 \Uhhhhhhhhnote 4 none Unicode code point where h is a hexadecimal digit</p>
-<p><a href=https://gist.github.com/hectoregm/1368066>https://gist.github.com/hectoregm/1368066</a>
-Escape Sequence Name Meaning
+<p><a href=https://gist.github.com/hectoregm/1368066>https://gist.github.com/hectoregm/1368066</a></p>
+<p>Escape Sequence Name Meaning
 \a Alert Produces an audible or visible alert.
 \b Backspace Moves the cursor back one position (non-destructive).
 \f Form Feed Moves the cursor to the first position of the next page.
@@ -72,11 +69,14 @@ Escape Sequence Name Meaning
 \xdd Defines one character by the hexadecimal digit (base-16 number).</p>
 </section>
 <footer>
-<p class=published-time>Created: Jan 1, 0001 | Updated: Feb 6, 2022
+<p class=published-time>Created: Feb 12, 2022 | Updated: Feb 12, 2022
 </p>
 </footer>
-<section>
-<script src=https://utteranc.es/client.js repo=inomoz/inomoz.com issue-term=pathname theme=preferred-color-scheme crossorigin=anonymous async></script>
+<section class=tags-list>
+<ul>
+<li>
+<a href=/tags/c>C</a>
+</li></ul>
 </section>
 </article>
 </section>

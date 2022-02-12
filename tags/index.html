@@ -11,19 +11,14 @@
 <link rel=manifest href=/manifest.webmanifest>
 <link rel=alternate type=application/rss+xml href=https://inomoz.com/tags/index.xml title=Inomoz>
 <link rel=stylesheet type=text/css media=screen href=https://inomoz.com/css/normalize.css>
-<link rel=stylesheet type=text/css media=screen href=https://inomoz.com/css/main.css>
+<link rel=stylesheet type=text/css media=screen href=https://inomoz.com/scss/main.css integrity>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet>
 </head>
 <body><header class=header>
 <h1 class=header-title>
-<a href=https://inomoz.com/>
-<pre>
-██╗███╗░░██╗░█████╗░███╗░░░███╗░█████╗░███████╗
-██║████╗░██║██╔══██╗████╗░████║██╔══██╗╚════██║
-██║██╔██╗██║██║░░██║██╔████╔██║██║░░██║░░███╔═╝
-██║██║╚████║██║░░██║██║╚██╔╝██║██║░░██║██╔══╝░░
-██║██║░╚███║╚█████╔╝██║░╚═╝░██║╚█████╔╝███████╗
-╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░░░░╚═╝░╚════╝░╚══════╝</pre>
-</a>
+<a href=https://inomoz.com/>Inomoz</a>
 </h1>
 <nav class=navbar>
 <ul class=navbar-section>
@@ -34,10 +29,31 @@
 </header>
 <main class=list>
 <section class=list-item>
+<a href=/posts/20220119215704-escape_sequences/ class=article-w>
+<article>
+<header>
+<h1 class=title>Escape Sequences</h1>
+<i class=gg-link></i>
+</header>
+<section class=summary-section>
+Combination of characters, which meaning something other than the literal characters contained therein.
+Usually 2 characters, one is preceding and second is actual character (which explain that escape sequence).
+https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1
+\a 07 Alert (Beep, Bell) (added in C89)[1] \b 08 Backspace \e 1B Escape character (non standart) \f 0C Formfeed Page Break \n 0A Newline (Line Feed); see notes below \r 0D Carriage Return \t 09 Horizontal Tab \v 0B Vertical Tab \\ 5C Backslash \' 27 Apostrophe or single quotation mark \" 22 Double quotation mark \?&mldr;
+</section>
+<footer>
+<p class=published-time>
+<time>Created: Feb 12, 2022 | Updated: Feb 12, 2022 | ~ 1 minutes to read</time>
+</p>
+</footer>
+</article>
+</a>
+</section>
+<section class=list-item>
 <a href=/posts/20220126023314-edu/ class=article-w>
 <article>
 <header>
-<h1 class=title>Education</h1>
+<h1 class=title>My education roadmap</h1>
 <i class=gg-link></i>
 </header>
 <section class=summary-section>
@@ -45,7 +61,64 @@ Stage 1 Puzzle English The C programming language Код: тайный язык 
 </section>
 <footer>
 <p class=published-time>
-<time>Created: Jan 1, 0001 | Updated: Feb 6, 2022 | ~ 0 minutes to read</time>
+<time>Created: Feb 12, 2022 | Updated: Feb 12, 2022 | ~ 0 minutes to read</time>
+</p>
+</footer>
+</article>
+</a>
+</section>
+<section class=list-item>
+<a href=/posts/bhargavagrokkingalgorithms101/ class=article-w>
+<article>
+<header>
+<h1 class=title>Grokking Algorithms</h1>
+<i class=gg-link></i>
+</header>
+<section class=summary-section>
+Grokking Algorithms v2 &mldr;
+</section>
+<footer>
+<p class=published-time>
+<time>Created: Feb 12, 2022 | Updated: Feb 12, 2022 | ~ 0 minutes to read</time>
+</p>
+</footer>
+</article>
+</a>
+</section>
+<section class=list-item>
+<a href=/posts/20220212192410-doom_emacs_workflow/ class=article-w>
+<article>
+<header>
+<h1 class=title>Doom Emacs Workflow</h1>
+<i class=gg-link></i>
+</header>
+<section class=summary-section>
+Command Abbreviations C - &ldquo;Control&rdquo; key M - &ldquo;M&rdquo; or &ldquo;option/alt&rdquo; key s - &ldquo;Command&rdquo; key SPC - &ldquo;Space&rdquo; key General (tested) C-s for saving the current file (customized command). M-x for entering a command SPC q q to Quit Emacs SPC f D to delete this file Projects with Projectile (tested) SPC p p to open a project SPC SPC to open a file in a project SPC o p to open the file explorer SPC o T to open the vterm in fullscreen SPC o t to open the vterm in a popup window SPC f r recently visited files SPC f R recently visited files in a project M-x projectile-discover-projects-in-directory to find projects within given folder using Projectile M-x projectile-discover-projects-in-search-path to find projects in the folder defined by the projectile-project-search-path variable using Projectile Dired Dired (Directory Editor) is how you interfaces with a directory Press C-x d to open dired.&mldr;
+</section>
+<footer>
+<p class=published-time>
+<time>Created: Feb 12, 2022 | Updated: Feb 12, 2022 | ~ 9 minutes to read</time>
+</p>
+</footer>
+</article>
+</a>
+</section>
+<section class=list-item>
+<a href=/posts/martinchistyykod101/ class=article-w>
+<article>
+<header>
+<h1 class=title>Чистый Код</h1>
+<i class=gg-link></i>
+</header>
+<section class=summary-section>
+Предисловие Честность в мелочах вовсе не честность
+Честность в мелочах вовсе не мелочь Датская поговорка. Альтернативы - бог скрывается в мелочах. Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.
+Сопровождение В программировании 80+% того что мы делаем мы называем сопровождением.
+1951 г. - появилась методология TPM (Total Productive maintenance). Ориентирована прежде всего на сопровождение а не на производство.&mldr;
+</section>
+<footer>
+<p class=published-time>
+<time>Created: Feb 12, 2022 | Updated: Feb 12, 2022 | ~ 3 minutes to read</time>
 </p>
 </footer>
 </article>
@@ -55,7 +128,7 @@ Stage 1 Puzzle English The C programming language Код: тайный язык 
 <a href=/posts/slatkineffectivepython902019/ class=article-w>
 <article>
 <header>
-<h1 class=title>Effective python: 90 specific ways to write better python</h1>
+<h1 class=title>Effective python</h1>
 <i class=gg-link></i>
 </header>
 <section class=summary-section>
@@ -65,25 +138,7 @@ Item 2: Follow the PEP8 Style Guide PEP is Python Enhancement Proposal or PEP 8 
 </section>
 <footer>
 <p class=published-time>
-<time>Created: Jan 1, 0001 | Updated: Feb 6, 2022 | ~ 3 minutes to read</time>
-</p>
-</footer>
-</article>
-</a>
-</section>
-<section class=list-item>
-<a href=/posts/20220119215704-escape_sequences/ class=article-w>
-<article>
-<header>
-<h1 class=title>escape sequences</h1>
-<i class=gg-link></i>
-</header>
-<section class=summary-section>
-https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1 \a 07 Alert (Beep, Bell) (added in C89)[1] \b 08 Backspace \e 1B Escape character (non standart) \f 0C Formfeed Page Break \n 0A Newline (Line Feed); see notes below \r 0D Carriage Return \t 09 Horizontal Tab \v 0B Vertical Tab \\ 5C Backslash \' 27 Apostrophe or single quotation mark \" 22 Double quotation mark \? 3F Question mark (used to avoid trigraphs) \nnnnote 2 any The byte whose numerical value is given by nnn interpreted as an octal number \xhh… any The byte whose numerical value is given by hh… interpreted as a hexadecimal number \uhhhhnote 3 none Unicode code point below 10000 hexadecimal (added in C99)[1]: 26 \Uhhhhhhhhnote 4 none Unicode code point where h is a hexadecimal digit&mldr;
-</section>
-<footer>
-<p class=published-time>
-<time>Created: Jan 1, 0001 | Updated: Feb 6, 2022 | ~ 1 minutes to read</time>
+<time>Created: Feb 11, 2022 | Updated: Feb 12, 2022 | ~ 3 minutes to read</time>
 </p>
 </footer>
 </article>
@@ -98,24 +153,6 @@ https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1 \a 07 Alert (Beep,
 </header>
 <section class=summary-section>
 Fullstack Vue.js &mldr;
-</section>
-<footer>
-<p class=published-time>
-<time>Created: Jan 1, 0001 | Updated: Feb 6, 2022 | ~ 0 minutes to read</time>
-</p>
-</footer>
-</article>
-</a>
-</section>
-<section class=list-item>
-<a href=/posts/bhargavagrokkingalgorithms101/ class=article-w>
-<article>
-<header>
-<h1 class=title>Grokking Algorithms</h1>
-<i class=gg-link></i>
-</header>
-<section class=summary-section>
-Grokking Algorithms &mldr;
 </section>
 <footer>
 <p class=published-time>
@@ -144,6 +181,27 @@ JavaScript: The definitive guide, 7th edition &mldr;
 </a>
 </section>
 <section class=list-item>
+<a href=/posts/20220209122942-kill_process_by_pattern/ class=article-w>
+<article>
+<header>
+<h1 class=title>Kill process by pattern</h1>
+<i class=gg-link></i>
+</header>
+<section class=summary-section>
+Use pkill -f, which matches the pattern for any part of the command line
+pkill -f my_pattern
+Just in case it doesn&rsquo;t work, try to use this one as well:
+pkill -9 -f my_pattern&mldr;
+</section>
+<footer>
+<p class=published-time>
+<time>Created: Jan 1, 0001 | Updated: Feb 12, 2022 | ~ 0 minutes to read</time>
+</p>
+</footer>
+</article>
+</a>
+</section>
+<section class=list-item>
 <a href=/posts/20220123190452-lean/ class=article-w>
 <article>
 <header>
@@ -153,67 +211,6 @@ JavaScript: The definitive guide, 7th edition &mldr;
 <section class=summary-section>
 https://en.wikipedia.org/wiki/Lean_software_development
 Lean software development is a translation of lean manufacturing principles and practices to the software development domain. Adapted from the Toyota Production System,[1] it is emerging with the support of a pro-lean subculture within the agile community. Lean offers a solid conceptual framework, values and principles, as well as good practices, derived from experience, that support agile organizations&mldr;
-</section>
-<footer>
-<p class=published-time>
-<time>Created: Jan 1, 0001 | Updated: Feb 6, 2022 | ~ 0 minutes to read</time>
-</p>
-</footer>
-</article>
-</a>
-</section>
-<section class=list-item>
-<a href=/posts/20220203004140-leetcode_examples/ class=article-w>
-<article>
-<header>
-<h1 class=title>LeetCode examples</h1>
-<i class=gg-link></i>
-</header>
-<section class=summary-section>
-Array in Java 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 public class Main { public static void main(String[] args) { DVD[] dvdCollection = new DVD[15]; // Create avenger item DVD avengerDVD = new DVD("The avengers", 2012, "Joss Wedon"); dvdCollection[7] = avengerDVD; System.out.print("hello, world"); } // A simple definition for a DVD.&mldr;
-</section>
-<footer>
-<p class=published-time>
-<time>Created: Jan 1, 0001 | Updated: Feb 6, 2022 | ~ 1 minutes to read</time>
-</p>
-</footer>
-</article>
-</a>
-</section>
-<section class=list-item>
-<a href=/posts/ritchieprogramminglanguage1990/ class=article-w>
-<article>
-<header>
-<h1 class=title>The c programming language</h1>
-<i class=gg-link></i>
-</header>
-<section class=summary-section>
-The c programming language Chapter 1 - A Tutorial Introduction 1.1 Getting Started the only way
-Front
-Exist only one way to learn programming language, what is that way?
-Back
-The only way to learn programming language is writing programs in it.
-hello world
-Front
-Write simple hello-world program&mldr;
-</section>
-<footer>
-<p class=published-time>
-<time>Created: Jan 1, 0001 | Updated: Feb 6, 2022 | ~ 9 minutes to read</time>
-</p>
-</footer>
-</article>
-</a>
-</section>
-<section class=list-item>
-<a href=/posts/martincleancodercode2011/ class=article-w>
-<article>
-<header>
-<h1 class=title>The clean coder: A code of conduct for professional programmers</h1>
-<i class=gg-link></i>
-</header>
-<section class=summary-section>
-The clean coder: A code of conduct for professional programmers &mldr;
 </section>
 <footer>
 <p class=published-time>
@@ -236,8 +233,8 @@ The clean coder: A code of conduct for professional programmers &mldr;
 <li><a style=font-size:1rem href=https://inomoz.com/tags/skills/>skills</a></li>
 <li><a style=font-size:1rem href=https://inomoz.com/tags/js/>js</a></li>
 <li><a style=font-size:1rem href=https://inomoz.com/tags/l1/>l1</a></li>
-<li><a style=font-size:1rem href=https://inomoz.com/tags/active/>active</a></li>
 <li><a style=font-size:1rem href=https://inomoz.com/tags/art%5C-and%5C-design/>art\-and\-design</a></li>
+<li><a style=font-size:1rem href=https://inomoz.com/tags/books/>books</a></li>
 <li><a style=font-size:1rem href=https://inomoz.com/tags/c/>c</a></li>
 <li><a style=font-size:1rem href=https://inomoz.com/tags/cpp/>cpp</a></li>
 <li><a style=font-size:1rem href=https://inomoz.com/tags/cs/>cs</a></li>

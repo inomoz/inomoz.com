@@ -1,4 +1,149 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>skills, on Inomoz</title><link>https://inomoz.com/tags/skills/</link><description>Recent content in skills, on Inomoz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://inomoz.com/tags/skills/index.xml" rel="self" type="application/rss+xml"/><item><title>The clean coder: A code of conduct for professional programmers</title><link>https://inomoz.com/posts/martincleancodercode2011/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/martincleancodercode2011/</guid><description>&lt;h2 id="martinCleanCoderCode2011">The clean coder: A code of conduct for professional programmers&lt;/h2></description></item><item><title>The pragmatic programmer: From journeyman to master</title><link>https://inomoz.com/posts/huntpragmaticprogrammerjourneyman1999/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/huntpragmaticprogrammerjourneyman1999/</guid><description>&lt;h2 id="huntPragmaticProgrammerJourneyman1999">The pragmatic programmer: From journeyman to master&lt;/h2></description></item><item><title>Код: тайный язык информатики</title><link>https://inomoz.com/posts/petzoldkodtaynyyyazyk101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/petzoldkodtaynyyyazyk101/</guid><description>&lt;h2 id="petzoldKodTaynyyYazyk101">Код: тайный язык информатики&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>skills, on Inomoz</title><link>https://inomoz.com/tags/skills/</link><description>Recent content in skills, on Inomoz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 12 Feb 2022 00:00:00 +0300</lastBuildDate><atom:link href="https://inomoz.com/tags/skills/index.xml" rel="self" type="application/rss+xml"/><item><title>Чистый Код</title><link>https://inomoz.com/posts/martinchistyykod101/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0300</pubDate><guid>https://inomoz.com/posts/martinchistyykod101/</guid><description>&lt;h2 id="martinChistyyKod101">Предисловие&lt;/h2>
+&lt;p>Честность в мелочах вовсе не честность&lt;/p>
+&lt;h3 id="честность-в-мелочах-вовсе-не-мелочь">Честность в мелочах вовсе не мелочь&lt;/h3>
+&lt;p>Датская поговорка. Альтернативы - бог скрывается в мелочах. Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.&lt;/p>
+&lt;h3 id="сопровождение">Сопровождение&lt;/h3>
+&lt;p>В программировании 80+% того что мы делаем мы называем сопровождением.&lt;/p>
+&lt;p>1951 г. - появилась методология TPM (Total Productive maintenance). Ориентирована прежде всего на сопровождение а не на производство. Основаня на приципах 5S.
+Ее принципы заложены в методолгии &lt;a href="https://inomoz.com/posts/20220123190452-lean/">LEAN&lt;/a>.&lt;/p>
+&lt;p>Хорошая практика программирования требует сосредоточенность, присутствие духа и мышление.&lt;/p>
+&lt;p>Философия 5S:&lt;/p>
+&lt;ul>
+&lt;li>Организация (сейри), грамотное именование.&lt;/li>
+&lt;li>Аккуратность (сейтон), всему своё место.&lt;/li>
+&lt;li>Чистка (сейсо), код не должен быть захламлённым.&lt;/li>
+&lt;li>Стандартизация (сэйкэцу), придерживайтесь единого стиля в коде.&lt;/li>
+&lt;li>Дисциплина (сюцукэ), нужно следовать правилам, размышлять о работе и быть готовым к изменениям в самом себе.&lt;/li>
+&lt;/ul>
+&lt;h3 id="описание-принципов">Описание принципов&lt;/h3>
+&lt;p>Следуя этим принципам вы значительно уменьшаете вероятность возникновения ошибок, вы стараетесть переработать уже существующий код под эти принципы, ваш код удобочитаем, спорные части вы переписываете сразу-же.&lt;/p>
+&lt;blockquote>
+&lt;p>Чистота ведет к божественности.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Тот кто верен в мелочах, верен во всем.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Ранняя пташка червяка ловит.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Не откладывай на завтра то, что можно сделать сегодня.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Из маленьких желудей вырастают большие дубы.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Дорога ложка к обеду.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Яблочко на ужин и доктор не нужен.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="непрерывное-улучшение">Непрерывное улучшение&lt;/h3>
+&lt;p>Каждое действие для проектирования можно рассматривать как атомарное восстановление. Стихотвроение никогда не бывает законченным, оно требует непрерывного улучшения, прекратить работу над ним значит бросить его.&lt;/p>
+&lt;p>Невнимательность к мелочам или их игнорирование, зацикливание на внешнем виде в конечном итоге обходится недёшево.&lt;/p>
+&lt;h3 id="зависимость-ошибок-от-стиля-программирования">Зависимость ошибок от стиля программирования&lt;/h3>
+&lt;p>В ходе исследований в BELL labs выяснилось что последовательный стиль применения отступов является одним из самых статистически значимых признаков низкой плотности ошибок.&lt;/p>
+&lt;p>Качество кода возникает в результате миллиона проявлений нбезразличного отношения к коду, а не от применения супер методов.&lt;/p>
+&lt;h3 id="рассматривайте-свой-код-dot-dot-dot">Рассматривайте свой код&amp;hellip;&lt;/h3>
+&lt;p>Рассматривайте свой код как красивое воплощение благородных усилий по проектированию - как процесс, а не статистически конечной точки.&lt;/p>
+&lt;h3 id="честность">Честность&lt;/h3>
+&lt;p>Как уже было сказано важно быть честным в мелочах. Нужно делать все возможное для улучшеня вашего кода и стараться делать его лучше чем он был.&lt;/p>
+&lt;h3 id="flashcards">Flashcards&lt;/h3>
+&lt;h4 id="мелочи-важны">Мелочи важны&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Обращая внимание на мелочи вы приобретаете, вы приобретаете?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.&lt;/p>
+&lt;p>Как уже было сказано важно быть честным в мелочах. Нужно делать все возможное для улучшеня вашего кода и стараться делать его лучше чем он был.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="5s">5S&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Назовите основые принципы философии 5S&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;ul>
+&lt;li>Организация (сейри), грамотное именование.&lt;/li>
+&lt;li>Аккуратность (сейтон), всему своё место.&lt;/li>
+&lt;li>Чистка (сейсо), код не должен быть захламлённым.&lt;/li>
+&lt;li>Стандартизация (сэйкэцу), придерживайтесь единого стиля в коде.&lt;/li>
+&lt;li>Дисциплина (сюцукэ), нужно следовать правилам, размышлять о работе и быть готовым к изменениям в самом себе.&lt;/li>
+&lt;/ul>
+&lt;p>Следуя этим принципам вы значительно уменьшаете вероятность возникновения ошибок, вы стараетесть переработать уже существующий код под эти принципы, ваш код удобочитаем, спорные части вы переписываете сразу-же.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="зачем">Зачем&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Почему важно обращать внимание на мелочи в контексте разработки, в чем основная суть?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Невнимательность к мелочам или их игнорирование, зацикливание на внешнем виде в конечном итоге обходится недёшево.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="небезразличие">Небезразличие&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Есть ли какие либо сверх-универсальные методы для достижения качества кода? Или нужно просто придерживаться небезразличного отношения к коду?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Скорее второе, я думаю есть методы позволяющие улучшить код, но они могут быть не всегда применимы, а если придерживаться второго пункта то качество кода улучшиться.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="идеальный-код">Идеальный код&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Когда ваш код становится идеальным?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Я думаю никогда.
+Рассматривайте свой код как красивое воплощение благородных усилий по проектированию - как процесс, а не статистически конечной точки.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="введение">Введение&lt;/h2>
+&lt;h3 id="профессионализм">Профессионализм&lt;/h3>
+&lt;figure>&lt;img src="https://inomoz.com/ox-hugo/20220123-212705_screenshot.png"/>
+&lt;/figure>
+&lt;p>Что позволяет избежать поток ужасных ошибок, отладку в панике, напор начальства? Правильный ответ профессионализм.&lt;/p></description></item><item><title>The clean coder: A code of conduct for professional programmers</title><link>https://inomoz.com/posts/martincleancodercode2011/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/martincleancodercode2011/</guid><description>&lt;h2 id="martinCleanCoderCode2011">The clean coder: A code of conduct for professional programmers&lt;/h2></description></item><item><title>The pragmatic programmer: From journeyman to master</title><link>https://inomoz.com/posts/huntpragmaticprogrammerjourneyman1999/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/huntpragmaticprogrammerjourneyman1999/</guid><description>&lt;h2 id="huntPragmaticProgrammerJourneyman1999">The pragmatic programmer: From journeyman to master&lt;/h2></description></item><item><title>Код: тайный язык информатики</title><link>https://inomoz.com/posts/petzoldkodtaynyyyazyk101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/petzoldkodtaynyyyazyk101/</guid><description>&lt;h2 id="petzoldKodTaynyyYazyk101">Код: тайный язык информатики&lt;/h2>
 &lt;h3 id="предисловие-к-оригинальному-изданию">Предисловие к оригинальному изданию&lt;/h3>
 &lt;h4 id="разница-между-оперативной-и-дисковой-памятью">Разница между оперативной и дисковой памятью&lt;/h4>
 &lt;!--list-separator-->
@@ -303,149 +448,4 @@
 &lt;p>Ток подобен объему воды проходящему через трубу в ед. времени.
 Напряжение давлению воды.
 Сопротовиление ширина трубы.&lt;/p>
-&lt;p>Объем воды текущий через трубу (ток) в еденицу времени прямо пропорионален давлению воды (напряжению) и обратно пропорионален толщине трубы (сопротивлению).&lt;/p></description></item><item><title>Чистый Код</title><link>https://inomoz.com/posts/martinchistyykod101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/martinchistyykod101/</guid><description>&lt;h2 id="martinChistyyKod101">Предисловие&lt;/h2>
-&lt;p>Честность в мелочах вовсе не честность&lt;/p>
-&lt;h3 id="честность-в-мелочах-вовсе-не-мелочь">Честность в мелочах вовсе не мелочь&lt;/h3>
-&lt;p>Датская поговорка. Альтернативы - бог скрывается в мелочах. Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.&lt;/p>
-&lt;h3 id="сопровождение">Сопровождение&lt;/h3>
-&lt;p>В программировании 80+% того что мы делаем мы называем сопровождением.&lt;/p>
-&lt;p>1951 г. - появилась методология TPM (Total Productive maintenance). Ориентирована прежде всего на сопровождение а не на производство. Основаня на приципах 5S.
-Ее принципы заложены в методолгии &lt;a href="https://inomoz.com/posts/20220123190452-lean/">LEAN&lt;/a>.&lt;/p>
-&lt;p>Хорошая практика программирования требует сосредоточенность, присутствие духа и мышление.&lt;/p>
-&lt;p>Философия 5S:&lt;/p>
-&lt;ul>
-&lt;li>Организация (сейри), грамотное именование.&lt;/li>
-&lt;li>Аккуратность (сейтон), всему своё место.&lt;/li>
-&lt;li>Чистка (сейсо), код не должен быть захламлённым.&lt;/li>
-&lt;li>Стандартизация (сэйкэцу), придерживайтесь единого стиля в коде.&lt;/li>
-&lt;li>Дисциплина (сюцукэ), нужно следовать правилам, размышлять о работе и быть готовым к изменениям в самом себе.&lt;/li>
-&lt;/ul>
-&lt;h3 id="описание-принципов">Описание принципов&lt;/h3>
-&lt;p>Следуя этим принципам вы значительно уменьшаете вероятность возникновения ошибок, вы стараетесть переработать уже существующий код под эти принципы, ваш код удобочитаем, спорные части вы переписываете сразу-же.&lt;/p>
-&lt;blockquote>
-&lt;p>Чистота ведет к божественности.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Тот кто верен в мелочах, верен во всем.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Ранняя пташка червяка ловит.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Не откладывай на завтра то, что можно сделать сегодня.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Из маленьких желудей вырастают большие дубы.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Дорога ложка к обеду.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Яблочко на ужин и доктор не нужен.&lt;/p>
-&lt;/blockquote>
-&lt;h3 id="непрерывное-улучшение">Непрерывное улучшение&lt;/h3>
-&lt;p>Каждое действие для проектирования можно рассматривать как атомарное восстановление. Стихотвроение никогда не бывает законченным, оно требует непрерывного улучшения, прекратить работу над ним значит бросить его.&lt;/p>
-&lt;p>Невнимательность к мелочам или их игнорирование, зацикливание на внешнем виде в конечном итоге обходится недёшево.&lt;/p>
-&lt;h3 id="зависимость-ошибок-от-стиля-программирования">Зависимость ошибок от стиля программирования&lt;/h3>
-&lt;p>В ходе исследований в BELL labs выяснилось что последовательный стиль применения отступов является одним из самых статистически значимых признаков низкой плотности ошибок.&lt;/p>
-&lt;p>Качество кода возникает в результате миллиона проявлений нбезразличного отношения к коду, а не от применения супер методов.&lt;/p>
-&lt;h3 id="рассматривайте-свой-код-dot-dot-dot">Рассматривайте свой код&amp;hellip;&lt;/h3>
-&lt;p>Рассматривайте свой код как красивое воплощение благородных усилий по проектированию - как процесс, а не статистически конечной точки.&lt;/p>
-&lt;h3 id="честность">Честность&lt;/h3>
-&lt;p>Как уже было сказано важно быть честным в мелочах. Нужно делать все возможное для улучшеня вашего кода и стараться делать его лучше чем он был.&lt;/p>
-&lt;h3 id="flashcards">Flashcards&lt;/h3>
-&lt;h4 id="мелочи-важны">Мелочи важны&lt;/h4>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Front&lt;/p>
-&lt;p>Обращая внимание на мелочи вы приобретаете, вы приобретаете?&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Back&lt;/p>
-&lt;p>Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.&lt;/p>
-&lt;p>Как уже было сказано важно быть честным в мелочах. Нужно делать все возможное для улучшеня вашего кода и стараться делать его лучше чем он был.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="5s">5S&lt;/h4>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Front&lt;/p>
-&lt;p>Назовите основые принципы философии 5S&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Back&lt;/p>
-&lt;ul>
-&lt;li>Организация (сейри), грамотное именование.&lt;/li>
-&lt;li>Аккуратность (сейтон), всему своё место.&lt;/li>
-&lt;li>Чистка (сейсо), код не должен быть захламлённым.&lt;/li>
-&lt;li>Стандартизация (сэйкэцу), придерживайтесь единого стиля в коде.&lt;/li>
-&lt;li>Дисциплина (сюцукэ), нужно следовать правилам, размышлять о работе и быть готовым к изменениям в самом себе.&lt;/li>
-&lt;/ul>
-&lt;p>Следуя этим принципам вы значительно уменьшаете вероятность возникновения ошибок, вы стараетесть переработать уже существующий код под эти принципы, ваш код удобочитаем, спорные части вы переписываете сразу-же.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="зачем">Зачем&lt;/h4>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Front&lt;/p>
-&lt;p>Почему важно обращать внимание на мелочи в контексте разработки, в чем основная суть?&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Back&lt;/p>
-&lt;p>Невнимательность к мелочам или их игнорирование, зацикливание на внешнем виде в конечном итоге обходится недёшево.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="небезразличие">Небезразличие&lt;/h4>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Front&lt;/p>
-&lt;p>Есть ли какие либо сверх-универсальные методы для достижения качества кода? Или нужно просто придерживаться небезразличного отношения к коду?&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Back&lt;/p>
-&lt;p>Скорее второе, я думаю есть методы позволяющие улучшить код, но они могут быть не всегда применимы, а если придерживаться второго пункта то качество кода улучшиться.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="идеальный-код">Идеальный код&lt;/h4>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Front&lt;/p>
-&lt;p>Когда ваш код становится идеальным?&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Back&lt;/p>
-&lt;p>Я думаю никогда.
-Рассматривайте свой код как красивое воплощение благородных усилий по проектированию - как процесс, а не статистически конечной точки.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="введение">Введение&lt;/h2>
-&lt;h3 id="профессионализм">Профессионализм&lt;/h3>
-&lt;figure>&lt;img src="https://inomoz.com/ox-hugo/20220123-212705_screenshot.png"/>
-&lt;/figure>
-&lt;p>Что позволяет избежать поток ужасных ошибок, отладку в панике, напор начальства? Правильный ответ профессионализм.&lt;/p></description></item></channel></rss>
+&lt;p>Объем воды текущий через трубу (ток) в еденицу времени прямо пропорионален давлению воды (напряжению) и обратно пропорионален толщине трубы (сопротивлению).&lt;/p></description></item></channel></rss>

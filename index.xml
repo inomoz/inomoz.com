@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Inomoz</title><link>https://inomoz.com/</link><description>Recent content on Inomoz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://inomoz.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Education</title><link>https://inomoz.com/posts/20220126023314-edu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220126023314-edu/</guid><description>&lt;h2 id="stage-1">Stage 1&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Inomoz</title><link>https://inomoz.com/</link><description>Recent content on Inomoz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 12 Feb 2022 18:28:56 +0300</lastBuildDate><atom:link href="https://inomoz.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Escape Sequences</title><link>https://inomoz.com/posts/20220119215704-escape_sequences/</link><pubDate>Sat, 12 Feb 2022 18:28:56 +0300</pubDate><guid>https://inomoz.com/posts/20220119215704-escape_sequences/</guid><description>&lt;p>Combination of characters, which meaning something other than the literal characters contained therein.&lt;/p>
+&lt;p>Usually 2 characters, one is preceding and second is actual character (which explain that escape sequence).&lt;/p>
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1">https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1&lt;/a>&lt;/p>
+&lt;p>\a 07 Alert (Beep, Bell) (added in C89)[1]
+\b 08 Backspace
+\e 1B Escape character (non standart)
+\f 0C Formfeed Page Break
+\n 0A Newline (Line Feed); see notes below
+\r 0D Carriage Return
+\t 09 Horizontal Tab
+\v 0B Vertical Tab
+\\ 5C Backslash
+\' 27 Apostrophe or single quotation mark
+\&amp;quot; 22 Double quotation mark
+\? 3F Question mark (used to avoid trigraphs)
+\nnnnote 2 any The byte whose numerical value is given by nnn interpreted as an octal number
+\xhh… any The byte whose numerical value is given by hh… interpreted as a hexadecimal number
+\uhhhhnote 3 none Unicode code point below 10000 hexadecimal (added in C99)[1]: 26
+\Uhhhhhhhhnote 4 none Unicode code point where h is a hexadecimal digit&lt;/p>
+&lt;p>&lt;a href="https://gist.github.com/hectoregm/1368066">https://gist.github.com/hectoregm/1368066&lt;/a>&lt;/p>
+&lt;p>Escape Sequence Name Meaning
+\a Alert Produces an audible or visible alert.
+\b Backspace Moves the cursor back one position (non-destructive).
+\f Form Feed Moves the cursor to the first position of the next page.
+\n New Line Moves the cursor to the first position of the next line.
+\r Carriage Return Moves the cursor to the first position of the current line.
+\t Horizontal Tab Moves the cursor to the next horizontal tabular position.
+\v Vertical Tab Moves the cursor to the next vertical tabular position.
+\' Produces a single quote.
+\&amp;quot; Produces a double quote.
+\? Produces a question mark.
+\\ Produces a single backslash.
+\0 Produces a null character.
+\ddd Defines one character by the octal digits (base-8 number). Multiple characters may be defined in the same escape sequence, but the value is implementation-specific (see examples).
+\xdd Defines one character by the hexadecimal digit (base-16 number).&lt;/p></description></item><item><title>My education roadmap</title><link>https://inomoz.com/posts/20220126023314-edu/</link><pubDate>Sat, 12 Feb 2022 18:09:51 +0300</pubDate><guid>https://inomoz.com/posts/20220126023314-edu/</guid><description>&lt;h2 id="stage-1">Stage 1&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://puzzle-english.com/">Puzzle English&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://inomoz.com/posts/ritchieprogramminglanguage1990/">The C programming language&lt;/a>&lt;/li>
@@ -15,7 +49,576 @@
 &lt;li>&lt;a href="https://inomoz.com/posts/flanaganjavascriptdefinitiveguide2020/">JavaScript: The definitive guide, 7th edition&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://inomoz.com/posts/djirdehfullstackvuejs2021/">Full Stack Vue.js&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://inomoz.com/posts/davidsvetosveshchenie2001/">Свет и освещение&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Effective python: 90 specific ways to write better python</title><link>https://inomoz.com/posts/slatkineffectivepython902019/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/slatkineffectivepython902019/</guid><description>&lt;h2 id="slatkinEffectivePython902019">Effective python: 90 specific ways to write better python&lt;/h2>
+&lt;/ul></description></item><item><title>Grokking Algorithms</title><link>https://inomoz.com/posts/bhargavagrokkingalgorithms101/</link><pubDate>Sat, 12 Feb 2022 17:41:32 +0300</pubDate><guid>https://inomoz.com/posts/bhargavagrokkingalgorithms101/</guid><description>&lt;h2 id="bhargavaGrokkingAlgorithms101">Grokking Algorithms v2&lt;/h2></description></item><item><title>Doom Emacs Workflow</title><link>https://inomoz.com/posts/20220212192410-doom_emacs_workflow/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0300</pubDate><guid>https://inomoz.com/posts/20220212192410-doom_emacs_workflow/</guid><description>&lt;h2 id="command-abbreviations">Command Abbreviations&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>C&lt;/code> - &amp;ldquo;Control&amp;rdquo; key&lt;/li>
+&lt;li>&lt;code>M&lt;/code> - &amp;ldquo;M&amp;rdquo; or &amp;ldquo;option/alt&amp;rdquo; key&lt;/li>
+&lt;li>&lt;code>s&lt;/code> - &amp;ldquo;Command&amp;rdquo; key&lt;/li>
+&lt;li>&lt;code>SPC&lt;/code> - &amp;ldquo;Space&amp;rdquo; key&lt;/li>
+&lt;/ul>
+&lt;h2 id="general--tested">General (tested)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>C-s&lt;/code> for saving the current file (customized command).&lt;/li>
+&lt;li>&lt;code>M-x&lt;/code> for entering a command&lt;/li>
+&lt;li>&lt;code>SPC q q&lt;/code> to Quit Emacs&lt;/li>
+&lt;li>&lt;code>SPC f D&lt;/code> to delete this file&lt;/li>
+&lt;/ul>
+&lt;h2 id="projects-with-projectile--tested">Projects with Projectile (tested)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>SPC p p&lt;/code> to open a project&lt;/li>
+&lt;li>&lt;code>SPC SPC&lt;/code> to open a file in a project&lt;/li>
+&lt;li>&lt;code>SPC o p&lt;/code> to open the file explorer&lt;/li>
+&lt;li>&lt;code>SPC o T&lt;/code> to open the vterm in fullscreen&lt;/li>
+&lt;li>&lt;code>SPC o t&lt;/code> to open the vterm in a popup window&lt;/li>
+&lt;li>&lt;code>SPC f r&lt;/code> recently visited files&lt;/li>
+&lt;li>&lt;code>SPC f R&lt;/code> recently visited files in a project&lt;/li>
+&lt;li>&lt;code>M-x projectile-discover-projects-in-directory&lt;/code> to find projects
+within given folder using Projectile&lt;/li>
+&lt;li>&lt;code>M-x projectile-discover-projects-in-search-path&lt;/code> to find projects in
+the folder defined by the &lt;code>projectile-project-search-path&lt;/code> variable
+using Projectile&lt;/li>
+&lt;/ul>
+&lt;h2 id="dired">Dired&lt;/h2>
+&lt;ul>
+&lt;li>Dired (Directory Editor) is how you interfaces with a directory&lt;/li>
+&lt;li>Press &lt;code>C-x d&lt;/code> to open dired.&lt;/li>
+&lt;li>Use &lt;code>RET&lt;/code> to go to a folder or open a file.&lt;/li>
+&lt;li>Use &lt;code>-&lt;/code> for going one folder back&lt;/li>
+&lt;li>Use &lt;code>+&lt;/code> for creating a new directory&lt;/li>
+&lt;li>Use &lt;code>d&lt;/code> to mark the files for deletion, press &lt;code>x&lt;/code> to delete.&lt;/li>
+&lt;li>Use &lt;code>M&lt;/code> to change permissions&lt;/li>
+&lt;li>Use &lt;code>o&lt;/code> to sort by modes.&lt;/li>
+&lt;li>Use &lt;code>O&lt;/code> to change the owner.&lt;/li>
+&lt;li>Use &lt;code>m&lt;/code> to mark and &lt;code>u&lt;/code> to unmark files or directories.&lt;/li>
+&lt;li>&lt;code>U&lt;/code> to unselect all&lt;/li>
+&lt;li>Use &lt;code>t&lt;/code> to invert the selection.&lt;/li>
+&lt;li>&lt;code>t&lt;/code> to switch between files and directories&lt;/li>
+&lt;li>Use &lt;code>C&lt;/code> to copy.&lt;/li>
+&lt;li>Use &lt;code>R&lt;/code> to move.&lt;/li>
+&lt;li>Move with &lt;code>h&lt;/code>, &lt;code>j&lt;/code>, &lt;code>k&lt;/code>, &lt;code>l&lt;/code>&lt;/li>
+&lt;li>Toggle &lt;code>(&lt;/code> for simple view&lt;/li>
+&lt;li>&lt;code>SPC .&lt;/code> to create or find a file&lt;/li>
+&lt;li>&lt;code>*&lt;/code> to invoke mark dialog&lt;/li>
+&lt;li>&lt;code>* \&lt;/code> to select all directories.&lt;/li>
+&lt;li>&lt;code>C&lt;/code> copy to another window&lt;/li>
+&lt;li>&lt;code>R&lt;/code> move to another window&lt;/li>
+&lt;li>&lt;code>dired-do-what-i-mean-target&lt;/code> set to true&lt;/li>
+&lt;li>&lt;code>i&lt;/code> to edit file/dir name&lt;/li>
+&lt;/ul>
+&lt;h2 id="buffers-windows-and-basic-navigation">Buffers, Windows and Basic Navigation&lt;/h2>
+&lt;h3 id="buffers">Buffers&lt;/h3>
+&lt;ul>
+&lt;li>Buffers are a special concept in emacs they can be terminals, files,
+directories, etc&lt;/li>
+&lt;li>&lt;code>SPC ,&lt;/code> to open another buffer
+&lt;ul>
+&lt;li>workspace buffer&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>SPC SHIFT ,&lt;/code> to switch to all buffers&lt;/li>
+&lt;li>&lt;code>SPC b X&lt;/code> You can create a scratch buffer&lt;/li>
+&lt;li>&lt;code>SPC b s&lt;/code> to save and name it&lt;/li>
+&lt;/ul>
+&lt;h3 id="windows">Windows&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>CTRL w v&lt;/code> window split vertically&lt;/li>
+&lt;li>&lt;code>CTRL w s&lt;/code> window split horizonal&lt;/li>
+&lt;li>&lt;code>CTRL w w&lt;/code> to switch windows&lt;/li>
+&lt;li>&lt;code>SPC w q&lt;/code> to kill windows&lt;/li>
+&lt;li>&lt;code>SPC w &amp;gt;&lt;/code> and &lt;code>SPC w &amp;lt;&lt;/code> to increase and decrease window width&lt;/li>
+&lt;li>&lt;code>SPC w +&lt;/code> and &lt;code>SPC w -&lt;/code> to increase and decrease window height&lt;/li>
+&lt;li>You can use vim motion keys to navigate between open windows for example &lt;code>SPC w H&lt;/code> moves the window to the left.&lt;/li>
+&lt;li>Windows are panes in your screen&lt;/li>
+&lt;/ul>
+&lt;h3 id="workspaces">Workspaces&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>SPC TAB n&lt;/code> New workspace&lt;/li>
+&lt;li>&lt;code>SPC TAB N&lt;/code> Newly named workspace&lt;/li>
+&lt;li>&lt;code>SPC TAB [&lt;/code> Previous workspace&lt;/li>
+&lt;li>&lt;code>SPC TAB ]&lt;/code> Next workspace&lt;/li>
+&lt;li>&lt;code>SPC TAB d&lt;/code> Remove workspace&lt;/li>
+&lt;li>&lt;code>SPC TAB R&lt;/code> Restore last session&lt;/li>
+&lt;li>&lt;code>M-1&lt;/code> Switch to workspace 1&lt;/li>
+&lt;li>&lt;code>M-2&lt;/code> Switch to workspace 2 and so forth.&lt;/li>
+&lt;/ul>
+&lt;h2 id="installing-packages-using-org-super-agenda-as-an-example">Installing Packages using org-super-agenda as an example&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>SPC f p&lt;/code> to open the config.&lt;/li>
+&lt;li>To add a package, add the package to &lt;code>.doom.d/package.el&lt;/code>&lt;/li>
+&lt;li>Then close and &lt;code>doom refresh&lt;/code>&lt;/li>
+&lt;li>Then go to &lt;code>.doom.d/config.el&lt;/code> to configure the package&lt;/li>
+&lt;li>&lt;code>def-package!&lt;/code> is a macro you can use to configure packages
+&lt;ul>
+&lt;li>&lt;code>space h help&lt;/code> you can look up method man pages&lt;/li>
+&lt;li>&lt;code>:init&lt;/code> is used for setting the package up&lt;/li>
+&lt;li>&lt;code>:config&lt;/code> to set configuration after the package has been
+initialized&lt;/li>
+&lt;li>&lt;code>:after&lt;/code> lets you set which package it should load after&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>You can use &lt;code>:after!&lt;/code> to configure packages that are already there&lt;/li>
+&lt;/ul>
+&lt;h2 id="quick-horizontal-movements-with-evil-snipe">Quick, horizontal movements with evil-snipe&lt;/h2>
+&lt;h3 id="inine-navigation">Inine navigation&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>f&lt;/code> and then the letter you want to navigate to.
+&lt;ul>
+&lt;li>&lt;code>,&lt;/code> will go backward&lt;/li>
+&lt;li>&lt;code>;&lt;/code> will go forward after that &amp;ldquo;find&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>t&lt;/code> to find and move cursor to the charachter before what you&amp;rsquo;ve searched.&lt;/li>
+&lt;li>&lt;code>v&lt;/code> puts you in vi mode. You can select text by with &lt;code>v t some-char-you-navigate-to&lt;/code> or &lt;code>v f some-char-you-navigate-to&lt;/code>&lt;/li>
+&lt;li>&lt;code>;&lt;/code> to jump to the next find&lt;/li>
+&lt;li>&lt;code>,&lt;/code> to jump to the previous one&lt;/li>
+&lt;li>&lt;code>s&lt;/code> to snipe&lt;/li>
+&lt;/ul>
+&lt;h3 id="long-distance-navigation-inside-the-file">Long distance navigation inside the file&lt;/h3>
+&lt;ul>
+&lt;li>Evil-snipe lets you go to all the occuranses in your document&lt;/li>
+&lt;li>&lt;code>g s SPC&lt;/code> to use avy and going to a certain word in file.&lt;/li>
+&lt;li>&lt;code>t&lt;/code> is the same thing except for a character you want to jump to before the one you insert&lt;/li>
+&lt;li>&lt;code>s&lt;/code> to do a double character search&lt;/li>
+&lt;li>Evil-snipe will remember your last search so &lt;code>,&lt;/code> and &lt;code>;&lt;/code> will navigate&lt;/li>
+&lt;li>&lt;code>F&lt;/code> or &lt;code>T&lt;/code> to go backwards&lt;/li>
+&lt;li>&lt;code>g s SPC&lt;/code> and then select the letter that avy gives you to navigate to that spot
+&lt;ul>
+&lt;li>These letters are on your home row so they are easy to click&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>SPC h v&lt;/code> for variable, to set the avy variable to search all open
+windows
+&lt;ul>
+&lt;li>&lt;code>avy-all-windows&lt;/code> lets you search in all windows open.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>You can remove a word with
+&lt;code>g s SPC select-one-letter x select-the-removal-spot&lt;/code>
+&lt;ul>
+&lt;li>You can use &lt;code>X&lt;/code> to stay in your original spot of search&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>You can go &lt;code>g s space select-one-letter i select-the-correction-spot&lt;/code>
+to correct the spelling of the search
+&lt;ul>
+&lt;li>Install ispell on your OS first&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>You can &lt;code>yank&lt;/code> a word from one place to another with
+&lt;code>g s SPC select-one-letter y select-the-correction-spot-to-paste&lt;/code>&lt;/li>
+&lt;li>Use &lt;code>t&lt;/code> to &amp;ldquo;teleport&amp;rdquo; the word from one place to another
+&lt;code>g s SPC select-one-letter t select-the-correction-spot-to-teleport&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="multiple-cursor-in-emacs-with-evil-multiedit">Multiple cursor in Emacs with Evil-multiedit&lt;/h2>
+&lt;ul>
+&lt;li>Make selections and then edit those selections interactively&lt;/li>
+&lt;li>&lt;code>M d&lt;/code> will select the current word, and again will find another
+occurance&lt;/li>
+&lt;li>&lt;code>M D&lt;/code> will find the occurence upward&lt;/li>
+&lt;li>You can use a visual selection to select multiple words.&lt;/li>
+&lt;li>&lt;code>R&lt;/code> will select all occurances&lt;/li>
+&lt;li>&lt;code>CTRL n&lt;/code> for next selection &lt;code>CTRL p&lt;/code> for previous&lt;/li>
+&lt;li>Exclude matches with &lt;code>RET&lt;/code>&lt;/li>
+&lt;li>You can make an edit and the changes will be reflected in all the
+selection&lt;/li>
+&lt;/ul>
+&lt;h2 id="org-mode">Org Mode&lt;/h2>
+&lt;h3 id="basics">Basics&lt;/h3>
+&lt;ul>
+&lt;li>Org mode gives you structure to your document&lt;/li>
+&lt;li>&lt;code>*&lt;/code> for a h1 &lt;code>**&lt;/code> for an h2 and so on&lt;/li>
+&lt;li>You can &lt;code>TAB&lt;/code> a section to fold a subtree (hide it)&lt;/li>
+&lt;li>You can use &lt;code>SHIFT TAB&lt;/code> to cycle through folded states&lt;/li>
+&lt;li>&lt;code>CTRL return&lt;/code> to create a headline of the same type&lt;/li>
+&lt;li>&lt;code>M arrow up&lt;/code> lets you shift the position of the section&lt;/li>
+&lt;li>&lt;code>M h&lt;/code> promotes a headline to the next level&lt;/li>
+&lt;li>&lt;code>M l&lt;/code> demotes&lt;/li>
+&lt;li>You can create lists
+&lt;ol>
+&lt;li>onw&lt;/li>
+&lt;li>2&lt;/li>
+&lt;li>wooo&lt;/li>
+&lt;li>3&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="links-hyperlinks-and-more">Links, Hyperlinks and more&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>SPC m l&lt;/code> to add a link to an org page&lt;/li>
+&lt;li>You can add &lt;code>::&lt;/code> to specify a heading or a line number&lt;/li>
+&lt;li>You can paste http links as well&lt;/li>
+&lt;li>You can &amp;ldquo;link&amp;rdquo; some text with specific code &lt;code>SPC m l&lt;/code> elisp: &lt;a href="(+%202%202)">(+ 2 2)&lt;/a> when you click the link, emacs will evaluate the expression&lt;/li>
+&lt;li>Show &lt;a href="org-agenda">My Agenda&lt;/a>&lt;/li>
+&lt;li>&lt;a href="ls">List Files&lt;/a> in directory&lt;/li>
+&lt;/ul>
+&lt;h3 id="defining-custoom-link-types">Defining custoom Link Types&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://youtube.com/watch?v=Febe4lUK5G4">Whatch the video about custom links&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="linking-to-words-and-bookmarks">Linking to words &amp;amp; Bookmarks&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>SPC n l&lt;/code> stores a link to a particular headline&lt;/li>
+&lt;/ul>
+&lt;h3 id="code-snippets-and-babel">Code Snippets &amp;amp; Babel&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>SPC i s&lt;/code> for inserting code snippets
+&lt;ul>
+&lt;li>
+&lt;p>Example:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-emacs-lisp" data-lang="emacs-lisp"> (&lt;span style="color:#a6e22e">+&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#ae81ff">4&lt;/span> &lt;span style="color:#ae81ff">5&lt;/span>)
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>C-c C-c&lt;/code> to execute the code.&lt;/li>
+&lt;li>&lt;code>SPC m '&lt;/code> to edit inside the babel in another buffer.&lt;/li>
+&lt;li>Results will show up in a &lt;code>##+RESULTS&lt;/code> header&lt;/li>
+&lt;li>This feature is called Babel&lt;/li>
+&lt;li>One snippet can consume the output of another snippet&lt;/li>
+&lt;li>You can create your own snippets in the following directory: &lt;code>~/.doom.d/snippets/&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="task-management">Task Management&lt;/h3>
+&lt;ul>
+&lt;li>Create a task by prefixing any heading with &lt;code>TODO&lt;/code>&lt;/li>
+&lt;li>&lt;code>DONE&lt;/code> means the task is done&lt;/li>
+&lt;li>You can create your custom key words by changing this variable: &lt;code>org-todo-keywords&lt;/code>
+&lt;ul>
+&lt;li>
+&lt;p>remember you can get to your variables through &lt;code>SPC h v&lt;/code> (M-x counsel-describe-variable)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>These values are already set in Doom:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text"> ((sequence &amp;#34;TODO(t)&amp;#34; &amp;#34;PROJ(p)&amp;#34; &amp;#34;STRT(s)&amp;#34; &amp;#34;WAIT(w)&amp;#34; &amp;#34;HOLD(h)&amp;#34; &amp;#34;|&amp;#34; &amp;#34;DONE(d)&amp;#34; &amp;#34;KILL(k)&amp;#34;)
+(sequence &amp;#34;[ ](T)&amp;#34; &amp;#34;[-](S)&amp;#34; &amp;#34;[?](W)&amp;#34; &amp;#34;|&amp;#34; &amp;#34;[X](D)&amp;#34;))
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>SPC m t&lt;/code> to change a status of a todo&lt;/li>
+&lt;li>&lt;code>SHIFT left&lt;/code> and &lt;code>SHIFT right&lt;/code> can be used to change the status of a todo as well.&lt;/li>
+&lt;li>If you finish a task with a command, org mode will add a date that you &amp;ldquo;closed&amp;rdquo; the task.&lt;/li>
+&lt;li>&lt;code>SPC o a t&lt;/code> to open the agenda -&amp;gt; todo list&lt;/li>
+&lt;li>&lt;code>q&lt;/code> to quit&lt;/li>
+&lt;li>&lt;code>org-agenda-files&lt;/code> is a variable you can set to filter which files agenda searches for todos in.&lt;/li>
+&lt;/ul>
+&lt;h4 id="priorities-for-tasks">Priorities for Tasks&lt;/h4>
+&lt;ul>
+&lt;li>&lt;code>SHIFT up&lt;/code> and &lt;code>SHIFT down&lt;/code> will toggle the priority of tasks&lt;/li>
+&lt;li>&lt;code>org-fancy-priorities&lt;/code> gives you fancy looking priorities&lt;/li>
+&lt;/ul>
+&lt;h4 id="marking-tasks-with-tags">Marking Tasks with Tags&lt;/h4>
+&lt;ul>
+&lt;li>Tags can be attached to any headlines&lt;/li>
+&lt;li>&lt;code>SPC m q&lt;/code> to tag a headline&lt;/li>
+&lt;li>Example:
+&lt;ul>
+&lt;li>TODO play more games :fun:&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Tags are hierarchical so nested headings will be tagged with the
+parent header tag&lt;/li>
+&lt;li>&lt;code>org-tag-sparce-tree&lt;/code> will search for headings that only have a specific
+tag&lt;/li>
+&lt;/ul>
+&lt;h4 id="setting-a-poperty-for-a-task-headline">Setting a poperty for a task/headline&lt;/h4>
+&lt;ul>
+&lt;li>&lt;code>SPC m o&lt;/code> is used for setting a property.&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Marking Headlines with Categories&lt;/p>
+&lt;ul>
+&lt;li>You can use &lt;a href="https://orgmode.org/manual/Categories.html">categories&lt;/a> to change the label in agenda view.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Org-Habits&lt;/p>
+&lt;ul>
+&lt;li>If you want to &lt;a href="https://orgmode.org/manual/Tracking-your-habits.html">keep track of your habits&lt;/a> using org mode, you can set the &lt;code>STYLE&lt;/code> property to habit.
+&lt;ul>
+&lt;li>If you want to set a category (for chani&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="lists">Lists&lt;/h3>
+&lt;ul>
+&lt;li>Two types of lists, ordered and unordered lists
+&lt;ul>
+&lt;li>&lt;code>SHIFT right&lt;/code> and &lt;code>SHIFT left&lt;/code> can be used to change the type of lists.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>You can also change an unorded list by changing the first item to 1. and then typing &lt;code>C-c C-c&lt;/code> and vice verca.&lt;/li>
+&lt;/ul>
+&lt;h3 id="checkboxes">Checkboxes&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> This is still todo&lt;/li>
+&lt;li>[-] This is in progress&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> This is a done task&lt;/li>
+&lt;/ul>
+&lt;h4 id="you-can-see-how-many-are-done-with-a-cookie">You can see how many are done with a &amp;ldquo;cookie&amp;rdquo; &lt;code>[1/2]&lt;/code>&lt;/h4>
+&lt;ul>
+&lt;li>[-] Task 1&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Task 2&lt;/li>
+&lt;li>You can do this by adding &lt;code>[/]&lt;/code> to the heading and pressing &lt;code>C-c C-c&lt;/code>&lt;/li>
+&lt;li>You can&amp;rsquo;t assign a tag or a priority&lt;/li>
+&lt;/ul>
+&lt;h2 id="magit">Magit&lt;/h2>
+&lt;ul>
+&lt;li>Magit is enabled by default in Doom Emacs&amp;rsquo;s init.el&lt;/li>
+&lt;li>&lt;code>SPC g g&lt;/code> shows Magit status page
+&lt;ul>
+&lt;li>Most commands are done from the status page&lt;/li>
+&lt;li>Use tab to expand headlines in the status page&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>?&lt;/code> in Magit&amp;rsquo;s status page for a nice list of available commands and help, &lt;code>q&lt;/code> to close this help page&lt;/li>
+&lt;li>Open diff view for a file with &lt;code>TAB&lt;/code>&lt;/li>
+&lt;li>Press &lt;code>s&lt;/code> under &amp;ldquo;Unstaged changes&amp;rdquo; to stage a change
+&lt;ul>
+&lt;li>&lt;code>u&lt;/code> to undo a change&lt;/li>
+&lt;li>&lt;code>c&lt;/code> to commit&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>b s&lt;/code> for branch and spinoff to create another branch, rewinding the
+commits you made to master&lt;/li>
+&lt;li>&lt;code>b b&lt;/code> to switch branches&lt;/li>
+&lt;/ul>
+&lt;h3 id="git-commit-flow-in-more-detail">Git Commit Flow in More Detail&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>t t&lt;/code> to create a tag, default place is the commit you are currently
+selecting&lt;/li>
+&lt;li>&lt;code>V&lt;/code> to select a change in a diff and &lt;code>x&lt;/code> to discard that change.&lt;/li>
+&lt;li>&lt;code>s&lt;/code> to stage&lt;/li>
+&lt;li>&lt;code>c&lt;/code> to commit, you can &lt;code>q&lt;/code> to quit the commit screen&lt;/li>
+&lt;li>&lt;code>P&lt;/code> to push and then &lt;code>p&lt;/code> to your remote or &lt;code>u&lt;/code> to a another remote&lt;/li>
+&lt;/ul>
+&lt;h3 id="magit-with-forge-for-issuing-pull-requests-emacs">Magit with Forge for Issuing Pull Requests - Emacs&lt;/h3>
+&lt;ul>
+&lt;li>Forge is installed in emacs doom&lt;/li>
+&lt;li>&lt;code>@&lt;/code> for forge&lt;/li>
+&lt;li>Set up forge with &lt;code>M x forge-pull&lt;/code>
+&lt;ul>
+&lt;li>the first time you will get a token from github&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>@ c p&lt;/code> to create a pull request with forge
+&lt;ul>
+&lt;li>select the base branch&lt;/li>
+&lt;li>then select the target branch&lt;/li>
+&lt;li>then provide a short description&lt;/li>
+&lt;li>&lt;code>CTRL c CTRL c&lt;/code> to finish the pull request&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Now there will be a &lt;code>pull requests&lt;/code> tab&lt;/li>
+&lt;/ul>
+&lt;h2 id="terminal">Terminal&lt;/h2>
+&lt;ul>
+&lt;li>Set up vterm in your init.el file.&lt;/li>
+&lt;li>&lt;code>SPC o T&lt;/code> for opening vterm&lt;/li>
+&lt;li>&lt;code>SPC o t&lt;/code> for opening vterm in a popup window&lt;/li>
+&lt;/ul>
+&lt;h2 id="file-tree">File Tree&lt;/h2>
+&lt;ul>
+&lt;li>Set up neotree or treemacs in your init.el file.&lt;/li>
+&lt;li>&lt;code>SPC o p&lt;/code> for opening neotree or treemacs&lt;/li>
+&lt;/ul>
+&lt;h2 id="others">Others&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>C-c C-z&lt;/code> to insert a note for a heading in org mode.&lt;/li>
+&lt;/ul>
+&lt;!--listend-->
+&lt;ul>
+&lt;li>&lt;code>C-c C-c&lt;/code> to insert a tag for a heading in org mode.&lt;/li>
+&lt;/ul>
+&lt;h2 id="capturing">Capturing&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>SPC X&lt;/code> to capture (the new thing gets caputured to a single file but that&amp;rsquo;s fine since we can easily refile it.)&lt;/li>
+&lt;li>&lt;code>SPC m r r&lt;/code> to refile&lt;/li>
+&lt;/ul>
+&lt;h2 id="org-roam">Org Roam&lt;/h2>
+&lt;p>These keybinding only work after installing org-roam. To install org roam edit your &lt;code>init.el&lt;/code> file and add &lt;code>(org +roam2)&lt;/code> in its designated place. Watch &lt;a href="https://www.youtube.com/watch?v=AyhPmypHDEw">this video&lt;/a> to understand what org-roam is.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>SPC n r f&lt;/code> Find an existing node or create a new one.&lt;/li>
+&lt;li>&lt;code>SPC n r i&lt;/code> Insert a link to another node.&lt;/li>
+&lt;li>&lt;code>SPC n r r&lt;/code> Toggle backlinks pane&lt;/li>
+&lt;li>&lt;code>SPC m m o t&lt;/code> Add a roam tag.&lt;/li>
+&lt;li>&lt;code>SPC m m o a&lt;/code> Add a roam alias.&lt;/li>
+&lt;/ul>
+&lt;h2 id="sources">Sources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=BRqjaN4-gGQ&amp;amp;list=PLhXZp00uXBk4np17N39WvB80zgxlZfVwj&amp;amp;index=10">Link to youtube video series&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.ianjones.us/zaiste-programming-doom-emacs-tutorial/#org7ad2452">This org file is mostly from the notes taken from the series above by ianjones.us&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=s0ed8Da3mjE">Three HUGE Mistakes New Emacs Users Make&lt;/a> (they are included in the tips above)&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-to-learn">What to learn &lt;code>[0/2]&lt;/code>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;a href="https://orgroam.com">Org Roam&lt;/a>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> abbrev-mode&lt;/li>
+&lt;/ul></description></item><item><title>Чистый Код</title><link>https://inomoz.com/posts/martinchistyykod101/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0300</pubDate><guid>https://inomoz.com/posts/martinchistyykod101/</guid><description>&lt;h2 id="martinChistyyKod101">Предисловие&lt;/h2>
+&lt;p>Честность в мелочах вовсе не честность&lt;/p>
+&lt;h3 id="честность-в-мелочах-вовсе-не-мелочь">Честность в мелочах вовсе не мелочь&lt;/h3>
+&lt;p>Датская поговорка. Альтернативы - бог скрывается в мелочах. Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.&lt;/p>
+&lt;h3 id="сопровождение">Сопровождение&lt;/h3>
+&lt;p>В программировании 80+% того что мы делаем мы называем сопровождением.&lt;/p>
+&lt;p>1951 г. - появилась методология TPM (Total Productive maintenance). Ориентирована прежде всего на сопровождение а не на производство. Основаня на приципах 5S.
+Ее принципы заложены в методолгии &lt;a href="https://inomoz.com/posts/20220123190452-lean/">LEAN&lt;/a>.&lt;/p>
+&lt;p>Хорошая практика программирования требует сосредоточенность, присутствие духа и мышление.&lt;/p>
+&lt;p>Философия 5S:&lt;/p>
+&lt;ul>
+&lt;li>Организация (сейри), грамотное именование.&lt;/li>
+&lt;li>Аккуратность (сейтон), всему своё место.&lt;/li>
+&lt;li>Чистка (сейсо), код не должен быть захламлённым.&lt;/li>
+&lt;li>Стандартизация (сэйкэцу), придерживайтесь единого стиля в коде.&lt;/li>
+&lt;li>Дисциплина (сюцукэ), нужно следовать правилам, размышлять о работе и быть готовым к изменениям в самом себе.&lt;/li>
+&lt;/ul>
+&lt;h3 id="описание-принципов">Описание принципов&lt;/h3>
+&lt;p>Следуя этим принципам вы значительно уменьшаете вероятность возникновения ошибок, вы стараетесть переработать уже существующий код под эти принципы, ваш код удобочитаем, спорные части вы переписываете сразу-же.&lt;/p>
+&lt;blockquote>
+&lt;p>Чистота ведет к божественности.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Тот кто верен в мелочах, верен во всем.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Ранняя пташка червяка ловит.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Не откладывай на завтра то, что можно сделать сегодня.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Из маленьких желудей вырастают большие дубы.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Дорога ложка к обеду.&lt;/p>
+&lt;/blockquote>
+&lt;!--quoteend-->
+&lt;blockquote>
+&lt;p>Яблочко на ужин и доктор не нужен.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="непрерывное-улучшение">Непрерывное улучшение&lt;/h3>
+&lt;p>Каждое действие для проектирования можно рассматривать как атомарное восстановление. Стихотвроение никогда не бывает законченным, оно требует непрерывного улучшения, прекратить работу над ним значит бросить его.&lt;/p>
+&lt;p>Невнимательность к мелочам или их игнорирование, зацикливание на внешнем виде в конечном итоге обходится недёшево.&lt;/p>
+&lt;h3 id="зависимость-ошибок-от-стиля-программирования">Зависимость ошибок от стиля программирования&lt;/h3>
+&lt;p>В ходе исследований в BELL labs выяснилось что последовательный стиль применения отступов является одним из самых статистически значимых признаков низкой плотности ошибок.&lt;/p>
+&lt;p>Качество кода возникает в результате миллиона проявлений нбезразличного отношения к коду, а не от применения супер методов.&lt;/p>
+&lt;h3 id="рассматривайте-свой-код-dot-dot-dot">Рассматривайте свой код&amp;hellip;&lt;/h3>
+&lt;p>Рассматривайте свой код как красивое воплощение благородных усилий по проектированию - как процесс, а не статистически конечной точки.&lt;/p>
+&lt;h3 id="честность">Честность&lt;/h3>
+&lt;p>Как уже было сказано важно быть честным в мелочах. Нужно делать все возможное для улучшеня вашего кода и стараться делать его лучше чем он был.&lt;/p>
+&lt;h3 id="flashcards">Flashcards&lt;/h3>
+&lt;h4 id="мелочи-важны">Мелочи важны&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Обращая внимание на мелочи вы приобретаете, вы приобретаете?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.&lt;/p>
+&lt;p>Как уже было сказано важно быть честным в мелочах. Нужно делать все возможное для улучшеня вашего кода и стараться делать его лучше чем он был.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="5s">5S&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Назовите основые принципы философии 5S&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;ul>
+&lt;li>Организация (сейри), грамотное именование.&lt;/li>
+&lt;li>Аккуратность (сейтон), всему своё место.&lt;/li>
+&lt;li>Чистка (сейсо), код не должен быть захламлённым.&lt;/li>
+&lt;li>Стандартизация (сэйкэцу), придерживайтесь единого стиля в коде.&lt;/li>
+&lt;li>Дисциплина (сюцукэ), нужно следовать правилам, размышлять о работе и быть готовым к изменениям в самом себе.&lt;/li>
+&lt;/ul>
+&lt;p>Следуя этим принципам вы значительно уменьшаете вероятность возникновения ошибок, вы стараетесть переработать уже существующий код под эти принципы, ваш код удобочитаем, спорные части вы переписываете сразу-же.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="зачем">Зачем&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Почему важно обращать внимание на мелочи в контексте разработки, в чем основная суть?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Невнимательность к мелочам или их игнорирование, зацикливание на внешнем виде в конечном итоге обходится недёшево.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="небезразличие">Небезразличие&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Есть ли какие либо сверх-универсальные методы для достижения качества кода? Или нужно просто придерживаться небезразличного отношения к коду?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Скорее второе, я думаю есть методы позволяющие улучшить код, но они могут быть не всегда применимы, а если придерживаться второго пункта то качество кода улучшиться.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="идеальный-код">Идеальный код&lt;/h4>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Front&lt;/p>
+&lt;p>Когда ваш код становится идеальным?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!--list-separator-->
+&lt;ul>
+&lt;li>
+&lt;p>Back&lt;/p>
+&lt;p>Я думаю никогда.
+Рассматривайте свой код как красивое воплощение благородных усилий по проектированию - как процесс, а не статистически конечной точки.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="введение">Введение&lt;/h2>
+&lt;h3 id="профессионализм">Профессионализм&lt;/h3>
+&lt;figure>&lt;img src="https://inomoz.com/ox-hugo/20220123-212705_screenshot.png"/>
+&lt;/figure>
+&lt;p>Что позволяет избежать поток ужасных ошибок, отладку в панике, напор начальства? Правильный ответ профессионализм.&lt;/p></description></item><item><title>Effective python</title><link>https://inomoz.com/posts/slatkineffectivepython902019/</link><pubDate>Fri, 11 Feb 2022 00:00:00 +0300</pubDate><guid>https://inomoz.com/posts/slatkineffectivepython902019/</guid><description>&lt;h2 id="slatkinEffectivePython902019">Effective python: 90 specific ways to write better python&lt;/h2>
 &lt;h3 id="item-1-know-which-version-of-python-you-re-using">Item 1: Know which version of python you&amp;rsquo;re using&lt;/h3>
 &lt;h4 id="idioms-of-programming-language-are-defined-by-its-users">Idioms of programming language are defined by its users&lt;/h4>
 &lt;p>This means popular practices, formating rules, conventions, etc are defined by their users!&lt;/p>
@@ -122,39 +725,10 @@ f&amp;rsquo;my number is {number:.{places}}?&lt;/p>
 &lt;p>F-strings are sucinot yet powerful, because they allow for arbitray Pytho expression to be directly embedded within format specifiers.&lt;/p>
 &lt;p>Write helperes functions instead of complex expressions&lt;/p>
 &lt;p>Python&amp;rsquo;s syntax makes it easy to write single line epxressions that are overly complicated and difficult to read.&lt;/p>
-&lt;p>Move complex expressions into helpere functions expeciialy if you need to use the same logic repeately&lt;/p></description></item><item><title>escape sequences</title><link>https://inomoz.com/posts/20220119215704-escape_sequences/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220119215704-escape_sequences/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1">https://en.wikipedia.org/wiki/Escape_sequences_in_C#ref_Note1&lt;/a>
-\a 07 Alert (Beep, Bell) (added in C89)[1]
-\b 08 Backspace
-\e 1B Escape character (non standart)
-\f 0C Formfeed Page Break
-\n 0A Newline (Line Feed); see notes below
-\r 0D Carriage Return
-\t 09 Horizontal Tab
-\v 0B Vertical Tab
-\\ 5C Backslash
-\' 27 Apostrophe or single quotation mark
-\&amp;quot; 22 Double quotation mark
-\? 3F Question mark (used to avoid trigraphs)
-\nnnnote 2 any The byte whose numerical value is given by nnn interpreted as an octal number
-\xhh… any The byte whose numerical value is given by hh… interpreted as a hexadecimal number
-\uhhhhnote 3 none Unicode code point below 10000 hexadecimal (added in C99)[1]: 26
-\Uhhhhhhhhnote 4 none Unicode code point where h is a hexadecimal digit&lt;/p>
-&lt;p>&lt;a href="https://gist.github.com/hectoregm/1368066">https://gist.github.com/hectoregm/1368066&lt;/a>
-Escape Sequence Name Meaning
-\a Alert Produces an audible or visible alert.
-\b Backspace Moves the cursor back one position (non-destructive).
-\f Form Feed Moves the cursor to the first position of the next page.
-\n New Line Moves the cursor to the first position of the next line.
-\r Carriage Return Moves the cursor to the first position of the current line.
-\t Horizontal Tab Moves the cursor to the next horizontal tabular position.
-\v Vertical Tab Moves the cursor to the next vertical tabular position.
-\' Produces a single quote.
-\&amp;quot; Produces a double quote.
-\? Produces a question mark.
-\\ Produces a single backslash.
-\0 Produces a null character.
-\ddd Defines one character by the octal digits (base-8 number). Multiple characters may be defined in the same escape sequence, but the value is implementation-specific (see examples).
-\xdd Defines one character by the hexadecimal digit (base-16 number).&lt;/p></description></item><item><title>Fullstack Vue.js</title><link>https://inomoz.com/posts/djirdehfullstackvuejs2021/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/djirdehfullstackvuejs2021/</guid><description>&lt;h2 id="djirdehFullstackVueJs2021">Fullstack Vue.js&lt;/h2></description></item><item><title>Grokking Algorithms</title><link>https://inomoz.com/posts/bhargavagrokkingalgorithms101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/bhargavagrokkingalgorithms101/</guid><description>&lt;h2 id="bhargavaGrokkingAlgorithms101">Grokking Algorithms&lt;/h2></description></item><item><title>JavaScript: The definitive guide, 7th edition</title><link>https://inomoz.com/posts/flanaganjavascriptdefinitiveguide2020/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/flanaganjavascriptdefinitiveguide2020/</guid><description>&lt;h2 id="flanaganJavaScriptDefinitiveGuide2020">JavaScript: The definitive guide, 7th edition&lt;/h2></description></item><item><title>LEAN</title><link>https://inomoz.com/posts/20220123190452-lean/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220123190452-lean/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Lean_software_development">https://en.wikipedia.org/wiki/Lean_software_development&lt;/a>&lt;/p>
+&lt;p>Move complex expressions into helpere functions expeciialy if you need to use the same logic repeately&lt;/p></description></item><item><title>Fullstack Vue.js</title><link>https://inomoz.com/posts/djirdehfullstackvuejs2021/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/djirdehfullstackvuejs2021/</guid><description>&lt;h2 id="djirdehFullstackVueJs2021">Fullstack Vue.js&lt;/h2></description></item><item><title>JavaScript: The definitive guide, 7th edition</title><link>https://inomoz.com/posts/flanaganjavascriptdefinitiveguide2020/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/flanaganjavascriptdefinitiveguide2020/</guid><description>&lt;h2 id="flanaganJavaScriptDefinitiveGuide2020">JavaScript: The definitive guide, 7th edition&lt;/h2></description></item><item><title>Kill process by pattern</title><link>https://inomoz.com/posts/20220209122942-kill_process_by_pattern/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220209122942-kill_process_by_pattern/</guid><description>&lt;p>Use pkill -f, which matches the pattern for any part of the command line&lt;/p>
+&lt;p>&lt;code>pkill -f my_pattern&lt;/code>&lt;/p>
+&lt;p>Just in case it doesn&amp;rsquo;t work, try to use this one as well:&lt;/p>
+&lt;p>&lt;code>pkill -9 -f my_pattern&lt;/code>&lt;/p></description></item><item><title>LEAN</title><link>https://inomoz.com/posts/20220123190452-lean/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220123190452-lean/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Lean_software_development">https://en.wikipedia.org/wiki/Lean_software_development&lt;/a>&lt;/p>
 &lt;p>Lean software development is a translation of lean manufacturing principles and practices to the software development domain. Adapted from the Toyota Production System,[1] it is emerging with the support of a pro-lean subculture within the agile community. Lean offers a solid conceptual framework, values and principles, as well as good practices, derived from experience, that support agile organizations&lt;/p></description></item><item><title>LeetCode examples</title><link>https://inomoz.com/posts/20220203004140-leetcode_examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/20220203004140-leetcode_examples/</guid><description>&lt;h2 id="array-in-java">Array in Java&lt;/h2>
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 &lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -218,7 +792,7 @@ System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">o
 &lt;/span>&lt;span style="color:#75715e">&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>The c programming language</title><link>https://inomoz.com/posts/ritchieprogramminglanguage1990/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/ritchieprogramminglanguage1990/</guid><description>&lt;h2 id="ritchieProgrammingLanguage1990">The c programming language&lt;/h2>
+&lt;/div></description></item><item><title>Salesloop Tasks</title><link>https://inomoz.com/posts/salesloop-tasks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/salesloop-tasks/</guid><description>&lt;h2 id="list">list&lt;/h2></description></item><item><title>The c programming language</title><link>https://inomoz.com/posts/ritchieprogramminglanguage1990/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/ritchieprogramminglanguage1990/</guid><description>&lt;h2 id="ritchieProgrammingLanguage1990">The c programming language&lt;/h2>
 &lt;h3 id="chapter-1-a-tutorial-introduction">Chapter 1 - A Tutorial Introduction&lt;/h3>
 &lt;h4 id="1-dot-1-getting-started">1.1 Getting Started&lt;/h4>
 &lt;!--list-separator-->
@@ -2066,149 +2640,4 @@ plt&lt;span style="color:#f92672">.&lt;/span>savefig(fname)
 fname &lt;span style="color:#75715e"># return this to org-mode&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Свет и освещение</title><link>https://inomoz.com/posts/davidsvetosveshchenie2001/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/davidsvetosveshchenie2001/</guid><description>&lt;h2 id="davidSvetOsveshchenie2001">Свет и освещение&lt;/h2></description></item><item><title>Чистый Код</title><link>https://inomoz.com/posts/martinchistyykod101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/martinchistyykod101/</guid><description>&lt;h2 id="martinChistyyKod101">Предисловие&lt;/h2>
-&lt;p>Честность в мелочах вовсе не честность&lt;/p>
-&lt;h3 id="честность-в-мелочах-вовсе-не-мелочь">Честность в мелочах вовсе не мелочь&lt;/h3>
-&lt;p>Датская поговорка. Альтернативы - бог скрывается в мелочах. Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.&lt;/p>
-&lt;h3 id="сопровождение">Сопровождение&lt;/h3>
-&lt;p>В программировании 80+% того что мы делаем мы называем сопровождением.&lt;/p>
-&lt;p>1951 г. - появилась методология TPM (Total Productive maintenance). Ориентирована прежде всего на сопровождение а не на производство. Основаня на приципах 5S.
-Ее принципы заложены в методолгии &lt;a href="https://inomoz.com/posts/20220123190452-lean/">LEAN&lt;/a>.&lt;/p>
-&lt;p>Хорошая практика программирования требует сосредоточенность, присутствие духа и мышление.&lt;/p>
-&lt;p>Философия 5S:&lt;/p>
-&lt;ul>
-&lt;li>Организация (сейри), грамотное именование.&lt;/li>
-&lt;li>Аккуратность (сейтон), всему своё место.&lt;/li>
-&lt;li>Чистка (сейсо), код не должен быть захламлённым.&lt;/li>
-&lt;li>Стандартизация (сэйкэцу), придерживайтесь единого стиля в коде.&lt;/li>
-&lt;li>Дисциплина (сюцукэ), нужно следовать правилам, размышлять о работе и быть готовым к изменениям в самом себе.&lt;/li>
-&lt;/ul>
-&lt;h3 id="описание-принципов">Описание принципов&lt;/h3>
-&lt;p>Следуя этим принципам вы значительно уменьшаете вероятность возникновения ошибок, вы стараетесть переработать уже существующий код под эти принципы, ваш код удобочитаем, спорные части вы переписываете сразу-же.&lt;/p>
-&lt;blockquote>
-&lt;p>Чистота ведет к божественности.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Тот кто верен в мелочах, верен во всем.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Ранняя пташка червяка ловит.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Не откладывай на завтра то, что можно сделать сегодня.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Из маленьких желудей вырастают большие дубы.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Дорога ложка к обеду.&lt;/p>
-&lt;/blockquote>
-&lt;!--quoteend-->
-&lt;blockquote>
-&lt;p>Яблочко на ужин и доктор не нужен.&lt;/p>
-&lt;/blockquote>
-&lt;h3 id="непрерывное-улучшение">Непрерывное улучшение&lt;/h3>
-&lt;p>Каждое действие для проектирования можно рассматривать как атомарное восстановление. Стихотвроение никогда не бывает законченным, оно требует непрерывного улучшения, прекратить работу над ним значит бросить его.&lt;/p>
-&lt;p>Невнимательность к мелочам или их игнорирование, зацикливание на внешнем виде в конечном итоге обходится недёшево.&lt;/p>
-&lt;h3 id="зависимость-ошибок-от-стиля-программирования">Зависимость ошибок от стиля программирования&lt;/h3>
-&lt;p>В ходе исследований в BELL labs выяснилось что последовательный стиль применения отступов является одним из самых статистически значимых признаков низкой плотности ошибок.&lt;/p>
-&lt;p>Качество кода возникает в результате миллиона проявлений нбезразличного отношения к коду, а не от применения супер методов.&lt;/p>
-&lt;h3 id="рассматривайте-свой-код-dot-dot-dot">Рассматривайте свой код&amp;hellip;&lt;/h3>
-&lt;p>Рассматривайте свой код как красивое воплощение благородных усилий по проектированию - как процесс, а не статистически конечной точки.&lt;/p>
-&lt;h3 id="честность">Честность&lt;/h3>
-&lt;p>Как уже было сказано важно быть честным в мелочах. Нужно делать все возможное для улучшеня вашего кода и стараться делать его лучше чем он был.&lt;/p>
-&lt;h3 id="flashcards">Flashcards&lt;/h3>
-&lt;h4 id="мелочи-важны">Мелочи важны&lt;/h4>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Front&lt;/p>
-&lt;p>Обращая внимание на мелочи вы приобретаете, вы приобретаете?&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Back&lt;/p>
-&lt;p>Концепция программирования зависящая только от тестов и кода уже устарела. Мелочи важнее чем любые планы. Обращая внимание на мелочи вы приобретаете необходимую практику.&lt;/p>
-&lt;p>Как уже было сказано важно быть честным в мелочах. Нужно делать все возможное для улучшеня вашего кода и стараться делать его лучше чем он был.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="5s">5S&lt;/h4>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Front&lt;/p>
-&lt;p>Назовите основые принципы философии 5S&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Back&lt;/p>
-&lt;ul>
-&lt;li>Организация (сейри), грамотное именование.&lt;/li>
-&lt;li>Аккуратность (сейтон), всему своё место.&lt;/li>
-&lt;li>Чистка (сейсо), код не должен быть захламлённым.&lt;/li>
-&lt;li>Стандартизация (сэйкэцу), придерживайтесь единого стиля в коде.&lt;/li>
-&lt;li>Дисциплина (сюцукэ), нужно следовать правилам, размышлять о работе и быть готовым к изменениям в самом себе.&lt;/li>
-&lt;/ul>
-&lt;p>Следуя этим принципам вы значительно уменьшаете вероятность возникновения ошибок, вы стараетесть переработать уже существующий код под эти принципы, ваш код удобочитаем, спорные части вы переписываете сразу-же.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="зачем">Зачем&lt;/h4>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Front&lt;/p>
-&lt;p>Почему важно обращать внимание на мелочи в контексте разработки, в чем основная суть?&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Back&lt;/p>
-&lt;p>Невнимательность к мелочам или их игнорирование, зацикливание на внешнем виде в конечном итоге обходится недёшево.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="небезразличие">Небезразличие&lt;/h4>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Front&lt;/p>
-&lt;p>Есть ли какие либо сверх-универсальные методы для достижения качества кода? Или нужно просто придерживаться небезразличного отношения к коду?&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Back&lt;/p>
-&lt;p>Скорее второе, я думаю есть методы позволяющие улучшить код, но они могут быть не всегда применимы, а если придерживаться второго пункта то качество кода улучшиться.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="идеальный-код">Идеальный код&lt;/h4>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Front&lt;/p>
-&lt;p>Когда ваш код становится идеальным?&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;!--list-separator-->
-&lt;ul>
-&lt;li>
-&lt;p>Back&lt;/p>
-&lt;p>Я думаю никогда.
-Рассматривайте свой код как красивое воплощение благородных усилий по проектированию - как процесс, а не статистически конечной точки.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="введение">Введение&lt;/h2>
-&lt;h3 id="профессионализм">Профессионализм&lt;/h3>
-&lt;figure>&lt;img src="https://inomoz.com/ox-hugo/20220123-212705_screenshot.png"/>
-&lt;/figure>
-&lt;p>Что позволяет избежать поток ужасных ошибок, отладку в панике, напор начальства? Правильный ответ профессионализм.&lt;/p></description></item></channel></rss>
+&lt;/div></description></item><item><title>Свет и освещение</title><link>https://inomoz.com/posts/davidsvetosveshchenie2001/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://inomoz.com/posts/davidsvetosveshchenie2001/</guid><description>&lt;h2 id="davidSvetOsveshchenie2001">Свет и освещение&lt;/h2></description></item></channel></rss>
