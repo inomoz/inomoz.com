@@ -5,6 +5,124 @@
     <link>https://inomoz.com/tags/</link>
     <description>Recent content in Tags on Inomoz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://inomoz.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Feb 2022 21:31:10 +0300</lastBuildDate><atom:link href="https://inomoz.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>js</title>
+      <link>https://inomoz.com/tags/js/</link>
+      <pubDate>Sat, 12 Feb 2022 21:31:10 +0300</pubDate>
+      
+      <guid>https://inomoz.com/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>https://inomoz.com/tags/c/</link>
+      <pubDate>Sat, 12 Feb 2022 18:28:56 +0300</pubDate>
+      
+      <guid>https://inomoz.com/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>https://inomoz.com/tags/education/</link>
+      <pubDate>Sat, 12 Feb 2022 18:09:51 +0300</pubDate>
+      
+      <guid>https://inomoz.com/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CS</title>
+      <link>https://inomoz.com/tags/cs/</link>
+      <pubDate>Sat, 12 Feb 2022 17:41:32 +0300</pubDate>
+      
+      <guid>https://inomoz.com/tags/cs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://inomoz.com/tags/math/</link>
+      <pubDate>Sat, 12 Feb 2022 17:41:32 +0300</pubDate>
+      
+      <guid>https://inomoz.com/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>skills,</title>
+      <link>https://inomoz.com/tags/skills/</link>
+      <pubDate>Sat, 12 Feb 2022 00:00:00 +0300</pubDate>
+      
+      <guid>https://inomoz.com/tags/skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>books</title>
+      <link>https://inomoz.com/tags/books/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0300</pubDate>
+      
+      <guid>https://inomoz.com/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://inomoz.com/tags/python/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0300</pubDate>
+      
+      <guid>https://inomoz.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>art\-and\-design</title>
+      <link>https://inomoz.com/tags/art%5C-and%5C-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://inomoz.com/tags/art%5C-and%5C-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cpp,</title>
+      <link>https://inomoz.com/tags/cpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://inomoz.com/tags/cpp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L1</title>
+      <link>https://inomoz.com/tags/l1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://inomoz.com/tags/l1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L2</title>
+      <link>https://inomoz.com/tags/l2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://inomoz.com/tags/l2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python\-web</title>
+      <link>https://inomoz.com/tags/python%5C-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://inomoz.com/tags/python%5C-web/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

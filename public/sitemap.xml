@@ -2,33 +2,123 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://inomoz.com/categories/</loc>
-    <lastmod>2021-05-20T10:24:10+03:00</lastmod>
-  </url><url>
     <loc>https://inomoz.com/</loc>
-    <lastmod>2021-05-20T10:24:10+03:00</lastmod>
+    <lastmod>2022-02-13T16:16:35+03:00</lastmod>
   </url><url>
     <loc>https://inomoz.com/posts/</loc>
-    <lastmod>2021-05-20T10:24:10+03:00</lastmod>
+    <lastmod>2022-02-13T16:16:35+03:00</lastmod>
   </url><url>
-    <loc>https://inomoz.com/posts/software-which-i-use/</loc>
-    <lastmod>2021-05-20T10:24:10+03:00</lastmod>
+    <loc>https://inomoz.com/posts/20220106021112-vim_super_base/</loc>
+    <lastmod>2022-02-13T16:16:35+03:00</lastmod>
   </url><url>
-    <loc>https://inomoz.com/posts/vim-notes/</loc>
-    <lastmod>2021-05-20T10:24:10+03:00</lastmod>
+    <loc>https://inomoz.com/posts/20220108140506-movies/</loc>
+    <lastmod>2022-02-13T11:13:36+03:00</lastmod>
   </url><url>
-    <loc>https://inomoz.com/categories/workflow/</loc>
-    <lastmod>2021-05-20T10:24:10+03:00</lastmod>
+    <loc>https://inomoz.com/posts/flanaganjavascriptdefinitiveguide2020/</loc>
+    <lastmod>2022-02-12T22:28:45+03:00</lastmod>
   </url><url>
-    <loc>https://inomoz.com/posts/about-me/</loc>
-    <lastmod>2021-05-20T10:24:10+03:00</lastmod>
-  </url><url>
-    <loc>https://inomoz.com/categories/life/</loc>
-    <lastmod>2021-05-20T10:24:10+03:00</lastmod>
-  </url><url>
-    <loc>https://inomoz.com/posts/typography/</loc>
-    <lastmod>2021-05-20T10:24:10+03:00</lastmod>
+    <loc>https://inomoz.com/tags/js/</loc>
+    <lastmod>2022-02-12T22:28:45+03:00</lastmod>
   </url><url>
     <loc>https://inomoz.com/tags/</loc>
+    <lastmod>2022-02-12T22:28:45+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/c/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/20220119215704-escape_sequences/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/education/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/20220126023314-edu/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/cs/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/bhargavagrokkingalgorithms101/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/math/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/20220212192410-doom_emacs_workflow/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/skills/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/20220212172135-test/</loc>
+    <lastmod>2022-02-12T21:38:14+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/martinchistyykod101/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/books/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/slatkineffectivepython902019/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/python/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/art%5C-and%5C-design/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/categories/</loc>
+  </url><url>
+    <loc>https://inomoz.com/tags/cpp/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/djirdehfullstackvuejs2021/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/20220209122942-kill_process_by_pattern/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/l1/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/l2/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/20220123190452-lean/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/20220203004140-leetcode_examples/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/tags/python%5C-web/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/salesloop-tasks/</loc>
+    <lastmod>2022-02-12T21:13:03+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/ritchieprogramminglanguage1990/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/martincleancodercode2011/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/huntpragmaticprogrammerjourneyman1999/</loc>
+    <lastmod>2022-02-06T20:35:41+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/feldroytwoscoopsdjango101/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/20220123015058-utf/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/petzoldkodtaynyyyazyk101/</loc>
+    <lastmod>2022-02-06T20:35:41+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/alexandremelinkratchayshiykursshkolnoy/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
+  </url><url>
+    <loc>https://inomoz.com/posts/davidsvetosveshchenie2001/</loc>
+    <lastmod>2022-02-06T21:14:51+03:00</lastmod>
   </url>
 </urlset>

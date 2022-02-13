@@ -10,11 +10,14 @@
 body {
     max-width: 960px;
     margin: 0 auto;
-    /*   background: linear-gradient(var(--main-hover-bg) 1px, transparent 1px) left top / 29px 29px; */
-    font-family: Consolas, monospace;
+    font-family: 'Lora', serif;
     overflow-x: hidden;
     font-size: 1rem;
     line-height: 1.8125rem;
+}
+
+h1.title{
+    margin-bottom: 0;
 }
 
 body > header, body > section, body > footer {
@@ -54,10 +57,10 @@ body > header, body > section, body > footer {
 }
 
 h1, .h1 {
-  font-size: 2.625rem;
-  line-height: 3.625rem;
-  margin-top: 1.8125rem;
-  margin-bottom: 1.8125rem;
+  font-size: 2rem; /* 32px */
+  line-height: 1.8125rem; /* 58px */
+  margin-top: 0.9063rem;
+  margin-bottom: 0.9063rem;
 }
 h2, .h2 {
   font-size: 1.625rem;
@@ -178,7 +181,7 @@ body > header {
 
 .header .header-title {
     display: flex;
-    font-weight: 700;
+    font-style: italic;
     font-size: 3rem;
     line-height: 1;
     margin-top: .5rem;
@@ -410,4 +413,39 @@ p code{
 
 img{
     max-width: 100%;
+}
+
+section.tags-list{
+    padding: 0 20px;
+}
+.tags-list ul{
+    list-style: none;
+    margin-top: .90625rem;
+    padding-left: 0;
+}
+
+.tags-list li{
+    display: inline-block;
+    border: 1px solid var(--main-link-color);
+    padding: 0 8px;
+    border-radius: 2px;
+}
+
+
+.tags-list li:not(:last-of-type){
+    margin-right: 10px;
+}
+
+.tags-list li a{
+    text-decoration: none;
+}
+
+.pagination{
+    padding-left: 20px;
+}
+
+.pagination a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
 }

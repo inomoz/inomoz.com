@@ -2,7 +2,7 @@
 title = "Doom Emacs Workflow"
 author = ["Inom Turdikulov"]
 date = 2022-02-12T00:00:00+03:00
-lastmod = 2022-02-12T20:09:40+03:00
+lastmod = 2022-02-12T22:57:09+03:00
 draft = false
 +++
 
@@ -219,7 +219,7 @@ draft = false
     -   Example:
 
         ```emacs-lisp
-          (+ 2 3 4 5)
+        (+ 2 3 4 5)
         ```
 -   `C-c C-c` to execute the code.
 -   `SPC m '` to edit inside the babel in another buffer.
@@ -238,8 +238,8 @@ draft = false
     -   These values are already set in Doom:
 
         ```text
-                   ((sequence "TODO(t)" "PROJ(p)" "STRT(s)" "WAIT(w)" "HOLD(h)" "|" "DONE(d)" "KILL(k)")
-                (sequence "[ ](T)" "[-](S)" "[?](W)" "|" "[X](D)"))
+        ((sequence "TODO(t)" "PROJ(p)" "STRT(s)" "WAIT(w)" "HOLD(h)" "|" "DONE(d)" "KILL(k)")
+        (sequence "[ ](T)" "[-](S)" "[?](W)" "|" "[X](D)"))
         ```
 -   `SPC m t` to change a status of a todo
 -   `SHIFT left` and `SHIFT right` can be used to change the status of a todo as well.

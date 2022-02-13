@@ -22,12 +22,14 @@
                         </section>
                         <footer>
                             <p class="published-time">
-                                <time>Created: {{ dateFormat "Jan 2, 2006" .Date }} | Updated: {{ dateFormat "Jan 2, 2006" .Lastmod }} {{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }} | ~ {{ math.Round (div (countwords .Content) 200.0) }} minutes to read</time>
+                                <time>
+                                    Created: {{ dateFormat "Jan 2, 2006" .Date }}
+                                    | Updated: {{ dateFormat "Jan 2, 2006" .Lastmod }} {{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}
+                                    | ~ {{ math.Round (div (countwords .Content) 200.0) }} minutes to read</time>
                             </p>
                         </footer>
                     </article>
-                </a>
-
+                  </a>
             </section>
             <section class="tags-list">
                 <ul>
