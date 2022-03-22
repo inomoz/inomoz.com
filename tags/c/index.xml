@@ -10,7 +10,7 @@
 \t 09 Horizontal Tab
 \v 0B Vertical Tab
 \\ 5C Backslash
-\' 27 Apostrophe or single quotation mark
+\&amp;rsquo; 27 Apostrophe or single quotation mark
 \&amp;quot; 22 Double quotation mark
 \? 3F Question mark (used to avoid trigraphs)
 \nnnnote 2 any The byte whose numerical value is given by nnn interpreted as an octal number
@@ -26,7 +26,7 @@
 \r Carriage Return Moves the cursor to the first position of the current line.
 \t Horizontal Tab Moves the cursor to the next horizontal tabular position.
 \v Vertical Tab Moves the cursor to the next vertical tabular position.
-\' Produces a single quote.
+\&amp;rsquo; Produces a single quote.
 \&amp;quot; Produces a double quote.
 \? Produces a question mark.
 \\ Produces a single backslash.

@@ -31,7 +31,7 @@ It&amp;rsquo;s Python formatting style guide.&lt;/p>
 &lt;h4 id="expressions-and-statements">Expressions and statements&lt;/h4>
 &lt;ul>
 &lt;li>Use inline negation &lt;code>if a is not b&lt;/code> instead negation of positive expression &lt;code>if not a is b&lt;/code>, some like &lt;code>if not CONDTION&lt;/code>. It&amp;rsquo;s really hard to understand.&lt;/li>
-&lt;li>Don&amp;rsquo;t check for empty/non-empty by comparing length to zero ([], &amp;lsquo;'), just use &lt;code>if/if not&lt;/code> something and you need assume that empty value will be evaluated to False, non-empty to True.&lt;/li>
+&lt;li>Don&amp;rsquo;t check for empty/non-empty by comparing length to zero ([], &amp;lsquo;&amp;rsquo;), just use &lt;code>if/if not&lt;/code> something and you need assume that empty value will be evaluated to False, non-empty to True.&lt;/li>
 &lt;li>Avoid single-line if, for and while loops, except compound statements, spread them over multiple lines for clarity/readability (it&amp;rsquo;s actual for complex items).&lt;/li>
 &lt;li>Split long lines with parentheses if they are too long.&lt;/li>
 &lt;li>Prefer splitting with parentheses over using \ line conttinuation character.&lt;/li>
@@ -58,38 +58,38 @@ bytes and str&lt;/p>
 &lt;li>byte - RAW unsigned 8 bit value &lt;code>b'h\x65llo'&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;!--listend-->
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">a &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">b&lt;/span>&lt;span style="color:#e6db74">&amp;#39;h&lt;/span>&lt;span style="color:#ae81ff">\x65&lt;/span>&lt;span style="color:#e6db74">llo&lt;/span>&lt;span style="color:#ae81ff">\x55&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>
-print(list(a))
-print(a)
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>a &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">b&lt;/span>&lt;span style="color:#e6db74">&amp;#39;h&lt;/span>&lt;span style="color:#ae81ff">\x65&lt;/span>&lt;span style="color:#e6db74">llo&lt;/span>&lt;span style="color:#ae81ff">\x55&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(list(a))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(a)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;ul>
 &lt;li>str instances - &lt;a href="https://inomoz.com/posts/20220123015058-utf/">Unicode&lt;/a> code points, that represent textual characters from human language
 str instances don&amp;rsquo;t have binary encoding&lt;/li>
 &lt;/ul>
 &lt;!--listend-->
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">a &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;a&lt;/span>&lt;span style="color:#ae81ff">\u0300&lt;/span>&lt;span style="color:#e6db74"> propos&amp;#39;&lt;/span>
-print(list(a))
-print(a)
-print(a&lt;span style="color:#f92672">.&lt;/span>encode(&lt;span style="color:#e6db74">&amp;#39;windows-1251&amp;#39;&lt;/span>, &lt;span style="color:#e6db74">&amp;#39;ignore&amp;#39;&lt;/span>))
-print(a&lt;span style="color:#f92672">.&lt;/span>encode()&lt;span style="color:#f92672">.&lt;/span>decode())
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>a &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;a&lt;/span>&lt;span style="color:#ae81ff">\u0300&lt;/span>&lt;span style="color:#e6db74"> propos&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(list(a))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(a)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(a&lt;span style="color:#f92672">.&lt;/span>encode(&lt;span style="color:#e6db74">&amp;#39;windows-1251&amp;#39;&lt;/span>, &lt;span style="color:#e6db74">&amp;#39;ignore&amp;#39;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(a&lt;span style="color:#f92672">.&lt;/span>encode()&lt;span style="color:#f92672">.&lt;/span>decode())
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>The core of your program should use str type containg Unicode data, but can accept different encoding - latin1, big5 from interafaces.&lt;/p>
 &lt;p>Use helper function to ensure th e inputs you operate are the type of character sequence that you expect.&lt;/p>
